@@ -1,4 +1,8 @@
-a{
+input[type="radio"],
+input[type="checkbox"]{
+    display: none;
+}
+a, svg{
     text-decoration: none;
     -webkit-transition: all 0.25s;
     -moz-transition: all 0.25s;
@@ -50,7 +54,13 @@ h2{
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
+    color: #333333;
+    background-color: #FFE735;
     text-transform: uppercase;
+}
+.btn:hover{
+    color: #ffffff;
+    background-color: #1062AA;
 }
 
 
