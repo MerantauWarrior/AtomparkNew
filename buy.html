@@ -512,7 +512,6 @@
       '          </a>';
     $(document).on('click','.js-add-basket, .js-remove-basket', function (e) {
       e.preventDefault();
-      console.log($(this))
       if($(this).hasClass('js-add-basket')){
         $(this).siblings('.buy-product__action').remove();
         $(this).replaceWith(btnRemove);
@@ -533,7 +532,7 @@
           settings: "unslick"
         },
         {
-          breakpoint: 600,
+          breakpoint: 767,
           settings: {
             dots: true,
             slidesToShow: 2,
