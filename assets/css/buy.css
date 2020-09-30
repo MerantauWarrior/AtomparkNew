@@ -329,6 +329,9 @@
     line-height: 28px;
     color: #1062AA;
 }
+.buy-product__title{
+    font-family: 'Roboto', sans-serif;
+}
 .buy-product__text{
     float: left;
     width: 100%;
