@@ -275,6 +275,9 @@
 .buy-products{
     padding: 40px 0;
 }
+.buy-products:last-child{
+    margin-bottom: 45px;
+}
 .buy-products__heading-2{
     margin-bottom: 20px;
     text-align: center;
@@ -453,6 +456,49 @@
 input[type="radio"]:checked + .label-check-buy:after{
     background: #1062AA url('../img/buy/checkmark.svg') center center no-repeat;
 }
+.buy-product__custom-price{
+    display: flex;
+    margin-bottom: 17px;
+}
+.buy-product__custom-price-select select,
+.buy-product__custom-price-inp{
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #81859C;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #333333;
+}
+.buy-product__custom-price-select select{
+    width: 73px;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+.buy-product__custom-price-select select option{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #81859C;
+}
+.buy-product__custom-price-select{
+    position: relative;
+    width: 73px;
+    margin: 0 6px;
+    background: #fff url('../img/buy/customprice-arrow.svg') 52px center no-repeat;
+}
+.buy-product__custom-price-inp{
+    width: 136px;
+    margin: 0 6px;
+    text-align: center;
+}
 /*Slider v2*/
 .buy-studio__slider-v2{
     margin: 36px -16px 48px -16px;
@@ -571,6 +617,88 @@ input[type="radio"]:checked + .label-check-buy:after{
 .buy-studio-slide-v2:nth-child(6) li:before{
     border-left: 2px solid #F7B916;
     border-bottom: 2px solid #F7B916;
+}
+/*Footer*/
+.footer-buy{
+    padding: 45px 0 32px 0;
+    background-color: #1062AA;
+}
+.footer-buy__top,
+.footer-buy__bottom{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-buy__top{
+    padding-bottom: 45px;
+    border-bottom: 1px solid #F7B916;
+}
+.footer-buy__bottom{
+    margin-top: 37px;
+}
+.footer-buy-info,
+.footer-buy-pay,
+.footer-buy-policy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+.footer-buy-logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.footer-buy-info__title{
+    margin-bottom: 13px;
+    font-size: 10px;
+    line-height: 12px;
+    color: #E5E5E5;
+}
+.footer-buy-info__link{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #F7B916;
+}
+.footer-buy-info__link:hover{
+    text-decoration: underline;
+}
+.footer-buy-pay{
+    margin-top: 40px;
+}
+.footer-buy-copyright{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E5E5E5;
+}
+.footer-buy-policy__link{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #E5E5E5;
+}
+.footer-buy-policy__link:hover{
+    text-decoration: underline;
+}
+.footer-buy-menu,
+.footer-buy-socials{
+    display: none;
+    justify-content: space-between;
+}
+.footer-buy-menu__link{
+    font-size: 16px;
+    line-height: 19px;
+    color: #F2F2F2;
+}
+.footer-buy-menu__link:hover{
+    text-decoration: underline;
 }
 
 
@@ -767,5 +895,56 @@ input[type="radio"]:checked + .label-check-buy:after{
     .buy-studio-slide-v2 .buy-studio-slide__description{
         padding: 0;
     }
-
+    /*footer*/
+    .footer-buy{
+        padding: 31px 0 43px 0;
+    }
+    .footer-buy-pay{
+        display: none;
+    }
+    .footer-buy-menu,
+    .footer-buy-socials{
+        display: flex;
+        width: 100%;
+    }
+    .footer-buy-logo,
+    .footer-buy-copyright{
+        position: static;
+    }
+    .footer-buy__top{
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 41px;
+    }
+    .footer-buy-info{
+        justify-content: flex-end;
+        width: 50%;
+        margin-left: auto;
+        text-align: right;
+    }
+    .footer-buy-info__item:first-child{
+        margin-bottom: 20px;
+    }
+    .footer-buy-info__title{
+        margin-bottom: 3px;
+    }
+    .footer-buy-policy{
+        order: 1;
+        justify-content: center;
+    }
+    .footer-buy-policy__link{
+        margin: 0 5px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .footer-buy-copyright{
+        order: 2;
+        margin-top: 32px;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+    }
+    .footer-buy-socials{
+        margin: 43px 0 38px 0;
+    }
 }
