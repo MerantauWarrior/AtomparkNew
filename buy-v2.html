@@ -628,7 +628,7 @@
 <script>
   $(document).ready(function () {
     //Buy
-    var btnAddSingle = '<a href="#" class="btn buy-btn__add-basket js-add-basket">\n' +
+    var btnAddSingle = '<a href="#" class="btn buy-btn__add-basket js-add-basket-single">\n' +
       '            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
       '              <circle cx="8.5" cy="28.5" r="2.5" fill=""/>\n' +
       '              <circle cx="23.5" cy="28.5" r="2.5" fill=""/>\n' +
@@ -648,7 +648,18 @@
       '                    fill="white"/>\n' +
       '            </svg>\n' +
       '            <span>В КОРЗИНЕ</span>\n' +
-      '          </button>';
+      '          </button>\n' +
+      '          <a href="#" class="buy-product__action js-remove-basket-single">\n' +
+      '            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+      '              <path\n' +
+      '                  d="M6.79289 12.7071L8.58579 14.5L6.79289 16.2929L8.20711 17.7071L10 15.9142L11.7929 17.7071L13.2071 16.2929L11.4142 14.5L13.2071 12.7071L11.7929 11.2929L10 13.0858L8.20711 11.2929L6.79289 12.7071Z"\n' +
+      '                  fill="#1062AA"/>\n' +
+      '              <path fill-rule="evenodd" clip-rule="evenodd"\n' +
+      '                    d="M7 0C5.89543 0 5 0.89543 5 2V3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H2.07397L2.8609 19.2301C2.98113 20.7931 4.28445 22 5.85206 22H14.1479C15.7155 22 17.0189 20.7931 17.1391 19.2301L17.926 9H18C19.1046 9 20 8.10457 20 7V5C20 3.89543 19.1046 3 18 3H15V2C15 0.895431 14.1046 0 13 0H7ZM13 3H7V2H13V3ZM4.85501 19.0767L4.07988 9H15.9201L15.145 19.0767C15.1049 19.5977 14.6705 20 14.1479 20H5.85206C5.32953 20 4.89508 19.5977 4.85501 19.0767ZM2 7V5H18V7H2Z"\n' +
+      '                    fill="#1062AA"/>\n' +
+      '            </svg>\n' +
+      '            REMOVE\n' +
+      '          </a>';
     var btnAdd = '<a href="#" class="btn buy-btn__add-basket js-add-basket">\n' +
       '            <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
       '              <circle cx="8.5" cy="28.5" r="2.5" fill=""/>\n' +
@@ -692,9 +703,14 @@
         $(this).replaceWith(btnAdd);
       }
     });
-    $(document).on('click','.js-add-basket-single', function (e) {
+    $(document).on('click','.js-add-basket-single, .js-remove-basket-single', function (e) {
       e.preventDefault();
-      $(this).replaceWith(btnRemoveSingle);
+      if($(this).hasClass('js-add-basket-single')){
+        $(this).replaceWith(btnRemoveSingle);
+      }else{
+        $(this).siblings('.buy-btn__in-basket').remove();
+        $(this).replaceWith(btnAddSingle);
+      }
     })
 
     //Slider
