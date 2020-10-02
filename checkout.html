@@ -62,7 +62,7 @@
                   <label for="pay" class="checkout-label">Выберите способ оплаты*</label>
                   <div class="select select-currency">
                     <select name="pay" id="pay" required>
-                      <option value="" selected>Выберите способ оплаты</option>
+                      <option value="0" selected>Выберите способ оплаты</option>
                       <option value="1" data-icon="assets/img/checkout/pay-1.png">Visa/MasterCard</option>
                       <option value="2" data-icon="assets/img/checkout/pay-2.png">PayPal</option>
                       <option value="3" data-icon="assets/img/checkout/pay-3.png">American Express</option>
@@ -79,14 +79,17 @@
                 <div class="checkout__field">
                   <label for="mail" class="checkout-label">Email (на этот email будет отправлен ключ активации)*</label>
                   <input type="email" name="mail" id="mail" class="checkout-inp" placeholder="user@gmail.com" required>
+                  <span class="inp-error-msg">Please enter a valid email address</span>
                 </div>
                 <div class="checkout__field">
                   <label for="name" class="checkout-label">Name*</label>
                   <input type="text" name="name" id="name" class="checkout-inp" placeholder="User 2020" required>
+                  <span class="inp-error-msg">Please enter a valid name</span>
                 </div>
                 <div class="checkout__field">
                   <label for="tel" class="checkout-label">Phone*</label>
                   <input type="tel" name="tel" id="tel" class="checkout-inp" placeholder="+31 20 241 8700" required>
+                  <span class="inp-error-msg">Please enter a valid phone</span>
                 </div>
                 <div class="checkout__optional-fields"></div>
               </div>
@@ -115,8 +118,8 @@
                   <div class="checkout-summary-text">Do you have a promocode?</div>
                   <a href="#" class="checkout-link js-promo">Click here</a>
                   <div class="checkout-summary__promo-box">
-                    <input type="text" name="promo" id="promo" class="checkout-summary__promo-inp empty" placeholder="autumnsale2020">
-                    <button class="checkout-summary__promo-btn" type="button" disabled>apply</button>
+                    <input type="text" name="promo" id="promo" class="checkout-summary__promo-inp" placeholder="Enter promocode">
+                    <button class="checkout-summary__promo-btn" type="button">apply</button>
                   </div>
                 </div>
               </div>
@@ -126,7 +129,7 @@
               </div>
             </div>
             <div class="checkout__submit">
-              <button class="btn" type="submit">Make payment</button>
+              <button class="btn btn-submit" type="submit" disabled>Make payment</button>
             </div>
           </div>
         </form>
@@ -193,37 +196,56 @@
 <script>
   $(document).ready(function () {
 
+//Promocode show
     $('.js-promo').click(function (e) {
       e.preventDefault();
       $('.checkout-summary__promo-box').siblings().remove();
       $('.checkout-summary__promo-box').show();
     });
 
-    $('.checkout-summary__promo-inp').on('keyup', function () {
-      var pVal = $(this).val();
-      if($(this).val().length !== 0){
-        $(this).removeClass('empty');
-        $('.checkout-summary__promo-btn').attr('disabled', false);
+//Promocode pending
+    $('.checkout-summary__promo-btn').click(function () {
+      var pVal = $('.checkout-summary__promo-inp').val();
+      if(pVal.length !== 0){
+        $('.checkout-summary__promo-inp').addClass('pending');
+        $('.checkout-summary__promo-inp').attr('disabled', true);
+        $(this).attr('disabled', true);
       }else {
-        $(this).addClass('empty');
-        $('.checkout-summary__promo-btn').attr('disabled', true);
+        $('.checkout-summary__promo-inp').removeClass('pending')
+        $('.checkout-summary__promo-inp').attr('disabled', false);
+        $(this).attr('disabled', false);
       }
     });
+//Empty Inputs
+    $(document).on('blur change','input, select:hidden', function () {
+      $("input[required], select:hidden[required]").filter(function () {
+        $.trim($(this).val()).length == 0 ? $(this).addClass('has-error') : $(this).removeClass('has-error');
+      });
+      var allReq = $(":input[required]").filter(function () {
+        console.log($(this).val())
+        return $.trim($(this).val()).length == 0;
+      }).length;
+      if(allReq === 0){
+        $('.checkout__submit button').attr('disabled', false);
+      }else {
+        $('.checkout__submit button').attr('disabled', true);
+      }
+    })
 
+//Optional fields after payment method checking
     var fields = '<div class="checkout__field">\n' +
       '                  <label for="tel" class="checkout-label">Address*</label>\n' +
       '                  <input type="text" name="Address" id="Address" class="checkout-inp" placeholder="" required>\n' +
+      '                  <span class="inp-error-msg">Please enter a valid ADdress</span>' +
       '                </div>' +
       '<div class="checkout__field">\n' +
       '                  <label for="tel" class="checkout-label">City*</label>\n' +
       '                  <input type="text" name="City" id="City" class="checkout-inp" placeholder="" required>\n' +
+      '                  <span class="inp-error-msg">Please enter a valid City</span>' +
       '                </div>';
-    var curValPrev = 0;
     $('.select-items div').on('click', function () {
       var curVal = $(this).data('val');
-      curValPrev = curVal;
-      console.log(curVal)
-      if(curValPrev !== 1){
+      if(curVal !== 1){
         $('.checkout__optional-fields').children().remove();
         $('.checkout__optional-fields').append(fields);
       }else {

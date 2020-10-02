@@ -238,10 +238,6 @@
     font-size: 16px;
     line-height: 26px;
 }
-.cart-product-additional--periods .cart-product-additional__info,
-.cart-product-additional--periods .cart-product-additional__text{
-    max-width: 400px;
-}
 .cart-product-additional__controls{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -271,43 +267,6 @@
 }
 .cart-product-additional__btn svg{
     margin-right: 9px;
-}
-.cart-product-period{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 30px;
-}
-.cart-product-period--h{
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.cart-product-period--v{
-    float: left;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-}
-.cart-product-period--v .buy-radio{
-    margin: 8px 0;
-}
-.cart-product-additional__controls-group{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-}
-.cart-product-additional__controls-group .cart-product-additional__controls{
-    margin-left: 0;
 }
 .cart-empty{
     display: none;
@@ -411,6 +370,12 @@
     .cart-product-action{
         margin-left: auto;
     }
+    .cart-product-controls--priceonly .cart-product-price{
+        margin-left: auto;
+    }
+    .cart-product-controls--priceonly .cart-product-action{
+        margin-left: 50px;
+    }
     .cart-product-qty{
         margin: 0 20px;
     }
@@ -480,27 +445,6 @@
     }
     .cart-product-additional__btn{
         margin-top: 0;
-    }
-    .cart-product-period{
-        margin-left: -15px;
-    }
-    .cart-product-period .buy-radio{
-        margin: 0;
-    }
-    .cart-product-period .buy-radio:first-child{
-        margin-right: 30px;
-    }
-    .cart-product-period--v{
-        float: none;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 100%;
-        margin: 26px 0 17px 0;
     }
     .cart-empty{
         padding: 30px 0 80px 0;

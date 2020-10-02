@@ -158,19 +158,8 @@
     color: #333333;
     border: 1px solid #81859C;
 }
-.checkout-summary__promo-inp.empty{
+.checkout-summary__promo-inp.pending{
     border: 1px solid #E8EBF2;
-}
-.checkout-summary__promo-inp::-webkit-input-placeholder {
-    color: #E8EBF2;
-}
-.checkout-summary__promo-inp::-moz-placeholder {
-    color: #E8EBF2;
-}
-.checkout-summary__promo-inp:-ms-input-placeholder {
-    color: #E8EBF2;
-}
-.checkout-summary__promo-inp:-moz-placeholder {
     color: #E8EBF2;
 }
 .checkout-summary__promo-btn{
@@ -197,7 +186,7 @@
     background-color: #1062AA;
     cursor: pointer;
 }
-.checkout-summary__promo-btn:disabled{
+.pending + .checkout-summary__promo-btn{
     background-color: #E8EBF2;
     cursor: default;
 }

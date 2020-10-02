@@ -108,6 +108,19 @@ ul > li:before{
     border-radius: 100%;
     background-color: #1062AA;
 }
+.has-error{
+    border: 1px solid #EF5237 !important;
+}
+.inp-error-msg{
+    display: none;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #EF5237;
+}
+.has-error + .inp-error-msg{
+    display: block;
+}
 .btn{
     display: flex;
     justify-content: center;
@@ -129,11 +142,26 @@ ul > li:before{
     color: #ffffff;
     background-color: #1062AA;
 }
+.btn:disabled{
+    cursor: default;
+}
 .btn-m{
     width: 195px;
 }
 .btn-s{
     width: 122px;
+}
+.btn-submit{
+    background-color: #1062AA;
+    color: #FFFFFF;
+}
+.btn-submit:hover{
+    color: #333333;
+    background-color: #FFE735;
+}
+.btn-submit:disabled{
+    background-color: #E8EBF2;
+    color: #333333;
 }
 
 /*Select Currency*/
