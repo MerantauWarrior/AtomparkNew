@@ -1,3 +1,21 @@
+.wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
 .container,
 .container-md{
     width: 100%;
@@ -23,10 +41,16 @@
     outline: none;
 }
 .slick-dots{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    margin-top: 69px;
+    margin-top: 0;
 }
 .slick-dots button{
     height: 8px;
@@ -35,8 +59,6 @@
     background-color: rgba(129, 133, 156, 0.45);
     font-size: 0;
     line-height: 0;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
     border-radius: 100%;
     cursor: pointer;
 }

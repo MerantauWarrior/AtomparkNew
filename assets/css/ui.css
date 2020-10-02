@@ -108,7 +108,6 @@ ul > li:before{
     border-radius: 100%;
     background-color: #1062AA;
 }
-
 .btn{
     display: flex;
     justify-content: center;
@@ -124,10 +123,107 @@ ul > li:before{
     color: #333333;
     background-color: #FFE735;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn:hover{
     color: #ffffff;
     background-color: #1062AA;
+}
+.btn-m{
+    width: 195px;
+}
+.btn-s{
+    width: 122px;
+}
+
+/*Select Currency*/
+.select{
+    position: relative;
+    width: 100%;
+}
+.select select{
+    display: none;
+}
+.select-currency .select-selected{
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #81859C;
+    color: #333333;
+    background-color: #fff;
+}
+.select-currency .select-selected.select-arrow-active{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+}
+.select-currency .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 17px;
+    width: 10px;
+    height: 6px;
+    margin-top: -3px;
+    background: url("../img/general/select-arrow.svg") no-repeat 50% 50%;
+    background-size: contain;
+}
+.select-currency .select-selected.select-arrow-active:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.select-currency .select-items div, .select-selected{
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    user-select: none;
+}
+.select-currency .select-items div{
+    height: 40px;
+    border-top: 1px solid rgba(129, 133, 156, 0.5);
+    line-height: 39px;
+    color: #333333;
+}
+.select-currency .select-items div.same-as-selected{
+    background-color: rgba(129, 133, 156, 0.3);
+    cursor: default;
+}
+.select-currency .select-items div span, .select-selected span{
+    width: 50%;
+    margin-left: auto;
+}
+.select-currency .select-items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #81859C;
+    box-sizing: border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    z-index: 999;
+}
+.select-currency .select-arrow-active + .select-items{
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.select-hide{
+    display: none;
+}
+.select-currency .select-items div:not(.same-as-selected):hover{
+    background-color: rgba(129, 133, 156, 0.3);
 }
 
 
