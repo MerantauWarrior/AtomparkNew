@@ -1,7 +1,7 @@
 /*to basket*/
 .to-basket{
     position: fixed;
-    top: 0;
+    top: 50%;
     right: 0;
     width: 263px;
     height: 56px;
@@ -12,6 +12,11 @@
     -webkit-border-radius: 12px 0 12px 12px;
     -moz-border-radius: 12px 0 12px 12px;
     border-radius: 12px 0 12px 12px;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    -o-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 .to-basket__icon{
     display: flex;
