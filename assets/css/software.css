@@ -69,7 +69,8 @@
 }
 .software-product__video{
     width: 100%;
-    margin: 10px 0 35px 0;
+    max-width: 610px;
+    margin: 10px auto 35px auto;
 }
 .software-product__content{
     max-width: 660px;
