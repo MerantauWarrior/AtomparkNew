@@ -1,0 +1,184 @@
+.software-benefits{
+    padding-top: 65px;
+}
+.software-benefits__title{
+    text-align: center;
+}
+.software-benefits__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.software-benefits-item{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.software-benefits-item__icon{
+    margin-right: 12px;
+}
+.software-benefits-item__text{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1062AA;
+}
+.software-products{
+    padding-top: 60px;
+}
+.software-products:last-child{
+    padding-bottom: 60px;
+}
+.software-products__simple-title{
+    margin-bottom: 60px;
+    text-align: center;
+}
+.software-product{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+.software-product__top{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.software-product__icon{
+    min-width: 43px;
+    margin-right: 20px;
+}
+.software-product__title{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #1062AA;
+}
+.software-product__video{
+    width: 100%;
+    margin: 10px 0 35px 0;
+}
+.software-product__content{
+    max-width: 660px;
+}
+.software-product-features__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+}
+.software-product-features__text{
+    margin-top: 12px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.software-product-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 23px;
+}
+.software-product-reviews__rating{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 76px;
+}
+.software-product-reviews__rating-stars{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 11px;
+}
+.software-product-reviews__rating-value{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1062AA;
+}
+.software-product-reviews__more{
+    width: 100%;
+    margin-top: 37px;
+}
+.software-product-reviews__more-link{
+    display: flex;
+    align-items: center;
+}
+.software-product-reviews__more-link a{
+    margin-right: 9px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #00ADEE;
+}
+.software-product-reviews__more-link a:hover{
+    text-decoration: underline;
+}
+.software-product__actions{
+    max-width: 263px;
+    margin-left: auto;
+    text-align: center;
+}
+.software-product__actions-bonus{
+    margin-top: 12px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1062AA;
+}
+.software-product__buy-btn{
+    margin-top: 30px;
+}
+.software-product__actions-timer{
+    margin-top: 9px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.software-product__actions-timer span{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #FE2C35;
+}
+.software-products__title-w-link{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.software-products__title-link{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #00ADEE;
+}
+.software-products__title-link:hover{
+    text-decoration: underline;
+}
+.software-product__video-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 38px;
+    width: 240px;
+    background-color: #EF5237;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    -webkit-border-radius: 0 19px 19px 0;
+    -moz-border-radius: 0 19px 19px 0;
+    border-radius: 0 19px 19px 0;
+}
+.software-product-features__list{
+    font-size: 18px;
+    line-height: 28px;
+}
+.software-product-features__list li{
+    margin-top: 10px;
+    padding-left: 17px;
+}
+.software-product-features__list li:before {
+    top: 12px;
+    width: 5px;
+    height: 5px;
+}

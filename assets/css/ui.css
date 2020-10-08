@@ -163,6 +163,56 @@ ul > li:before{
     background-color: #E8EBF2;
     color: #333333;
 }
+.btn-black{
+    background-color: transparent;
+    border: 2px solid #333333;
+    color: #333333;
+}
+.btn-black span{
+    margin-left: 11px;
+}
+.btn-black:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.btn-product{
+    height: 64px;
+}
+.btn-product svg{
+    fill: #1062AA;
+}
+.btn-product:hover svg{
+    fill: #F7B916;
+}
+.btn-product__icon{
+    margin-right: 20px;
+}
+.btn-product__text{
+    max-width: 125px;
+}
+.btn-product__text-line{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-product__discount{
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: none;
+    line-height: 14px;
+    color: #EF5237;
+}
+.btn-product:hover .btn-product__discount{
+    color: #F7B916;
+}
+.btn-product__oldprice{
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration-line: line-through;
+}
+.btn-product-s{
+    height: 50px;
+}
+
 
 /*Select Currency*/
 .select{
