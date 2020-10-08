@@ -32,7 +32,7 @@
     -moz-border-radius: 6px;
     border-radius: 6px;
 }
-.software-products:last-child{
+.container:last-child .software-products{
     margin-bottom: 120px;
 }
 .software-products__simple-title{
