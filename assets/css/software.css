@@ -83,8 +83,8 @@
 }
 .software-product-features__text{
     margin-top: 12px;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
 }
 .software-product-reviews{
     display: flex;
@@ -188,8 +188,8 @@
     z-index: 999;
 }
 .software-product-features__list{
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 16px;
+    line-height: 26px;
 }
 .software-product-features__list li{
     margin-top: 10px;
