@@ -234,6 +234,14 @@
     text-transform: none;
 }
 
+@media all and (min-height: 768px) and (max-width: 1024px){
+    .software-benefits-item{
+        width: 50%;
+    }
+    .software-product__actions{
+        margin: 30px auto 0 auto;
+    }
+}
 @media all and (min-height: 320px) and (max-width: 767px){
     .software-benefits{
         margin: 30px 0 60px 0;
