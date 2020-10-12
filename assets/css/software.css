@@ -201,6 +201,7 @@
     height: 5px;
 }
 .sw-p-download-form{
+    display: none;
     margin: 25px -15px;
     padding: 30px;
     background-color: #EBF0FF;
@@ -303,5 +304,8 @@
         float: right;
         font-size: 21px;
         line-height: 37px;
+    }
+    .sw-p-download-form{
+        display: block;
     }
 }
