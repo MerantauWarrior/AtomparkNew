@@ -185,7 +185,7 @@
     -webkit-border-radius: 0 19px 19px 0;
     -moz-border-radius: 0 19px 19px 0;
     border-radius: 0 19px 19px 0;
-    z-index: 999;
+    z-index: 99;
 }
 .software-product-features__list{
     font-size: 16px;
@@ -199,4 +199,109 @@
     top: 12px;
     width: 5px;
     height: 5px;
+}
+.sw-p-download-form{
+    margin: 25px -15px;
+    padding: 30px;
+    background-color: #EBF0FF;
+}
+.sw-p-download-form__inp{
+    position: relative;
+}
+.sw-p-download-form__inp-icon{
+    position: absolute;
+    top: 13px;
+    right: 16px;
+}
+.inp-sw-p-download-form{
+    width: 100%;
+    padding: 11px 46px 11px 16px;
+    border: 1px solid #81859C;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    color: #656565;
+}
+.btn-sw-p-download-form{
+    margin: 19px auto 0 auto;
+    background-color: #80849B;
+    color: #FFFFFF;
+    text-transform: none;
+}
+
+@media all and (min-height: 320px) and (max-width: 767px){
+    .software-benefits{
+        margin: 30px 0 60px 0;
+    }
+    .software-benefits__items{
+        align-items: flex-start;
+    }
+    .software-benefits-item{
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .software-benefits-item__icon{
+        width: 34px;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .software-benefits-item__text{
+        display: block;
+    }
+    .software-benefits-item__icon img{
+        width: 100%;
+    }
+    .software-products{
+        padding: 0;
+        border: none;
+    }
+    .software-product__title{
+        font-size: 21px;
+        line-height: 26px;
+    }
+    .software-product__video{
+        margin: 5px 0 25px 0;
+    }
+    .software-product-reviews{
+        justify-content: center;
+    }
+    .software-product-reviews__logo{
+        margin-bottom: 20px;
+    }
+    .software-product-reviews__rating{
+        margin-left: 0;
+    }
+    .software-product-reviews__more{
+        margin-top: 18px;
+    }
+    .software-product__actions{
+        margin-right: auto;
+    }
+    .software-product__actions-bonus{
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .software-product__buy-btn{
+        margin: 19px auto 0 auto;
+    }
+    .software-product__actions{
+        width: 100%;
+        max-width: 100%;
+    }
+    .software-products__title-w-link{
+        display: block;
+        margin-bottom: 0;
+    }
+    .software-products__title-link{
+        float: right;
+        font-size: 21px;
+        line-height: 37px;
+    }
 }
