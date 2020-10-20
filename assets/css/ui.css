@@ -168,12 +168,22 @@ ul > li:before{
     border: 2px solid #333333;
     color: #333333;
 }
-.btn-black span{
+.btn-black span,
+.btn-black-filled span{
     margin-left: 11px;
 }
 .btn-black:hover{
     background-color: #333333;
     color: #FFFFFF;
+}
+.btn-black-filled{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.btn-black-filled:hover{
+    background-color: transparent;
+    border: 2px solid #333333;
+    color: #333333;
 }
 .btn-product{
     height: 64px;
@@ -212,7 +222,17 @@ ul > li:before{
 .btn-product-s{
     height: 50px;
 }
-
+.link-w-arrow{
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1062AA;
+}
+.link-w-arrow span{
+    margin-left: 12px;
+}
 
 /*Select Currency*/
 .select{
