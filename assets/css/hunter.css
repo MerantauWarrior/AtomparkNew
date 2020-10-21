@@ -1,0 +1,15 @@
+.hunter-audience{
+    margin-top: 85px;
+    padding: 69px 0 116px 0;
+    background-color: rgba(235, 240, 255, 0.5);
+}
+.hunter-audience__tree{
+    margin-top: 76px;
+}
+.hunter-cards{
+    padding: 125px 0 140px 0;
+}
+.hunter-cards__title{
+    max-width: 785px;
+    margin: 0 auto 53px auto;
+}
