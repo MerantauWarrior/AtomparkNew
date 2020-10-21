@@ -10,6 +10,7 @@ h2,h3{
     flex-wrap: wrap;
 }
 .product-top__col{
+    position: relative;
     width: 50%;
 }
 .product-top__title{

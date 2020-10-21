@@ -80,6 +80,13 @@
 .slider-next{
     right: -64px;
 }
+.slider-prev svg,
+.slider-next svg{
+    fill: #00ADEE;
+}
+.slick-disabled svg{
+    fill: #81859C;
+}
 /*progress*/
 .progress{
     position: fixed;

@@ -1,3 +1,20 @@
+.hunter__top{
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    width: 248px;
+    padding: 7px 18px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #1062AA;
+    background-color: #fff;
+    border: 1px solid #1062AA;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
 .hunter-audience{
     margin-top: 85px;
     padding: 69px 0 116px 0;
