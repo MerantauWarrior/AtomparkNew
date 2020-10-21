@@ -103,8 +103,6 @@ ol > li:before{
     left: 0;
 }
 ul > li:before{
-    width: 4px;
-    height: 4px;
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;

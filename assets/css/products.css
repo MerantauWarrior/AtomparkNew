@@ -305,6 +305,8 @@ h2,h3{
 }
 .product-updates-box__changes-list li:before{
     top: 11px;
+    width: 4px;
+    height: 4px;
 }
 .product-updates-box__more{
     margin-left: 38px;
@@ -410,6 +412,8 @@ h2,h3{
     padding-left: 17px;
 }
 .product-demo__list li:before{
+    width: 4px;
+    height: 4px;
     top: 9px;
 }
 .product-demo__get-demo{
