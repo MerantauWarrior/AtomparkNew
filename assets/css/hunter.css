@@ -30,3 +30,17 @@
     max-width: 785px;
     margin: 0 auto 53px auto;
 }
+
+@media all and (min-height: 320px) and (max-width: 767px){
+    .hunter-audience{
+        margin-top: 0;
+        padding: 71px 0 0 0;
+        background-color: #fff;
+    }
+    .hunter-cards{
+        padding: 71px 0 84px 0;
+    }
+    .hunter-cards__title{
+        margin: 0 auto 24px auto;
+    }
+}

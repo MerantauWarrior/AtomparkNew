@@ -53,3 +53,47 @@
     text-align: center;
     color: #81859C;
 }
+
+@media all and (min-width: 320px)and (max-width: 767px){
+    .verifier-steps{
+        padding: 72px 0 64px 0;
+    }
+    .verifier-steps__description{
+        margin-top: 16px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .verifier-steps__items{
+        justify-content: center;
+    }
+    .verifier-steps-item{
+        margin-top: 25px;
+        width: 100%;
+    }
+    .verifier-steps-item__title{
+        margin: 9px 0 2px 0;
+    }
+    .verifier-steps-item__description{
+        margin-top: 0;
+    }
+    .verifier-charges{
+        padding-bottom: 84px;
+    }
+    .verifier-charges__text{
+        margin-top: 24px;
+    }
+    /*other products*/
+    .other{
+        padding: 71px 0 84px 0;
+    }
+    .other-slider__inner{
+        margin: 23px -10px 0 -10px;
+    }
+    .other-slide{
+        width: 162px;
+        margin: 0 10px;
+    }
+    .other-slider__prev, .other-slider__next{
+        display: none;
+    }
+}
