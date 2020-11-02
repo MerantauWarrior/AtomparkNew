@@ -445,6 +445,40 @@
       </div>
     </section>
 
+    <section class="sender-inbox">
+      <div class="container">
+        <h2>Email delivery Into «Inbox»</h2>
+        <div class="sender-inbox__list">
+          <div class="sender-inbox-item">
+            <div class="sender-inbox-item__title">Spin Text</div>
+            <div class="sender-inbox-item__description">With its many features, such as personalization, the use of
+              spin-text, unsubscribe links and social networking widgets, your mail is more likely to fall into the
+              recipient’s «Inbox».
+            </div>
+          </div>
+          <div class="sender-inbox-item">
+            <div class="sender-inbox-item__title">Built-in Spam Checker</div>
+            <div class="sender-inbox-item__description">SpamAssassin analyzes your email and gives you a spam score. The
+              lower the score, the better the chance of your email getting to the inbox.
+            </div>
+          </div>
+          <div class="sender-inbox-item">
+            <div class="sender-inbox-item__title">Unsubscribe Wizard</div>
+            <div class="sender-inbox-item__description">Remove unsubscribers in multiple ways – by uploading a file with
+              email addresses, by connecting to your email server, or with your very own unsubscribe form.
+            </div>
+          </div>
+          <div class="sender-inbox-item">
+            <div class="sender-inbox-item__title">Automatic Delete Bounces</div>
+            <div class="sender-inbox-item__description">A bounce is a returned message sent by the recipient’s server
+              saying that the requested email address is unavailable or does not exist. This software’s email sender
+              will delete those addresses from your mailing lists automatically.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="product-video">
       <div class="product-video__bg">
         <div class="container">
@@ -913,6 +947,34 @@
             variableWidth: true,
             centerPadding: '40px',
             initialSlide: 2,
+            slidesToShow: 1
+          }
+        }
+      ]
+    });
+    //product inbox slider
+    $('.sender-inbox__list').slick({
+      infinite: false,
+      arrows: false,
+      dots: false,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 9999,
+          settings: "unslick"
+        },
+        {
+          breakpoint: 1025,
+          settings: {
+            dots: true,
+            slidesToShow: 3
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            dots: true,
+            adaptiveHeight: true,
             slidesToShow: 1
           }
         }
