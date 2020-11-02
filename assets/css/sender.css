@@ -1,0 +1,73 @@
+/*Subscribers*/
+.sender-sebscribers{
+    margin-top: 104px;
+    padding: 56px 0 153px 0;
+    background-color: rgba(235, 240, 255, 0.5);
+}
+.sender-sebscribers__tree{
+    margin-top: 76px;
+}
+/*Templates*/
+.sender-templates{
+    padding: 125px 0;
+}
+.sender-templates__subtitle{
+    max-width: 750px;
+    margin: 25px auto 38px auto;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #81859C;
+}
+.sender-templates__slider{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sender-templates__slider .slick-dots{
+    margin-top: 20px;
+}
+.sender-templates-slide{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 0 16px;
+}
+.sender-templates__btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 84px;
+}
+/*Updates*/
+.product-updates--sender{
+    padding: 125px 0 23px 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    /*Subscribers*/
+    .sender-sebscribers{
+        margin-top: 45px;
+        padding: 31px 0 0 0;
+    }
+    /*Templates*/
+    .sender-templates{
+        margin-top: 0;
+        padding: 72px 0;
+    }
+    .sender-templates__slider{
+        display: block;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .sender-templates__slider .slick-track {
+        display: flex;
+    }
+    .sender-templates__slider .slick-track .slick-slide {
+        display: flex;
+        height: auto;
+    }
+    .sender-templates__btn{
+        display: block;
+        margin-top: 32px;
+    }
+}
