@@ -421,6 +421,7 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    z-index: 999;
 }
 .modal-sender-complete__close{
     position: absolute;
@@ -620,6 +621,10 @@
     .sender-calc-time-toggle:checked + .sender-calc-time-toggle-label:before{
         content:attr(data-on);
         left: 30px;
+    }
+    .modal-sender-complete{
+        max-width: 90%;
+        padding: 30px;
     }
     /*Updates*/
     .product-updates--sender{
