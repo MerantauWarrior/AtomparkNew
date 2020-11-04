@@ -878,6 +878,7 @@ h2,h3{
     }
     .product-reviews__list{
         margin-top: 0;
+        margin-bottom: 0;
     }
     .product-reviews .slick-slide{
         padding: 24px 15px;
@@ -1010,6 +1011,7 @@ h2,h3{
     .product-accordion__arrow{
         min-width: 16px;
         margin-top: 9px;
+        margin-left: 5px;
     }
     .product-accordion__title{
         font-size: 24px;

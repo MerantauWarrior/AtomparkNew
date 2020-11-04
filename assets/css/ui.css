@@ -135,6 +135,7 @@ ul > li:before{
     line-height: 21px;
     color: #333333;
     background-color: #FFE735;
+    font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     cursor: pointer;
 }
