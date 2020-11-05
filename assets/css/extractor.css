@@ -1,0 +1,194 @@
+/*Bussines*/
+.extractor-bussines{
+    margin-top: 140px;
+    padding: 69px 0 132px 0;
+    background-color: #F5F7FF;
+}
+.extractor-bussines--black{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+.extractor-bussines h2{
+    max-width: 700px;
+    margin: 0 auto;
+}
+.extractor-bussines__inner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 63px;
+}
+.extractor-bussines__content{
+    width: 100%;
+    max-width: 463px;
+}
+.extractor-bussines__content-tab{
+    display: none;
+}
+.extractor-bussines__content-tab_opened{
+    display: block;
+}
+.extractor-bussines__heading{
+    font-size: 30px;
+    line-height: 35px;
+}
+.extractor-bussines__text{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.extractor-bussines__tabs{
+    margin-left: auto;
+    width: 100%;
+    max-width: 476px;
+    height: 258px;
+}
+.extractor-bussines-tabs{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.extractor-bussines-tabs__controls{
+    position: relative;
+    width: 56px;
+    min-width: 56px;
+    height: 100%;
+    z-index: 2;
+}
+.extractor-bussines-tabs__link{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 37px;
+    margin-bottom: 6px;
+    background-color: #1062AA;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.extractor-bussines--black .extractor-bussines-tabs__link:not(.extractor-bussines-tabs__link_active){
+    background-color: #333333;
+}
+.extractor-bussines-tabs__link:first-child{
+    height: 43px;
+}
+.extractor-bussines-tabs__link:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 10px;
+    height: 100%;
+    background-color: #fff;
+}
+.extractor-bussines-tabs__link_active{
+    background-color: #FFFFFF;
+    box-shadow: -4px 4px 20px rgba(16, 98, 170, 0.2);
+}
+.extractor-bussines-tabs__link svg{
+    stroke: #FFFFFF;
+}
+.extractor-bussines--black .extractor-bussines-tabs__link svg{
+    stroke: #00ADEE;
+}
+.extractor-bussines-tabs__link:nth-child(1) svg,
+.extractor-bussines-tabs__link:nth-child(5) svg{
+    fill: #FFFFFF;
+    stroke: none;
+}
+.extractor-bussines--black .extractor-bussines-tabs__link:nth-child(1) svg,
+.extractor-bussines--black .extractor-bussines-tabs__link:nth-child(5) svg{
+    fill: #00ADEE;
+    stroke: none;
+}
+.extractor-bussines-tabs__link:last-child{
+    margin-bottom: 0;
+}
+.extractor-bussines-tabs__content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: -4px 4px 20px rgba(16, 98, 170, 0.2);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.extractor-bussines-tabs__tab{
+    display: none;
+    height: 100%;
+}
+.extractor-bussines-tabs__tab.extractor-bussines-tabs__tab_opened{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.extractor-bussines-tabs__content img{
+    max-height: 100%;
+}
+.extractor-bussines-tabs__link_active svg{
+    stroke: #1062AA;
+}
+.extractor-bussines-tabs__link_active:nth-child(1) svg,
+.extractor-bussines-tabs__link_active:nth-child(5) svg{
+    fill: #1062AA;
+    stroke: none;
+}
+/*Why*/
+.product-why--extractor{
+    padding-top: 124px;
+}
+.product-why--extractor h2{
+    margin-bottom: 34px;
+}
+/*Cards*/
+.extractor-cards{
+    padding: 71px 0 179px 0;
+}
+.extractor-cards__title{
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto 79px auto;
+}
+/*Update*/
+.product-updates--extractor{
+    padding: 125px 0 140px 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    /*Bussines*/
+    .extractor-bussines{
+        margin-top: 41px;
+        padding: 30px 0;
+    }
+    .extractor-bussines:not(.extractor-bussines--black){
+        background-color: #FFFFFF;
+    }
+    .extractor-bussines__inner{
+        margin-top: 27px;
+    }
+    .extractor-bussines__tabs{
+        order: 1;
+    }
+    .extractor-bussines__content{
+        order: 2;
+        margin-top: 43px;
+    }
+    /*Why*/
+    .product-why--extractor{
+        padding-top: 33px;
+    }
+    /*Cards*/
+    .extractor-cards{
+        padding: 56px 0 84px 0;
+    }
+    .extractor-cards__title{
+        margin: 0 auto 24px auto;
+    }
+    /*Update*/
+    .product-updates--extractor{
+        padding: 71px 0 84px 0;
+    }
+}
