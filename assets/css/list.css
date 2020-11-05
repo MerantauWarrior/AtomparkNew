@@ -1,0 +1,69 @@
+/*Audience*/
+.list-audience{
+    padding: 125px 0;
+}
+.list-audience__tree{
+    margin-top: 73px;
+}
+.list-audience__tree .products-tree__item:nth-child(odd) .products-tree__media{
+    order: 2;
+}
+.list-audience__tree .products-tree__item:nth-child(odd) .products-tree__content{
+    order: 1;
+}
+.list-audience__tree .products-tree__item:nth-child(even) .products-tree__media{
+    order: 1;
+}
+.list-audience__tree .products-tree__item:nth-child(even) .products-tree__content{
+    order: 2;
+}
+/*Discount*/
+.product-discount--list{
+    padding-bottom: 125px;
+}
+/*Why*/
+.product-why--list{
+    padding-bottom: 86px;
+}
+.product-why--list h2{
+    max-width: 750px;
+    margin: 0 auto;
+}
+.product-why--list .product-why__items{
+    margin-top: 36px;
+}
+/*Updates*/
+.product-updates--list{
+    padding: 128px 0 142px 0;
+}
+/*Accordions*/
+.product-accordions--list{
+    padding: 125px 0 133px 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    /*Audience*/
+    .list-audience{
+        padding: 71px 0 84px 0;
+    }
+    .list-audience__tree{
+        margin-top: 53px;
+    }
+    .list-audience__tree .products-tree__item:nth-child(odd) .products-tree__media{
+        order: 1;
+    }
+    .list-audience__tree .products-tree__item:nth-child(odd) .products-tree__content{
+        order: 2;
+    }
+    /*Discount*/
+    .product-discount--list{
+        padding-bottom: 64px;
+    }
+    /*Why*/
+    .product-why--list{
+        padding-bottom: 51px;
+    }
+    .product-why--list .product-why__items{
+        margin-top: 24px;
+    }
+}
