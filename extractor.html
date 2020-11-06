@@ -994,8 +994,11 @@
     // animation library
     AOS.init({disable: 'mobile'});
     // tabs
+    var links = parseInt($('.extractor-bussines-tabs__link').length);
+    var currentLink = 0;
     $('.extractor-bussines-tabs__link').click(function (e) {
       e.preventDefault();
+      currentLink = parseInt($(this).index());
       var tabId = $(this).attr('href');
       $('.extractor-bussines__content-tab').removeClass('extractor-bussines__content-tab_opened');
       $('.extractor-bussines__content-tab'+tabId+'Text').addClass('extractor-bussines__content-tab_opened');
@@ -1009,6 +1012,10 @@
         $('.extractor-bussines').removeClass('extractor-bussines--black')
       }
     });
+    setInterval(function () {
+      currentLink === links-1 ? currentLink = 0 : currentLink++;
+      $('.extractor-bussines-tabs__link').eq(currentLink).trigger('click');
+    }, 3000)
     // updates
     $('.product-updates-box__more').click(function (e) {
       e.preventDefault();
