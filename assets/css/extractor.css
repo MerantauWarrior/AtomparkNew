@@ -20,6 +20,7 @@
 .extractor-bussines__content{
     width: 100%;
     max-width: 370px;
+    margin-left: auto;
 }
 .extractor-bussines__content-tab{
     display: none;
@@ -37,7 +38,6 @@
     line-height: 26px;
 }
 .extractor-bussines__tabs{
-    margin-left: auto;
     width: 100%;
     max-width: 555px;
     height: 306px;
@@ -169,11 +169,7 @@
     .extractor-bussines__inner{
         margin-top: 27px;
     }
-    .extractor-bussines__tabs{
-        order: 1;
-    }
     .extractor-bussines__content{
-        order: 2;
         margin-top: 43px;
     }
     /*Why*/
