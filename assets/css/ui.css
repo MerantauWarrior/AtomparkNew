@@ -232,6 +232,26 @@ ul > li:before{
 .link-w-arrow span{
     margin-left: 12px;
 }
+.btn-w-text-after{
+    position: relative;
+    width: 100%;
+    max-width: 260px;
+}
+.btn-w-text-after__text{
+    position: absolute;
+    top: 61px;
+    left: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #1062AA;
+}
+.btn-w-text-after__img-try{
+    position: absolute;
+    top: -40px;
+    left: -35px;
+}
 
 /*Select Currency*/
 .select{
