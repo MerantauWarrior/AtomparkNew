@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'SegoePrint';
+    src: url('../fonts/SegoePrint.ttf')  format('truetype');
+}
 h2,h3{
     text-align: center;
 }
@@ -36,9 +40,26 @@ h2,h3{
 }
 .product-top__download-count{
     position: absolute;
-    top: 25px;
-    left: 10px;
-    z-index: -1;
+    top: 57px;
+    left: 0;
+    width: 100%;
+    max-width: 260px;
+    font-family: 'SegoePrint',sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #1062AA;
+    z-index: 1;
+}
+.product-top__download-count:after{
+    content: "";
+    position: absolute;
+    top: -38px;
+    left: 100%;
+    width: 46px;
+    height: 48px;
+    background: transparent url('../img/products/product-top-download-arrow.svg') center center no-repeat;
+    background-size: contain;
 }
 .product-top__buy{
     margin-top: 58px;
