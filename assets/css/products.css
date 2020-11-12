@@ -1533,6 +1533,17 @@ h2,h3{
         font-size: 18px;
         line-height: 21px;
     }
+    /*Other*/
+    .other{
+        padding: 71px 0 84px 0;
+    }
+    .other-slide{
+        width: 162px;
+    }
+    .other-slider__prev,
+    .other-slider__next{
+        display: none;
+    }
     /*Calc*/
     .product-calc{
         padding: 32px 0 48px 0;
@@ -1636,5 +1647,39 @@ h2,h3{
     .modal-calc-complete{
         max-width: 90%;
         padding: 30px;
+    }
+    /*Product steps*/
+    .product-steps{
+        padding: 71px 0 0 0;
+        background-color: #fff;
+    }
+    .product-steps__items{
+        margin-top: 24px;
+    }
+    .product-steps-item{
+        max-width: 100%;
+        text-align: center;
+    }
+    .product-steps-item:not(:first-child){
+        margin-top: 41px;
+    }
+    .product-steps-item:not(:last-child){
+        margin-right: 0;
+    }
+    .product-steps-item:not(:last-child) .product-steps-item__icon:after{
+        display: none;
+    }
+    .product-steps-item__icon{
+        margin: 0 auto;
+    }
+    .product-steps-item__text{
+        margin-top: 24px;
+    }
+    .product-steps-item__text span{
+        display: inline-block;
+    }
+    .product-steps__btn{
+        display: block;
+        margin-top: 28px;
     }
 }
