@@ -975,7 +975,8 @@ h2,h3{
     display: flex;
     align-items: center;
 }
-.product-calc-time__sign{
+.product-calc-time__sign,
+.product-calc-time-toggle-label{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -991,39 +992,39 @@ h2,h3{
 .product-calc-time__format{
     position: relative;
 }
-.product-calc-time-toggle-label{
-    display:block;
-    position:relative;
-    width:32px;
-    height:32px;
-    -webkit-border-radius: 16px;
-    -moz-border-radius: 16px;
-    border-radius: 16px;
-    background-color: transparent;
-    cursor:pointer;
-}
-.product-calc-time-toggle-label:before{
-    content:attr(data-off);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position:absolute;
-    top:0;
-    left:0;
-    height:32px;
-    width:32px;
-    -webkit-border-radius:100%;
-    -moz-border-radius:100%;
-    border-radius:100%;
-    border: 2px solid #F7B916;
-    font-size: 14px;
-    line-height: 22px;
-    color: #FFFFFF;
-    text-transform: uppercase;
-}
-.product-calc-time-toggle:checked + .product-calc-time-toggle-label:before{
-    content:attr(data-on);
-}
+/*.product-calc-time-toggle-label{*/
+/*    display:block;*/
+/*    position:relative;*/
+/*    width:32px;*/
+/*    height:32px;*/
+/*    -webkit-border-radius: 16px;*/
+/*    -moz-border-radius: 16px;*/
+/*    border-radius: 16px;*/
+/*    background-color: transparent;*/
+/*    cursor:pointer;*/
+/*}*/
+/*.product-calc-time-toggle-label:before{*/
+/*    content:attr(data-off);*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    position:absolute;*/
+/*    top:0;*/
+/*    left:0;*/
+/*    height:32px;*/
+/*    width:32px;*/
+/*    -webkit-border-radius:100%;*/
+/*    -moz-border-radius:100%;*/
+/*    border-radius:100%;*/
+/*    border: 2px solid #F7B916;*/
+/*    font-size: 14px;*/
+/*    line-height: 22px;*/
+/*    color: #FFFFFF;*/
+/*    text-transform: uppercase;*/
+/*}*/
+/*.product-calc-time-toggle:checked + .product-calc-time-toggle-label:before{*/
+/*    content:attr(data-on);*/
+/*}*/
 .product-calc-time__current{
     display: flex;
     align-items: center;
@@ -1599,51 +1600,52 @@ h2,h3{
     .product-calc-form{
         margin: 106px auto 0 auto;
     }
-    .product-calc-time__sign{
+    .product-calc-time__sign,
+    .product-calc-time-toggle-label{
         width: 48px;
         height: 48px;
     }
-    .product-calc-time-toggle-label{
-        display:block;
-        position:relative;
-        width:62px;
-        height:32px;
-        -webkit-border-radius: 16px;
-        -moz-border-radius: 16px;
-        border-radius: 16px;
-        background:#81859C;
-        cursor:pointer;
-    }
-    .product-calc-time-toggle-label:before{
-        content:attr(data-off);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position:absolute;
-        top:0;
-        left:0;
-        height:32px;
-        width:32px;
-        -webkit-border-radius:100%;
-        -moz-border-radius:100%;
-        border-radius:100%;
-        border: 2px solid #F7B916;
-        background-color: #fff;
-        font-size: 14px;
-        line-height: 22px;
-        color: #1062AA;
-        text-transform: uppercase;
-        -webkit-transition: all 0.25s;
-        -moz-transition: all 0.25s;
-        -ms-transition: all 0.25s;
-        -o-transition: all 0.25s;
-        transition: all 0.25s;
-        z-index:1;
-    }
-    .product-calc-time-toggle:checked + .product-calc-time-toggle-label:before{
-        content:attr(data-on);
-        left: 30px;
-    }
+    /*.product-calc-time-toggle-label{*/
+    /*    display:block;*/
+    /*    position:relative;*/
+    /*    width:62px;*/
+    /*    height:32px;*/
+    /*    -webkit-border-radius: 16px;*/
+    /*    -moz-border-radius: 16px;*/
+    /*    border-radius: 16px;*/
+    /*    background:#81859C;*/
+    /*    cursor:pointer;*/
+    /*}*/
+    /*.product-calc-time-toggle-label:before{*/
+    /*    content:attr(data-off);*/
+    /*    display: flex;*/
+    /*    align-items: center;*/
+    /*    justify-content: center;*/
+    /*    position:absolute;*/
+    /*    top:0;*/
+    /*    left:0;*/
+    /*    height:32px;*/
+    /*    width:32px;*/
+    /*    -webkit-border-radius:100%;*/
+    /*    -moz-border-radius:100%;*/
+    /*    border-radius:100%;*/
+    /*    border: 2px solid #F7B916;*/
+    /*    background-color: #fff;*/
+    /*    font-size: 14px;*/
+    /*    line-height: 22px;*/
+    /*    color: #1062AA;*/
+    /*    text-transform: uppercase;*/
+    /*    -webkit-transition: all 0.25s;*/
+    /*    -moz-transition: all 0.25s;*/
+    /*    -ms-transition: all 0.25s;*/
+    /*    -o-transition: all 0.25s;*/
+    /*    transition: all 0.25s;*/
+    /*    z-index:1;*/
+    /*}*/
+    /*.product-calc-time-toggle:checked + .product-calc-time-toggle-label:before{*/
+    /*    content:attr(data-on);*/
+    /*    left: 30px;*/
+    /*}*/
     .modal-calc-complete{
         max-width: 90%;
         padding: 30px;
