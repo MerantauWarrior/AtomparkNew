@@ -1293,6 +1293,9 @@ h2,h3{
     .product-top__buy .btn-product{
         margin: 0 auto;
     }
+    .product-top__download-count{
+        display: none;
+    }
     /* product tree*/
     .products-tree__item:not(:first-child){
         margin-top: 28px;
