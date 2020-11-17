@@ -549,14 +549,13 @@
     </section>
 
     <section class="product-calc">
-      <div class="container-md">
+      <div class="container">
         <h2>Request a Demo</h2>
         <p class="product-calc__subtitle">Use Atomic Studio to get clients from effective cold email campaigns</p>
         <form method="get" class="product-calc__inner" id="calcForm">
           <input type="hidden" name="date" id="date" class="product-calc__date">
           <input type="hidden" name="timeFormat" id="timeFormat" class="product-calc__get-format" value="PM">
-          <input type="hidden" name="timeHours" id="timeHours" class="product-calc__get-hours">
-          <input type="hidden" name="timeMinutes" id="timeMinutes" class="product-calc__get-minutes">
+          <input type="hidden" name="time" id="time" class="product-calc__get-time">
 
           <div class="product-calc-date">
             <div class="product-calc-b-title">Choose the date</div>
@@ -597,44 +596,37 @@
           <div class="product-calc-time">
             <div class="product-calc-b-title">Select time</div>
             <div class="product-calc-time__box">
-              <div class="product-calc-time__format">
-                <input type="checkbox" name="timeFormat" id="amPM" class="product-calc-time-toggle"/>
-                <label for="amPM" class="product-calc-time-toggle-label" data-off="pm" data-on="am">PM</label>
+              <div class="product-calc-time__items">
+                <div class="product-calc-time__item">01:00</div>
+                <div class="product-calc-time__item">01:15</div>
+                <div class="product-calc-time__item">01:30</div>
+                <div class="product-calc-time__item">02:00</div>
+                <div class="product-calc-time__item">02:15</div>
+                <div class="product-calc-time__item">02:30</div>
+                <div class="product-calc-time__item">03:00</div>
+                <div class="product-calc-time__item">03:15</div>
+                <div class="product-calc-time__item">03:30</div>
+                <div class="product-calc-time__item">04:00</div>
+                <div class="product-calc-time__item">04:15</div>
+                <div class="product-calc-time__item">04:30</div>
               </div>
-              <div class="product-calc-time__current">
-                <div class="product-calc-time__hours">
-                  <span>03</span>
-                  <ul class="product-calc-time__time product-calc-time__time-hours">
-                    <li>01</li>
-                    <li>02</li>
-                    <li class="product-calc-time__time_checked">03</li>
-                    <li>04</li>
-                  </ul>
-                </div>
-                <div class="product-calc-time__separator">:</div>
-                <div class="product-calc-time__minetes">
-                  <span>30</span>
-                  <ul class="product-calc-time__time product-calc-time__time-minutes">
-                    <li>00</li>
-                    <li>15</li>
-                    <li class="product-calc-time__time_checked">30</li>
-                    <li>45</li>
-                  </ul>
+              <div class="product-calc-time__box-format">
+                <div class="product-calc-time__box-format-text">We work at EET</div>
+                <div class="product-calc-time__format">
+                  <input type="checkbox" name="timeFormat" id="amPM" class="product-calc-time-toggle"/>
+                  <label for="amPM" class="product-calc-time-toggle-label" data-off="pm" data-on="am"></label>
                 </div>
               </div>
-              <div class="product-calc-time__sign">30</div>
             </div>
           </div>
           <div class="product-calc-form">
             <div class="product-calc-form__field">
-              <input type="tel" name="userTel" id="userTel" class="inp-product-calc-form js-number"
-                     placeholder="+38 093  ___  __  __" required>
+              <input type="tel" name="userTel" id="userTel" class="inp-product-calc-form js-number" placeholder="+38 093  ___  __  __" required>
               <div class="inp-product-calc-form-correct"></div>
               <div class="inp-error-msg">Please enter the correct number</div>
             </div>
             <div class="product-calc-form__field">
-              <input type="email" name="userMail" id="userMail" class="inp-product-calc-form"
-                     placeholder="ivanov@gmail.com" required>
+              <input type="email" name="userMail" id="userMail" class="inp-product-calc-form" placeholder="ivanov@gmail.com" required>
               <div class="inp-product-calc-form-correct"></div>
               <div class="inp-error-msg">Please enter a valid email address</div>
             </div>
@@ -1472,16 +1464,10 @@
         $('.product-calc-form__submit').attr('disabled', false);
       }
     })
-    $('.product-calc-time__time-hours li, .product-calc-time__time-minutes li').click(function () {
-      $(this).siblings('li').removeClass('product-calc-time__time_checked');
-      $(this).addClass('product-calc-time__time_checked');
-      if ($(this).parent().hasClass('product-calc-time__time-hours')) {
-        $('.product-calc-time__hours span').text($(this).text());
-        $('.product-calc__get-hours').val($(this).text());
-      } else {
-        $('.product-calc-time__minetes span').text($(this).text());
-        $('.product-calc__get-minutes').val($(this).text());
-      }
+    $('.product-calc-time__item').click(function () {
+      $('.product-calc-time__item').removeClass('product-calc-time__item_selected');
+      $(this).addClass('product-calc-time__item_selected');
+      $('.product-calc__get-time').val($(this).text());
     });
     $('.product-calc-time-toggle').on('change', function () {
       if (this.checked) {
@@ -1501,11 +1487,6 @@
     $('.modal-calc-complete__close').click(function () {
       $(this).parent().hide();
     });
-    if ($(window).width() < 768) {
-      $('.product-calc-time__hours, .product-calc-time__minetes').click(function () {
-        $(this).children('.product-calc-time__time').slideToggle(250);
-      });
-    }
 
     // updates
     $('.product-updates-box__more').click(function (e) {
