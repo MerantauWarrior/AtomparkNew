@@ -168,8 +168,9 @@ ul > li:before{
     color: #333333;
 }
 .btn-black span,
+.btn-submit span,
 .btn-black-filled span{
-    margin-left: 11px;
+    margin-left: 15px;
 }
 .btn-black:hover{
     background-color: #333333;

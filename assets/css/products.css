@@ -1252,6 +1252,105 @@ h2,h3{
 .product-steps-item__text span{
     display: block;
 }
+/*Products Tarrifs*/
+.products-tarrifs{
+    padding-top: 124px;
+}
+.products-tarrifs__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 78px;
+}
+.products-tarrifs-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 15px 48px 15px;
+    padding: 65px 48px 45px 48px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #333333;
+    background-color: #fff;
+}
+.products-tarrifs-item:before{
+    content: "";
+    position: absolute;
+    top: -13px;
+    left: -16px;
+    width: 100%;
+    height: 100%;
+    background-color: #81859C;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    z-index: -1;
+}
+.products-tarrifs-item--best:before{
+    background-color: #EF5237;
+}
+.products-tarrifs-item__title{
+    margin-bottom: 26px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #00ADEE;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+}
+.products-tarrifs-item__price{
+    margin-top: auto;
+    margin-bottom: 38px;
+}
+.products-tarrifs-item__price-text{
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+}
+.products-tarrifs-item__price-value{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 44px;
+    color: #1062AA;
+}
+.products-tarrifs-item--best .products-tarrifs-item__price-value{
+    color: #EF5237;
+}
+.products-tarrifs__text{
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.products-tarrifs__text span{
+    color: #00ADEE;
+}
+.products-tarrifs__btn{
+    display: flex;
+    justify-content: center;
+}
+.products-tarrifs-item__label{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 114px;
+    height: 82px;
+    margin-top: -42px;
+    margin-left: -57px;
+    padding-top: 13px;
+    background: transparent url(../img/studio/license-label.svg) center center no-repeat;
+    background-size: contain;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+}
 
 @media all and (min-width: 320px) and (max-width: 767px){
     /* product top*/
@@ -1645,5 +1744,22 @@ h2,h3{
     .product-steps__btn{
         display: block;
         margin-top: 28px;
+    }
+    /*Products Tarrifs*/
+    .products-tarrifs{
+        padding-top: 60px;
+    }
+    .products-tarrifs-item{
+        padding: 45px 15px 30px 15px;
+    }
+    .products-tarrifs-item__label{
+        width: 108px;
+        height: 76px;
+        top: 0;
+        right: 0;
+        left: auto;
+        margin-top: 0;
+        font-size: 14px;
+        line-height: 16px;
     }
 }
