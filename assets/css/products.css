@@ -1108,18 +1108,6 @@ h2,h3{
     line-height: 21px;
     color: #1062AA;
 }
-.inp-product-calc-form::-webkit-input-placeholder {
-    color: #1062AA;
-}
-.inp-product-calc-form::-moz-placeholder {
-    color: #1062AA;
-}
-.inp-product-calc-form:-ms-input-placeholder {
-    color: #1062AA;
-}
-.inp-product-calc-form:-moz-placeholder {
-    color: #1062AA;
-}
 .product-calc-form__submit:hover{
     background-color: #81859C;
     color: #FFFFFF;

@@ -109,6 +109,30 @@ ul > li:before{
 .has-error{
     border: 1px solid #EF5237 !important;
 }
+input{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-size: 18px;
+    line-height: 21px;
+}
+input::-webkit-input-placeholder {
+    color: #1062AA;
+}
+input::-moz-placeholder {
+    color: #1062AA;
+}
+input:-ms-input-placeholder {
+    color: #1062AA;
+}
+.inp:-moz-placeholder {
+    color: #1062AA;
+}
 .inp-error-msg{
     display: none;
     margin-top: 6px;

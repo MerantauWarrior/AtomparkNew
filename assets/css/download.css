@@ -1,0 +1,223 @@
+/*Download*/
+.download{
+    padding-top: 60px;
+}
+.download-title span{
+    color: #1062AA;
+}
+.download-form{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 23px;
+    padding: 38px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background-color: #FFE735;
+}
+.inp-download{
+    max-width: 260px;
+    padding: 0 24px;
+    border: 2px solid #1062AA;
+}
+.download-btn__downloads{
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #1062AA;
+}
+.download-btn__downloads span{
+    font-weight: 500;
+}
+.download-form__checkbox{
+    position: absolute;
+    top: 96px;
+    left: 38px;
+}
+.label-download-form{
+    position: relative;
+    display: block;
+    padding-left: 20px;
+    font-size: 12px;
+    line-height: 14px;
+}
+.label-download-form:before{
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 11px;
+    height: 11px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #1062AA;
+}
+.label-download-form:after{
+    content: "";
+    display: none;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 5px;
+    height: 7px;
+    border: solid #FFFFFF;
+    border-width: 0 1px 1px 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.inp-download-checkbox:checked + .label-download-form:after{
+    display: block;
+}
+.download-benefits{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 17px;
+}
+.download-benefits__features{
+    width: 100%;
+    max-width: 480px;
+}
+.download-benefits__features-row{
+    display: flex;
+    align-items: center;
+}
+.download-benefits__features-img{
+    width: 22px;
+    min-width: 22px;
+    margin-right: 16px;
+}
+.download-benefits__features-text{
+    font-size: 18px;
+    line-height: 38px;
+}
+.download-benefits__proofs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.download-benefits__proofs img{
+    margin-left: 38px;
+}
+.download-benefits__tips{
+    width: 100%;
+    max-width: 480px;
+    margin-top: 3px;
+}
+.download-benefits__tips a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    color: #00ADEE;
+}
+/*Accordion*/
+.product-accordions h4{
+    text-align: center;
+}
+/*Download thanks*/
+.download-thanks-title{
+    max-width: 650px;
+    margin: 0 auto;
+}
+.download-thanks__top{
+    padding: 30px 0 76px 0;
+}
+.download-thanks__img{
+    display: flex;
+    justify-content: center;
+}
+.download-thanks__top-text{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+}
+.download-tools{
+    padding: 108px 0 140px 0;
+    background-color: rgba(235, 240, 255, 0.5);
+}
+.download-tools__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.download-tools-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 263px;
+    margin-top: 36px;
+    margin-left: 40px;
+    margin-right: 40px;
+    text-align: center;
+}
+.download-tools-item__img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 176px;
+    height: 176px;
+    margin-bottom: 26px;
+    padding: 15px;
+    border: 1px solid #81859C;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.download-tools-item__title{
+    margin-bottom: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #1062AA;
+}
+.download-tools-item__description{
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.download-tools-item .btn{
+    margin-top: auto;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    .inp-download{
+        margin-bottom: 20px;
+    }
+    .download-form__checkbox{
+        position: static;
+        margin-bottom: 20px;
+    }
+    .download-benefits__features-row{
+        margin-bottom: 10px;
+    }
+    .download-benefits__features-text{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .download-benefits__proofs{
+        justify-content: center;
+        width: 100%;
+    }
+    .download-benefits__proofs img{
+        margin: 10px 0;
+    }
+    .download-tools{
+        padding: 60px 0;
+    }
+    .download-tools-item{
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
