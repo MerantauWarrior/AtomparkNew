@@ -3,7 +3,6 @@
     position: relative;
     padding: 16px 0 139px 0;
     background-color: rgba(235, 240, 255, 0.5);
-    overflow: hidden;
 }
 .feedbacks-top:after{
     content: "";
@@ -177,6 +176,9 @@
 @media all and (min-width: 320px) and (max-width: 767px){
     .feedbacks-top{
         padding-bottom: 60px;
+    }
+    .feedbacks-top:after{
+        display: none;
     }
     .feedbacks-top__inner{
         margin-top: 60px;
