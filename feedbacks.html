@@ -271,9 +271,9 @@
           <div class="select select-currency">
             <select name="feedbacksProgramm" id="feedbacksProgramm">
               <option value="0" selected>Choose product</option>
-              <option value="1">Atomic Email Logger</option>
-              <option value="2">Atomic Email Hunter</option>
-              <option value="3">Atomic Email Studio</option>
+              <option value="#1">Atomic Email Logger</option>
+              <option value="#2">Atomic Email Hunter</option>
+              <option value="#3">Atomic Email Studio</option>
               <option value="4">Atomic Email Tracker</option>
               <option value="5">Atomic Lead Extractor</option>
               <option value="6">Atomic List Manager</option>
@@ -284,7 +284,7 @@
           </div>
         </div>
         <div class="feedbacks__items">
-          <div class="feedbacks-product">
+          <div class="feedbacks-product" id="1">
             <div class="feedbacks-product__top">
               <div class="feedbacks-product__logo"><img src="assets/img/feedbacks/feedbacks-1.svg" alt="program name">
               </div>
@@ -389,7 +389,7 @@
               </a>
             </div>
           </div>
-          <div class="feedbacks-product">
+          <div class="feedbacks-product" id="2">
             <div class="feedbacks-product__top">
               <div class="feedbacks-product__logo"><img src="assets/img/feedbacks/feedbacks-2.svg" alt="program name">
               </div>
@@ -488,7 +488,7 @@
               </a>
             </div>
           </div>
-          <div class="feedbacks-product">
+          <div class="feedbacks-product" id="3">
             <div class="feedbacks-product__top">
               <div class="feedbacks-product__logo"><img src="assets/img/feedbacks/feedbacks-3.svg" alt="program name">
               </div>
@@ -761,6 +761,12 @@
 <script>
   $(document).ready(function () {
     // more reviews
+    $('.feedbacks__select .select-items div').click(function () {
+      var id = $(this).data('val');
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 1000);
+    })
     $('.feedbacks-product__more-link').click(function (e) {
       e.preventDefault();
       // make some ajax calls to get reviews
