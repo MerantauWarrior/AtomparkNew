@@ -194,5 +194,14 @@ document.addEventListener("click", closeAllSelect);
     $(this).toggleClass('footer-menu__arrow_opened');
     $(this).parent().parent().find('.footer-menu__list').slideToggle(250);
   });
+  if($('.js-agreement').length > 0){
+    $('.js-agreement').on('change', function () {
+      if($(this).is(":checked") || $(this).prop("checked")){
+        $(this).closest('form').find('button[type=submit]').prop('disabled',false);
+      }else{
+        $(this).closest('form').find('button[type=submit]').prop('disabled',true);
+      }
+    });
+  }
 
 }(jQuery));
