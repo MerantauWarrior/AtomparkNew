@@ -6,39 +6,39 @@ h2,h3{
     text-align: center;
 }
 /*top*/
-.product-top{
+.services-top{
     margin-top: 62px;
 }
-.product-top__inner{
+.services-top__inner{
     display: block;
 }
-.product-top__col{
+.services-top__col{
     position: relative;
     float: left;
     width: 50%;
 }
-.product-top__title{
+.services-top__title{
     font-size: 48px;
     line-height: 48px;
     color: #1062AA;
 }
-.product-top__title span{
+.services-top__title span{
     display: block;
     margin-bottom: -10px;
     font-size: 24px;
     line-height: 48px;
     color: #333333;
 }
-.product-top__description{
+.services-top__description{
     margin-top: 13px;
     font-size: 18px;
     line-height: 34px;
 }
-.product-top__download{
+.services-top__download{
     position: relative;
     margin-top: 34px;
 }
-.product-top__download-count{
+.services-top__download-count{
     position: absolute;
     top: 57px;
     left: 0;
@@ -51,17 +51,17 @@ h2,h3{
     color: #1062AA;
     z-index: 1;
 }
-.product-top__download-count:after{
+.services-top__download-count:after{
     content: "";
     position: absolute;
     top: -38px;
     left: 100%;
     width: 46px;
     height: 48px;
-    background: transparent url('../img/products/product-top-download-arrow.svg') center center no-repeat;
+    background: transparent url('../img/products/services-top-download-arrow.svg') center center no-repeat;
     background-size: contain;
 }
-.product-top__buy{
+.services-top__buy{
     margin-top: 58px;
 }
 /*product video*/
@@ -1345,50 +1345,50 @@ h2,h3{
 
 @media all and (min-width: 320px) and (max-width: 767px){
     /* product top*/
-    .product-top{
+    .services-top{
         margin-top: 22px;
     }
-    .product-top__inner{
+    .services-top__inner{
         display: flex;
         flex-wrap: wrap;
     }
-    .product-top__col{
+    .services-top__col{
         float: none;
         width: 100%;
     }
-    .product-top__col:nth-child(1){
+    .services-top__col:nth-child(1){
         order: 2;
     }
-    .product-top__col:nth-child(2){
+    .services-top__col:nth-child(2){
         order: 1;
     }
-    .product-top__col:nth-child(3){
+    .services-top__col:nth-child(3){
         order: 3;
     }
-    .product-top__title,
-    .product-top__title span{
+    .services-top__title,
+    .services-top__title span{
         font-size: 30px;
         line-height: 32px;
     }
-    .product-top__title span{
+    .services-top__title span{
         display: inline-block;
         margin-bottom: 0;
         margin-right: 7px;
         color: #1062AA;
     }
-    .product-top__description{
+    .services-top__description{
         margin-top: 18px;
         margin-bottom: 22px;
         font-size: 18px;
         line-height: 28px;
     }
-    .product-top__buy{
+    .services-top__buy{
         margin-top: 30px;
     }
-    .product-top__buy .btn-product{
+    .services-top__buy .btn-product{
         margin: 0 auto;
     }
-    .product-top__download-count{
+    .services-top__download-count{
         display: none;
     }
     /* product tree*/

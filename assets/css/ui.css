@@ -266,6 +266,7 @@ input:-ms-input-placeholder {
     position: absolute;
     top: 61px;
     left: 0;
+    width: 100%;
     font-weight: 500;
     font-size: 18px;
     line-height: 21px;
