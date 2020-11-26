@@ -732,7 +732,7 @@
                 <div class="product-calc-time__item">02:30</div>
                 <div class="product-calc-time__item">03:00</div>
                 <div class="product-calc-time__item">03:15</div>
-                <div class="product-calc-time__item">03:30</div>
+                <div class="product-calc-time__item product-calc-time__item_disabled">03:30</div>
                 <div class="product-calc-time__item">04:00</div>
                 <div class="product-calc-time__item">04:15</div>
                 <div class="product-calc-time__item">04:30</div>
@@ -1228,7 +1228,7 @@
         $('.product-calc-form__submit').attr('disabled', false);
       }
     })
-    $('.product-calc-time__item').click(function () {
+    $('.product-calc-time__item').not('.product-calc-time__item_disabled').click(function () {
       $('.product-calc-time__item').removeClass('product-calc-time__item_selected');
       $(this).addClass('product-calc-time__item_selected');
       $('.product-calc__get-time').val($(this).text());

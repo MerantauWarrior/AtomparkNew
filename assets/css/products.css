@@ -1026,6 +1026,10 @@ h2,h3{
     background-color: #F7B916;
     color: #FFFFFF;
 }
+.product-calc-time__item_disabled{
+    background-color: #81859C;
+    cursor: default;
+}
 .product-calc-time__item:nth-child(3n){
     margin-right: 0;
 }
