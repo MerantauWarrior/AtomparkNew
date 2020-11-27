@@ -130,7 +130,7 @@ input::-moz-placeholder {
 input:-ms-input-placeholder {
     color: #1062AA;
 }
-.inp:-moz-placeholder {
+input:-moz-placeholder {
     color: #1062AA;
 }
 .inp-error-msg{

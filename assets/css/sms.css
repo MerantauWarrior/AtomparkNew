@@ -2,7 +2,22 @@
 .services-reviews--sms-main{
     padding: 115px 0 300px 0;
 }
+/*Features*/
+.services-features--sms{
+    margin-top: -210px;
+}
+/*Icon blocks*/
+.services-icon-blocks--sms{
+    padding: 124px 0 134px 0;
+}
 
 @media all and (min-width: 320px) and (max-width: 767px){
-
+    /*Features*/
+    .services-features--sms{
+        margin-top: 0;
+    }
+    /*Icon blocks*/
+    .services-icon-blocks--sms{
+        padding: 60px 0;
+    }
 }
