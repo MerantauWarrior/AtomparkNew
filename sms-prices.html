@@ -610,7 +610,25 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
-
+    $('.btn-sms-prices-search-reset').click(function () {
+      $('.sms-prices__table table tr').show();
+    });
+    $('.inp-sms-prices-search').on('keyup', function(){
+      var filter, tr, td, i, txtValue;
+      filter = $(this).val().toUpperCase();
+      tr = $('.sms-prices__table table tr');
+      for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td")[0];
+        if (td) {
+          txtValue = td.textContent || td.innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+          } else {
+            tr[i].style.display = "none";
+          }
+        }
+      }
+    });
   });
 </script>
 </body>
