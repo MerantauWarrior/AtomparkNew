@@ -1,0 +1,19 @@
+<svg width="34" height="33" viewBox="0 0 34 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle r="2.17264" transform="matrix(0.5 0.866025 0.866025 -0.5 4.97374 23.4447)" stroke="#00ADEE" stroke-width="1.5"/>
+<circle r="2.17264" transform="matrix(0.5 0.866025 0.866025 -0.5 29.2799 9.75594)" stroke="#00ADEE" stroke-width="1.5"/>
+<path d="M11.2457 19.8239L7.16895 22.1776" stroke="#00ADEE" stroke-width="1.5"/>
+<path d="M27.085 11.0233L23.0083 13.377" stroke="#00ADEE" stroke-width="1.5"/>
+<mask id="path-5-inside-1" fill="white">
+<rect x="10.6968" y="10.4091" width="13.0358" height="13.0358" rx="1"/>
+</mask>
+<rect x="10.6968" y="10.4091" width="13.0358" height="13.0358" rx="1" stroke="#00ADEE" stroke-width="3" mask="url(#path-5-inside-1)"/>
+<path d="M14.3179 14.7543L20.1116 14.7543" stroke="#00ADEE" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="17.2146" cy="3.89115" r="2.17264" stroke="#00ADEE" stroke-width="1.5"/>
+<circle cx="17.2146" cy="29.9629" r="2.17264" stroke="#00ADEE" stroke-width="1.5"/>
+<path d="M17.2144 11.1333V6.4259" stroke="#00ADEE" stroke-width="1.5"/>
+<path d="M17.2144 27.4281V22.7207" stroke="#00ADEE" stroke-width="1.5"/>
+<circle cx="4.97374" cy="9.75585" r="2.17264" transform="rotate(-60 4.97374 9.75585)" stroke="#00ADEE" stroke-width="1.5"/>
+<circle cx="29.2799" cy="23.4446" r="2.17264" transform="rotate(-60 29.2799 23.4446)" stroke="#00ADEE" stroke-width="1.5"/>
+<path d="M11.2457 13.3767L7.16895 11.023" stroke="#00ADEE" stroke-width="1.5"/>
+<path d="M27.085 22.1772L23.0083 19.8235" stroke="#00ADEE" stroke-width="1.5"/>
+</svg>
