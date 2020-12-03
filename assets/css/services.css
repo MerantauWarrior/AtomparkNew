@@ -20,6 +20,9 @@ h2 span{
 .breadcrumbs{
     padding-top: 15px;
 }
+.services-chat-bottom{
+    margin-bottom: 142px;
+}
 /*Navigation*/
 .services-nav{
     background-color: #333333;
@@ -613,6 +616,9 @@ h2 span{
     .services-features-tree__btn{
         display: flex;
         justify-content: center;
+    }
+    .services-chat-bottom{
+        margin-bottom: 60px;
     }
     /*navigation*/
     .services-nav{

@@ -377,6 +377,7 @@
     margin: 0 auto;
 }
 .sms-prices-benefits__item-title{
+    font-weight: 700;
     margin-top: 18px;
     font-size: 24px;
     line-height: 28px;
@@ -385,6 +386,198 @@
     margin-top: 10px;
     font-size: 16px;
     line-height: 26px;
+}
+/*API*/
+/*Top*/
+.sms-api-top{
+    margin-top: 36px;
+}
+.sms-api-top__inner{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.sms-api-top__col{
+    width: 50%;
+}
+.sms-api-top__col img{
+    margin-left: auto;
+}
+.sms-api-top__title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+}
+.sms-api-top__description{
+    margin-top: 27px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.sms-api-top__btns{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 37px;
+}
+.sms-api-top__btns .link-w-arrow{
+    margin-left: 95px;
+}
+/*Code*/
+.sms-api-code{
+    padding-top: 134px;
+}
+.sms-api-code__content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+.sms-api-code-examples{
+    width: 100%;
+    max-width: 750px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.sms-api-code-examples__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #EBF0FF;
+}
+.sms-api-code-examples__nav-item{
+    height: 32px;
+    margin: 0 35px;
+    padding-top: 4px;
+    border-bottom: 2px solid transparent;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1062AA;
+}
+.sms-api-code-examples__nav-item:hover,
+.sms-api-code-examples__nav-item_active{
+    color: #333333;
+    border-bottom: 2px solid #00ADEE;
+}
+.sms-api-code-examples__tab{
+    display: none;
+}
+.sms-api-code-examples__tab_active{
+    display: block;
+}
+.hljs{
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+.hljs-ln-numbers {
+    text-align: center;
+    border-right: 1px solid #F7B916;
+    vertical-align: top;
+}
+.hljs-ln-n{
+    padding-right: 12px;
+}
+.hljs-ln-code {
+    padding-left: 20px!important;
+}
+.sms-api-code-docs{
+    width: 100%;
+    max-width: 324px;
+}
+.sms-api-code-doc-item{
+    display: flex;
+}
+.sms-api-code-doc-item:not(:last-child){
+    margin-bottom: 40px;
+}
+.sms-api-code-doc-item__img{
+    max-width: 30px;
+    min-width: 30px;
+    margin-top: 4px;
+    margin-right: 14px;
+}
+.sms-api-code-doc-item__title{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.sms-api-code-doc-item__text{
+    margin-top: 3px;
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 24px;
+}
+.sms-api-code-doc-item__link{
+    display: inline-flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 17px;
+    color: #00ADEE;
+}
+.sms-api-code-doc-item__link span{
+    margin-right: 5px;
+    text-decoration-line: underline;
+}
+.sms-api-code__links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sms-api-code__link{
+    margin-top: 32px;
+    padding: 15px 24px 13px 24px;
+    border: 1px solid #333333;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+}
+.sms-api-code__link:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+/*Reviews*/
+.services-reviews--sms-api{
+    padding: 115px 0 70px 0;
+}
+/*How works*/
+.sms-api-how{
+    padding: 131px 0 119px 0;
+}
+.sms-api-how__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 10px;
+}
+.sms-api-how__item-col{
+    width: 100%;
+    max-width: 430px;
+    margin: 0 30px;
+}
+.sms-api-how-item{
+    position: relative;
+    margin-top: 22px;
+    padding-left: 35px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.sms-api-how-item__bullet{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    background: transparent url('../img/sms/sms-api-how-bullet.svg') center center no-repeat;
+    background-size: contain;
 }
 
 @media all and (min-width: 320px) and (max-width: 767px){
@@ -461,6 +654,54 @@
     }
     .sms-prices-benefits__item:not(:last-child){
         margin-bottom: 30px;
+    }
+    /*API*/
+    /*Top*/
+    .sms-api-top__col{
+        width: 100%;
+    }
+    .sms-api-top__col:nth-child(1){
+        order: 2;
+    }
+    .sms-api-top__col:nth-child(2){
+        order: 1;
+    }
+    .sms-api-top__col img{
+        margin: 0 auto;
+    }
+    .sms-api-top__btns{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .sms-api-top__btns .link-w-arrow{
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+    /*Code*/
+    .sms-api-code-examples{
+        margin-bottom: 40px;
+    }
+    .sms-api-code-examples__nav-item {
+        width: 100%;
+        height: 40px;
+        line-height: 34px;
+        text-align: center;
+    }
+    .sms-api-code__links{
+        justify-content: center;
+    }
+    /*Reviews*/
+    .services-reviews--sms-api{
+        padding: 60px 0;
+    }
+    /*How works*/
+    .sms-api-how{
+        padding: 60px 0;
+    }
+    .sms-api-how__item-col{
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
     }
 
 }
