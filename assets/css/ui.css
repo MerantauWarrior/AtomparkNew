@@ -100,10 +100,13 @@ ol > li:before{
     position: absolute;
     left: 0;
 }
+ol > li:before,
 ul > li:before{
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+}
+ul > li:before{
     background-color: #1062AA;
 }
 .has-error{
