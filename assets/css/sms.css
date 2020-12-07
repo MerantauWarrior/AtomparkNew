@@ -715,6 +715,7 @@
     padding: 69px 0 132px 0;
     font-size: 16px;
     line-height: 26px;
+    overflow-x: hidden;
 }
 .sms-text h4{
     font-family: 'Roboto', sans-serif;
