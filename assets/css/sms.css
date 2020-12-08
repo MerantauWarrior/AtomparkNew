@@ -721,37 +721,37 @@
     font-family: 'Roboto', sans-serif;
     line-height: 28px;
 }
-ul li{
+.sms-text ul li{
     padding-left: 13px;
 }
-ul li:not(:last-child){
+.sms-text ul li:not(:last-child){
     margin-bottom: 9px;
 }
-ul li:before{
+.sms-text ul li:before{
     top: 11px;
     width: 4px;
     height: 4px;
 }
-.pretty-ol{
+.sms-text .pretty-ol{
     counter-reset: pretty-ol;
 }
-.pretty-ol li,
-.pretty-ul li,
-.pretty-ul-inline li{
+.sms-text .pretty-ol li,
+.sms-text .pretty-ul li,
+.sms-text .pretty-ul-inline li{
     padding-left: 37px;
 }
-.pretty-ol li:not(:last-child),
-.pretty-ul li:not(:last-child){
+.sms-text .pretty-ol li:not(:last-child),
+.sms-text .pretty-ul li:not(:last-child){
     margin-bottom: 14px;
 }
-.pretty-ol li:before,
-.pretty-ul li:before,
-.pretty-ul-inline li:before{
+.sms-text .pretty-ol li:before,
+.sms-text .pretty-ul li:before,
+.sms-text .pretty-ul-inline li:before{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.pretty-ol li:before{
+.sms-text .pretty-ol li:before{
     counter-increment: pretty-ol;
     content: counter(pretty-ol);
     width: 25px;
@@ -763,12 +763,12 @@ ul li:before{
     line-height: 17px;
     color: #FFFFFF;
 }
-.pretty-ul-inline li{
+.sms-text .pretty-ul-inline li{
     display: inline-block;
     margin-right: 40px;
 }
-.pretty-ul li:before,
-.pretty-ul-inline li:before{
+.sms-text .pretty-ul li:before,
+.sms-text .pretty-ul-inline li:before{
     top: 2px;
     width: 22px;
     height: 22px;
