@@ -297,7 +297,9 @@
                 <div class="news-article-promo__description">Quarantine paralyzes business, so it's time to adopt new
                   marketing techniques. Such as email marketing!
                 </div>
-                <div class="news-article-promo__encourage-text">Find and reach out to new clients with a set of Atomic tools.</div>
+                <div class="news-article-promo__encourage-text">Find and reach out to new clients with a set of Atomic
+                  tools.
+                </div>
               </div>
             </div>
             <div class="news-article">
@@ -424,6 +426,18 @@
               <button class="btn-news-subscribe" type="submit">Subscribe</button>
             </form>
           </div>
+        </div>
+        <div class="news-more">
+          <a href="#" class="news-more__link">
+            <span>
+              <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10L19 12L17 10" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
+                <path d="M10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10C19 9.96296 19 11 19 11"
+                    stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            <span>LOAD MORE</span>
+          </a>
         </div>
         <div class="news__pagination">
           <div class="pagination">
@@ -600,7 +614,12 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
-
+    $('.news-more__link').click(function (e) {
+      e.preventDefault();
+      $(this).addClass('news-more__link_loading');
+      // ajax does here and after request success add
+      // $('.news-more__link').removeClass('news-more__link_loading');
+    });
   });
 </script>
 </body>
