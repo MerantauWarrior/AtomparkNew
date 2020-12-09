@@ -227,55 +227,6 @@
     justify-content: flex-end;
     margin: 35px 0 45px 0;
 }
-.sms-prices-search{
-    position: relative;
-}
-.inp-sms-prices-search{
-    width: 260px;
-    height: 30px;
-    padding: 0 50px 0 25px;
-    border: 1px solid #81859C;
-    -webkit-border-radius: 45px;
-    -moz-border-radius: 45px;
-    border-radius: 45px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    line-height: 16px;
-    color: #333333;
-}
-.inp-sms-prices-search::-webkit-input-placeholder {
-    color: #81859C;
-}
-.inp-sms-prices-search::-moz-placeholder {
-    color: #81859C;
-}
-.inp-sms-prices-search:-ms-input-placeholder {
-    color: #81859C;
-}
-.inp-sms-prices-search:-moz-placeholder {
-    color: #81859C;
-}
-.btn-sms-prices-search-submit,
-.btn-sms-prices-search-reset{
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    -webkit-transform: translate(0, -50%);
-    -moz-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    -o-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    cursor: pointer;
-}
-.btn-sms-prices-search-reset{
-    display: none;
-}
-.inp-sms-prices-search:valid ~ .btn-sms-prices-search-reset{
-    display: block;
-}
-.inp-sms-prices-search:valid ~ .btn-sms-prices-search-submit{
-    display: none;
-}
 .sms-prices__table{
     width: 100%;
     overflow-x: auto;
@@ -306,53 +257,8 @@
     line-height: 28px;
     color: #81859C;
 }
-/*Pagination*/
-.sms-prices-pagination{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 41px;
-}
-.sms-prices-pagination__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    margin: 0 2px;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    border-radius: 100%;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
-    color: #1062AA;
-}
-.sms-prices-pagination__link:hover,
-.sms-prices-pagination__link_current{
-    background-color: #1062AA;
-    color: #FFFFFF;
-}
-.sms-prices-pagination__link-prev{
-    margin-right: 15px;
-}
-.sms-prices-pagination__link-next{
-    margin-left: 15px;
-}
-.sms-prices-pagination__link svg{
-    fill: #1062AA;
-}
-.sms-prices-pagination__link_disabled,
-.sms-prices-pagination__link_disabled:hover{
-    cursor: default;
-    background-color: #fff;
-}
-.sms-prices-pagination__link_disabled svg{
-    fill: #81859C;
-}
-.sms-prices-pagination__link:not(.sms-prices-pagination__link_disabled):hover svg{
-    fill: #FFFFFF;
+.pagination--sms-prices{
+    margin-top: 40px;
 }
 /*Prices benefits*/
 .sms-prices-benefits{
@@ -875,13 +781,6 @@
     }
     .sms-prices__search{
         justify-content: center;
-    }
-    /*Pagination*/
-    .sms-prices-pagination__link-next{
-        margin-left: 0;
-    }
-    .sms-prices-pagination__link-prev{
-        margin-right: 0;
     }
     /*Prices benefits*/
     .sms-prices-benefits{
