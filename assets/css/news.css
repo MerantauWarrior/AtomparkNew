@@ -234,6 +234,12 @@
     font-size: 16px;
     line-height: 26px;
 }
+.news-single h3,
+.news-single h4{
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 28px;
+}
 .news-single img{
     margin: 0 auto;
 }
@@ -244,6 +250,19 @@
     top: 11px;
     width: 4px;
     height: 4px;
+}
+.news-single ol{
+    counter-reset: ol;
+}
+.news-single ol li{
+    padding-left: 23px;
+}
+.news-single ol li:before{
+    counter-increment: ol;
+    content: counter(ol) ".";
+    font-size: 16px;
+    line-height: 26px;
+    color: #1062AA;
 }
 .news-single blockquote{
     position: relative;
@@ -402,6 +421,57 @@
         transform: rotate(360deg);
     }
 }
+/*news single promo*/
+.news-single-promo__top{
+    margin-bottom: 66px;
+}
+.news-single-promo__top-text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.news-single-promo__top-status{
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+}
+.news-single-promo__top-img{
+    margin: 14px auto 0 auto;
+}
+.news-single-table{
+    width: 100%;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+.news-single-table--promo{
+    max-width: 555px;
+}
+.news-single-table table{
+    width: 100%;
+    border: 1px solid #81859C;
+    line-height: 38px;
+}
+.news-single-table tr:not(:last-child){
+    border-bottom: 1px solid #81859C;
+}
+.news-single-table tr td:first-child,
+.news-single-table tr td:last-child{
+    min-width: 199px;
+    padding: 0 38px;
+}
+.news-single-table tr td:nth-child(2){
+    min-width: 57px;
+    padding: 0 13px;
+}
+.news-single-btns{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 555px;
+    margin: 28px auto;
+}
 
 @media all and (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
     .news-article,
@@ -438,5 +508,21 @@
     }
     .news-related{
         padding-bottom: 60px;
+    }
+    .news-single-promo__top-text{
+        justify-content: center;
+    }
+    .news-single-promo__top-status{
+        margin-bottom: 14px;
+    }
+    .news-single-table tr td:first-child,
+    .news-single-table tr td:last-child{
+        padding: 0 15px;
+    }
+    .news-single-btns{
+        justify-content: center;
+    }
+    .news-single-btns > *:first-child{
+        margin-bottom: 20px;
     }
 }
