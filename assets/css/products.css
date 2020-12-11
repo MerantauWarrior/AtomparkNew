@@ -58,7 +58,7 @@ h2,h3{
     left: 100%;
     width: 46px;
     height: 48px;
-    background: transparent url('../img/products/services-top-download-arrow.svg') center center no-repeat;
+    background: transparent url('../img/products/product-top-download-arrow.svg') center center no-repeat;
     background-size: contain;
 }
 .services-top__buy{

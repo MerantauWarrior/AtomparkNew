@@ -538,6 +538,9 @@
     line-height: 14px;
     color: #E5E5E5;
 }
+.footer a:not(.footer-contacts__tel):hover{
+    text-decoration: underline;
+}
 /*breadcrumbs*/
 .breadcrumbs__list{
     display: flex;
