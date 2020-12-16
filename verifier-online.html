@@ -687,14 +687,14 @@
       </div>
     </section>
 
-    <section class="product-accordions">
+    <section class="faqs">
       <div class="container-md">
         <h3>You might be wondering</h3>
-        <div class="product-accordions__list">
-          <div class="product-accordion product-accordion_opened">
-            <div class="product-accordion__top">
-              <div class="product-accordion__title">How to use Atomic Lead Extractor?</div>
-              <div class="product-accordion__arrow">
+        <div class="faqs__list">
+          <div class="faq faq_opened">
+            <div class="faq__top">
+              <div class="faq__title">How to use Atomic Lead Extractor?</div>
+              <div class="faq__arrow">
                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                       d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z"
@@ -702,15 +702,15 @@
                 </svg>
               </div>
             </div>
-            <div class="product-accordion__content">
+            <div class="faq__content">
               You should have the Internet connection to use phone number extractor from website. Install the program,
               run it. Then specify the keywords or add the URLs you need and click 'Start'.
             </div>
           </div>
-          <div class="product-accordion product-accordion_opened">
-            <div class="product-accordion__top">
-              <div class="product-accordion__title">How can I set search engines?</div>
-              <div class="product-accordion__arrow">
+          <div class="faq faq_opened">
+            <div class="faq__top">
+              <div class="faq__title">How can I set search engines?</div>
+              <div class="faq__arrow">
                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                       d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z"
@@ -718,7 +718,7 @@
                 </svg>
               </div>
             </div>
-            <div class="product-accordion__content">
+            <div class="faq__content">
               For example, if you live in USA, phone number extractor from website can be set for searching only for US
               websites. For this, choose 'Search engines' on the panel at the top of the window and put a tick opposite
               the 'Google US' option.
@@ -965,8 +965,8 @@
       $(this).hide();
     });
     // accordions
-    $('.product-accordion__top').click(function () {
-      $(this).parent().toggleClass('product-accordion_opened');
+    $('.faq__top').click(function () {
+      $(this).parent().toggleClass('faq_opened');
     });
 
     //product reviews slider

@@ -752,6 +752,77 @@
     font-size: 18px;
     line-height: 28px;
 }
+/*faqs*/
+.faqs{
+    padding: 102px 0 132px 0;
+}
+.faqs__list{
+    max-width: 808px;
+    margin-top: 66px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.faq{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.faq:not(:last-child){
+    margin-bottom: 38px;
+    padding-bottom: 38px;
+    border-bottom: 1px solid #1062AA;
+}
+.faq__top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.faq__arrow{
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.faq_opened .faq__arrow{
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+.faq__title{
+    font-size: 24px;
+    line-height: 24px;
+    color: #1062AA;
+}
+.faq__content{
+    display: none;
+    margin-top: 30px;
+    padding: 0 0 0 15px;
+    font-size: 18px;
+    line-height: 28px;
+}
+.faq_opened .faq__content{
+    display: block;
+}
+.faq ul li{
+    padding-left: 12px;
+}
+.faq ul li:before{
+    width: 4px;
+    height: 4px;
+    margin-top: 12px;
+}
+.faq ol{
+    counter-reset: section;
+}
+.faq ol li:before{
+    counter-increment: section;
+    content: counter(section) ". ";
+    position: static;
+}
+
 
 @media all and (min-width: 768px){
     /*header*/
@@ -1165,5 +1236,39 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    /*faqs*/
+    .faqs{
+        padding: 71px 0 78px 0;
+    }
+    .faqs__list{
+        margin-top: 25px;
+    }
+    .faq{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .faq:not(:last-child){
+        margin-bottom: 23px;
+        padding-bottom: 24px;
+    }
+    .faq__top{
+        align-items: flex-start;
+    }
+    .faq__arrow{
+        min-width: 16px;
+        margin-top: 9px;
+        margin-left: 5px;
+    }
+    .faq__title{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .faq__content{
+        margin-top: 13px;
+        padding: 0;
+    }
+    .sw-p-download-form{
+        display: block;
     }
 }

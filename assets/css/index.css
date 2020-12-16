@@ -1,0 +1,59 @@
+/*general*/
+h2, h3{
+    text-align: center;
+}
+/*why*/
+.home-why{
+    padding: 125px 0;
+}
+.home-why__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.home-why-item{
+    width: 100%;
+    max-width: 290px;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.home-why-item__icon{
+    width: 40px;
+    height: 40px;
+}
+.home-why-item__title{
+    margin-top: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+.home-why-item__description{
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 24px;
+}
+/*faqs*/
+.faqs--home{
+    padding: 125px 0;
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    /*why*/
+    .home-why{
+        padding: 60px 0;
+    }
+    .home-why-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /*faqs*/
+    .faqs--home{
+        padding: 60px 0;
+    }
+}

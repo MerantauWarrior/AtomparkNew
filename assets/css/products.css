@@ -657,76 +657,6 @@ h2,h3{
 .product-chat-btn:hover svg{
     stroke: #FFFFFF;
 }
-/*product accordions*/
-.product-accordions{
-    padding: 102px 0 132px 0;
-}
-.product-accordions__list{
-    max-width: 808px;
-    margin-top: 66px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.product-accordion{
-    padding-left: 30px;
-    padding-right: 30px;
-}
-.product-accordion:not(:last-child){
-    margin-bottom: 38px;
-    padding-bottom: 38px;
-    border-bottom: 1px solid #1062AA;
-}
-.product-accordion__top{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-}
-.product-accordion__arrow{
-    -webkit-transform: rotate(-180deg);
-    -moz-transform: rotate(-180deg);
-    -ms-transform: rotate(-180deg);
-    -o-transform: rotate(-180deg);
-    transform: rotate(-180deg);
-}
-.product-accordion_opened .product-accordion__arrow{
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-}
-.product-accordion__title{
-    font-size: 24px;
-    line-height: 24px;
-    color: #1062AA;
-}
-.product-accordion__content{
-    display: none;
-    margin-top: 30px;
-    padding: 0 0 0 15px;
-    font-size: 18px;
-    line-height: 28px;
-}
-.product-accordion_opened .product-accordion__content{
-    display: block;
-}
-.product-accordion ul li{
-    padding-left: 12px;
-}
-.product-accordion ul li:before{
-    width: 4px;
-    height: 4px;
-    margin-top: 12px;
-}
-.product-accordion ol{
-    counter-reset: section;
-}
-.product-accordion ol li:before{
-    counter-increment: section;
-    content: counter(section) ". ";
-    position: static;
-}
 /*others slider*/
 .other{
     padding: 108px 0 182px 0;
@@ -1577,40 +1507,6 @@ h2,h3{
     .product-chat__text{
         margin: 20px 0 37px 0;
         text-align: center;
-    }
-    /*product accordions*/
-    .product-accordions{
-        padding: 71px 0 78px 0;
-    }
-    .product-accordions__list{
-        margin-top: 25px;
-    }
-    .product-accordion{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .product-accordion:not(:last-child){
-        margin-bottom: 23px;
-        padding-bottom: 24px;
-    }
-    .product-accordion__top{
-        align-items: flex-start;
-    }
-    .product-accordion__arrow{
-        min-width: 16px;
-        margin-top: 9px;
-        margin-left: 5px;
-    }
-    .product-accordion__title{
-        font-size: 24px;
-        line-height: 28px;
-    }
-    .product-accordion__content{
-        margin-top: 13px;
-        padding: 0;
-    }
-    .sw-p-download-form{
-        display: block;
     }
     /*Product discount*/
     .product-discount__inner{

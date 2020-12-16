@@ -747,14 +747,14 @@
       </div>
     </section>
 
-    <section class="product-accordions">
+    <section class="faqs">
       <div class="container-md">
         <h3>You might be wondering</h3>
-        <div class="product-accordions__list">
-          <div class="product-accordion product-accordion_opened">
-            <div class="product-accordion__top">
-              <div class="product-accordion__title">Reasons to use Atomic Bulk Emails Verifier</div>
-              <div class="product-accordion__arrow">
+        <div class="faqs__list">
+          <div class="faq faq_opened">
+            <div class="faq__top">
+              <div class="faq__title">Reasons to use Atomic Bulk Emails Verifier</div>
+              <div class="faq__arrow">
                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                       d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z"
@@ -762,7 +762,7 @@
                 </svg>
               </div>
             </div>
-            <div class="product-accordion__content">
+            <div class="faq__content">
               Verifying existence of the email addresses in your list is one of the most important tasks for effective
               email marketing process. It helps to manage an efficient marketing campaign and saves you from paying
               extra charges for the bulk email service.<br><br>
@@ -774,10 +774,10 @@
               efficiently. The validation process is performed in multithread mode, using all the benefits of the Web.
             </div>
           </div>
-          <div class="product-accordion">
-            <div class="product-accordion__top">
-              <div class="product-accordion__title">Why Email Verification is Really Important?</div>
-              <div class="product-accordion__arrow">
+          <div class="faq">
+            <div class="faq__top">
+              <div class="faq__title">Why Email Verification is Really Important?</div>
+              <div class="faq__arrow">
                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                       d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z"
@@ -785,7 +785,7 @@
                 </svg>
               </div>
             </div>
-            <div class="product-accordion__content">
+            <div class="faq__content">
               Most of the web-sites have their own web forms which users/customers needs to fill in. During this fill up
               processes users may, intentionally and exidently, enter wrong email addresses. By accepting them, your
               email list will be flooded with inaccurate and undeliverable email addresses. If you send email to such
@@ -804,10 +804,10 @@
               So as you can see email verification is really win-win process.
             </div>
           </div>
-          <div class="product-accordion">
-            <div class="product-accordion__top">
-              <div class="product-accordion__title">What Emails Should be Verified?</div>
-              <div class="product-accordion__arrow">
+          <div class="faq">
+            <div class="faq__top">
+              <div class="faq__title">What Emails Should be Verified?</div>
+              <div class="faq__arrow">
                 <svg width="16" height="9" viewBox="0 0 16 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                       d="M8.70711 0.292893C8.31658 -0.097631 7.68342 -0.097631 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 2L9 1L7 1L7 2L9 2Z"
@@ -815,7 +815,7 @@
                 </svg>
               </div>
             </div>
-            <div class="product-accordion__content">
+            <div class="faq__content">
               Every email address and email list should be verified.
               The more often you verify your existing lists the better, and always verify your new email lists.
               Some people verify only new lists, or emails which were generated from untrusted sources, which is good,
@@ -1116,8 +1116,8 @@
       $(this).hide();
     });
     // accordions
-    $('.product-accordion__top').click(function () {
-      $(this).parent().toggleClass('product-accordion_opened');
+    $('.faq__top').click(function () {
+      $(this).parent().toggleClass('faq_opened');
     });
 
     //Slider download
