@@ -205,11 +205,11 @@ input:-moz-placeholder {
 }
 .btn-black-filled{
     background-color: #333333;
+    border: 2px solid #333333;
     color: #FFFFFF;
 }
 .btn-black-filled:hover{
     background-color: transparent;
-    border: 2px solid #333333;
     color: #333333;
 }
 .btn-product{
