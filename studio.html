@@ -1552,6 +1552,9 @@
       var slideno = $(this).index();
       $('.studio-included__slider').slick('slickGoTo', slideno);
     });
+    $('.studio-included__slider').on('afterChange', function(event, slick, currentSlide){
+      $('.studio-included-control').removeClass('studio-included-control_active').eq(currentSlide).addClass('studio-included-control_active');
+    });
 
     //Slider client
     $('.studio-clients-reviews').slick({
