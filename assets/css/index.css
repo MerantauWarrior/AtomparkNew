@@ -2,6 +2,170 @@
 h2, h3{
     text-align: center;
 }
+/*hero*/
+.hero{
+    position: relative;
+    padding: 150px 0 92px 0;
+    background-color: #1062AA;
+    overflow: hidden;
+}
+.hero-cirle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    width: 520px;
+    height: 520px;
+    margin-top: -260px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.hero-cirle img{
+    max-height: 80%;
+}
+.hero-cirle--orange{
+    left: 0;
+    margin-left: -260px;
+    background-color: #F7B916;
+    animation: circleBlue 2s linear 1 forwards;
+}
+.hero-cirle--orange img{
+    margin-right: -200px;
+}
+.hero-cirle--blue img{
+    margin-left: -200px;
+}
+.hero-cirle--blue{
+    right: 0;
+    margin-right: -260px;
+    background-color: #00ADEE;
+    animation: circleOrange 2s linear 1 forwards;
+}
+.hero-cirle-image{
+    position: absolute;
+    top: 50%;
+    max-width: 430px;
+}
+.hero-cirle-image--orange{
+    left: 0;
+    margin-left: -130px;
+}
+.hero-cirle-image--blue{
+    right: 0;
+    margin-right: -130px;
+}
+/*.hero-cirle img{*/
+/*    display: none;*/
+/*}*/
+/*@keyframes circleBlue{*/
+/*    0%{*/
+/*        left: 50%;*/
+/*    }*/
+/*    100%{*/
+/*        left: 0;*/
+/*    }*/
+/*}*/
+/*@keyframes circleOrange{*/
+/*    0%{*/
+/*        right: 50%;*/
+/*    }*/
+/*    100%{*/
+/*        right: 0;*/
+/*    }*/
+/*}*/
+.hero__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hero__title{
+    width: 100%;
+    max-width: 510px;
+    margin-bottom: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+.hero__title span{
+    font-size: 36px;
+    line-height: 44px;
+    -webkit-text-stroke: 1px #ffffff;
+    color: rgba(255,255,255,0);
+}
+.hero__description{
+    width: 100%;
+    max-width: 370px;
+    margin-bottom: 71px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ffffff;
+    text-align: center;
+}
+.hero__form{
+    position: relative;
+    width: 100%;
+    max-width: 360px;
+    margin-bottom: 82px;
+}
+.inp-hero{
+    padding: 0 150px 0 30px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #81859C;
+}
+.inp-hero::-webkit-input-placeholder {
+    color: #81859C;
+}
+.inp-hero::-moz-placeholder {
+    color: #81859C;
+}
+.inp-hero:-ms-input-placeholder {
+    color: #81859C;
+}
+.inp-hero:-moz-placeholder {
+    color: #81859C;
+}
+.btn-hero{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 127px;
+    height: 44px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background-color: #00ADEE;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 44px;
+    text-align: center;
+    color: #333333;
+    cursor: pointer;
+}
+.btn-hero:hover{
+    background-color: #F7B916;
+}
+.hero__scroll{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 2px solid #00ADEE;
+    cursor: pointer;
+}
 /*ratings*/
 .ratings{
     padding-top: 40px;
@@ -53,7 +217,7 @@ h2, h3{
 .business-item{
     display: flex;
     width: 100%;
-    max-width: 400px;
+    max-width: 402px;
     margin-top: 75px;
 }
 .business-item__img{
@@ -86,6 +250,14 @@ h2, h3{
 .business-item__link span{
     margin-right: 8px;
     text-decoration-line: underline;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -ms-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
+.business-item__link:hover span{
+    margin-right: 3px;
 }
 /*studio*/
 .home-studio{
@@ -1256,6 +1428,18 @@ h2, h3{
 
 
 @media all and (min-width: 320px) and (max-width: 767px){
+    /*hero*/
+    .hero{
+        padding: 60px 0;
+    }
+    .hero-cirle{
+        display: none;
+    }
+    /*ratings*/
+    .ratings-item{
+        width: 45%;
+        margin-top: 20px;
+    }
     /*business*/
     .business{
         padding: 60px 0;
