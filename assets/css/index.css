@@ -2,6 +2,42 @@
 h2, h3{
     text-align: center;
 }
+/*ratings*/
+.ratings{
+    padding-top: 40px;
+}
+.ratings__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.ratings-item{
+    display: flex;
+    flex-direction: column;
+}
+.ratings-item__logo{
+    margin-bottom: 14px;
+}
+.ratings-item__stars{
+    display: flex;
+    margin-bottom: 10px;
+}
+.ratings-item__star{
+    margin-right: 2px;
+}
+.ratings-item__info{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: lowercase;
+    color: #81859C;
+}
+.ratings-item__info span{
+    padding: 0 5px;
+    color: #EBF0FF;
+}
 /*business*/
 .business{
     padding: 123px 0 136px 0;

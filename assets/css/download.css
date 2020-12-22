@@ -1,4 +1,9 @@
 /*Download*/
+h1{
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+}
 .download{
     padding-top: 60px;
 }
