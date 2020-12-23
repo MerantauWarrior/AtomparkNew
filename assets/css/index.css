@@ -56,25 +56,6 @@ h2, h3{
     right: 0;
     margin-right: -130px;
 }
-/*.hero-cirle img{*/
-/*    display: none;*/
-/*}*/
-/*@keyframes circleBlue{*/
-/*    0%{*/
-/*        left: 50%;*/
-/*    }*/
-/*    100%{*/
-/*        left: 0;*/
-/*    }*/
-/*}*/
-/*@keyframes circleOrange{*/
-/*    0%{*/
-/*        right: 50%;*/
-/*    }*/
-/*    100%{*/
-/*        right: 0;*/
-/*    }*/
-/*}*/
 .hero__inner{
     display: flex;
     flex-direction: column;
@@ -165,6 +146,65 @@ h2, h3{
     border-radius: 100%;
     border: 2px solid #00ADEE;
     cursor: pointer;
+}
+.hero__scroll svg{
+    animation: scrollArrow 1.5s linear infinite;
+}
+@keyframes scrollArrow {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: 10px;
+    }
+    75%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@-o-keyframes scrollArrow {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: 10px;
+    }
+    75%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@-moz-keyframes scrollArrow {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: 10px;
+    }
+    75%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0;
+    }
+}
+@-webkit-keyframes scrollArrow {
+    0%{
+        margin-top: 0;
+    }
+    25%{
+        margin-top: 10px;
+    }
+    75%{
+        margin-top: -10px;
+    }
+    100%{
+        margin-top: 0;
+    }
 }
 /*ratings*/
 .ratings{
