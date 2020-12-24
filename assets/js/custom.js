@@ -142,14 +142,6 @@ document.addEventListener("click", closeAllSelect);
     setInterval(timer, 1000);
   }
   //Header
-  $('.header-submenu__list-link').hover(function () {
-    var srcImg = $(this).data('img')
-    if (typeof srcImg !== typeof undefined && srcImg !== false) {
-      $('.header-submenu-product img').attr('src', srcImg);
-    }
-  }, function () {
-    $('.header-submenu-product img').attr('src', 'assets/img/general/placeholder.png');
-  })
   $('.header-lang__switch').click(function () {
     $(this).toggleClass('header-lang__switch_active');
     $('.header-lang__select').fadeToggle(250);
@@ -157,31 +149,21 @@ document.addEventListener("click", closeAllSelect);
 
   //header mobile
   if ($(window).width() < 768) {
-    var lastScrollTop = 0;
-    window.addEventListener('scroll', function () {
-      var st = window.pageYOffset || document.documentElement.scrollTop;
-      if (st > lastScrollTop) {
-        if (st > window.innerHeight / 2) {
-          $('.header-search').fadeOut(250);
-        }
-      } else {
-        $('.header-search').fadeIn(250);
-      }
-      lastScrollTop = st <= 0 ? 0 : st;
-    }, {passive: true});
     $('.header-mobile-menu-toggle').click(function () {
       $('body').toggleClass('ovh');
       $('.header').toggleClass('header-navigation_opened');
     });
-    $('.header-menu__link').click(function (e) {
+    $('.header__link').click(function (e) {
       if (typeof $(this).attr('href') !== typeof undefined && $(this).attr('href') !== false) {
         return true;
       } else {
         e.preventDefault();
-        $(this).toggleClass('header-menu__link_active');
-        $(this).siblings('.header-submenu').slideToggle(250);
+        $(this).siblings('.navigation-submenu').addClass('navigation-submenu_opened');
       }
     })
+    $('.navigation-submenu-mobile-back').click(function () {
+      $(this).closest('.navigation-submenu').removeClass('navigation-submenu_opened');
+    });
     $('.header-submenu__top').click(function () {
       $(this).toggleClass('header-submenu__top_active');
       $(this).siblings('.header-submenu__list').slideToggle(250);

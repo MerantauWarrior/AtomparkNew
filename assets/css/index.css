@@ -148,9 +148,6 @@ h2, h3{
     animation: scrollArrow 1.5s linear infinite;
     cursor: pointer;
 }
-.hero__scroll svg{
-
-}
 @keyframes scrollArrow {
     0%{
         -webkit-transform: translateY(0);
