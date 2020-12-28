@@ -654,6 +654,9 @@
 .cta-blue h2{
     text-align: left;
 }
+.cta-blue h2 span{
+    color: #1062AA;
+}
 .cta-blue__form{
     position: relative;
     width: 100%;

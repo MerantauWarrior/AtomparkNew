@@ -416,6 +416,7 @@ h2, h3{
     padding: 4px 10px;
     font-size: 14px;
     line-height: 28px;
+    background-color: #fff;
     box-shadow: -4px 4px 20px rgba(16, 98, 170, 0.2);
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -1024,6 +1025,7 @@ h2, h3{
 }
 .bestsellers-item__img img{
     margin: 0 auto;
+    padding-top: 12px;
     max-width: 230px;
 }
 .bestsellers-item:hover .bestsellers-item__img{
