@@ -102,18 +102,22 @@
     height: 100%;
     background-color: #F7B916;
 }
+/*preheader*/
+.preheader{
+    position: relative;
+    overflow: hidden;
+}
 /*header*/
 .header{
+    position: relative;
     background-color: #fff;
+    z-index: 999;
 }
 .header--transparent{
     background-color: transparent;
 }
-.header--home{
-    background-color: #1062AA;
-}
 .header:hover{
-    background-color: #ffffff !important;
+    background-color: #ffffff;
 }
 .navigation-submenu-mobile-back{
     display: none;
@@ -876,7 +880,6 @@
         padding-bottom: 15px;
         background-color: #fff;
         box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
-        z-index: 999;
     }
     .navigation-submenu-mobile-back{
         display: inline-flex;

@@ -2,14 +2,11 @@
 h2, h3{
     text-align: center;
 }
-/*hero*/
-.hero{
-    position: relative;
-    padding: 150px 0 92px 0;
+/*preheader*/
+.preheader--home{
     background-color: #1062AA;
-    overflow: hidden;
 }
-.hero-cirle{
+.preheader-cirle{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,40 +18,51 @@ h2, h3{
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
+    z-index: 2;
 }
-.hero-cirle img{
-    max-height: 80%;
+.preheader-cirle__img{
+    display: block;
 }
-.hero-cirle--orange{
+.preheader-cirle__img-big{
+    display: none;
+}
+.preheader-cirle--orange{
     left: 0;
     margin-left: -260px;
     background-color: #F7B916;
     animation: circleBlue 2s linear 1 forwards;
 }
-.hero-cirle--orange img{
+.preheader-cirle--orange .preheader-cirle__img{
     margin-right: -200px;
 }
-.hero-cirle--blue img{
+.preheader-cirle--blue .preheader-cirle__img{
     margin-left: -200px;
 }
-.hero-cirle--blue{
+.preheader-cirle--blue{
     right: 0;
     margin-right: -260px;
     background-color: #00ADEE;
     animation: circleOrange 2s linear 1 forwards;
 }
-.hero-cirle-image{
+.preheader-cirle-image{
     position: absolute;
     top: 50%;
     max-width: 430px;
 }
-.hero-cirle-image--orange{
+.preheader-cirle-image--orange{
     left: 0;
     margin-left: -130px;
 }
-.hero-cirle-image--blue{
+.preheader-cirle-image--blue{
     right: 0;
     margin-right: -130px;
+}
+/*hero*/
+.hero{
+    position: relative;
+    padding: 150px 0 92px 0;
+    background-color: #1062AA;
+    overflow: hidden;
 }
 .hero__inner{
     display: flex;
@@ -1534,13 +1542,44 @@ h2, h3{
     padding: 125px 0;
 }
 
-
 @media all and (min-width: 1600px){
-    .hero-cirle--orange img{
-        margin-right: -400px;
+    .preheader-cirle{
+        width: 798px;
+        height: 798px;
+        margin-top: -399px;
     }
-    .hero-cirle--blue img{
-        margin-left: -400px;
+    .preheader-cirle__img{
+        display: none;
+    }
+    .preheader-cirle__img-big{
+        display: block;
+    }
+    .preheader-cirle--orange{
+        margin-left: -399px;
+    }
+    .preheader-cirle--blue{
+        margin-right: -399px;
+    }
+    .preheader-cirle--orange .preheader-cirle__img-big{
+        margin-right: -500px;
+    }
+    .preheader-cirle--blue .preheader-cirle__img-big{
+        margin-left: -500px;
+    }
+    .hero__title {
+        max-width: 664px;
+        margin-bottom: 24px;
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .hero__title span{
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .hero__description{
+        max-width: 410px;
+        font-size: 21px;
+        line-height: 31px;
     }
 }
 @media all and (min-width: 320px) and (max-width: 767px){
@@ -1548,7 +1587,7 @@ h2, h3{
     .hero{
         padding: 60px 0;
     }
-    .hero-cirle{
+    .preheader-cirle{
         display: none;
     }
     /*ratings*/
