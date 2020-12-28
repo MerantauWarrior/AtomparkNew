@@ -134,6 +134,10 @@ h2, h3{
 .btn-hero:hover{
     background-color: #F7B916;
 }
+.btn-hero:disabled{
+    background-color: #81859C;
+    color: #ffffff;
+}
 .hero__scroll{
     display: flex;
     align-items: center;

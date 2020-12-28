@@ -168,7 +168,7 @@ input:-moz-placeholder {
     color: #ffffff;
     background-color: #1062AA;
 }
-.btn:disabled{
+button:disabled{
     cursor: default;
 }
 .btn-m{

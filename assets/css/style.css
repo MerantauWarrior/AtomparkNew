@@ -103,11 +103,17 @@
     background-color: #F7B916;
 }
 /*header*/
+.header{
+    background-color: #fff;
+}
 .header--transparent{
     background-color: transparent;
 }
 .header--home{
     background-color: #1062AA;
+}
+.header:hover{
+    background-color: #ffffff !important;
 }
 .navigation-submenu-mobile-back{
     display: none;
@@ -187,7 +193,7 @@
 .header__logo svg{
     fill: #1062AA;
 }
-.header--transparent .header__logo svg{
+.header--transparent:not(:hover) .header__logo svg{
     fill: #ffffff;
 }
 .navigation{
@@ -215,11 +221,11 @@
 .header__link:hover{
     color: #1062AA;
 }
-.header--transparent .header__link{
+.header--transparent:not(:hover) .header__link{
     color: #FFFFFF;
 }
-.header--transparent .has-dropdown:hover .header__link,
-.header--transparent .header__link:hover{
+.header--transparent:not(:hover) .has-dropdown:hover .header__link,
+.header--transparent:not(:hover) .header__link:hover{
     color: #F7B916;
 }
 .header__link-arrow{
@@ -313,7 +319,7 @@
     line-height: 19px;
     color: #E3F2FF;
 }
-.header--transparent .header-btn{
+.header--transparent:not(:hover) .header-btn{
     color: #1062AA;
     background-color: #fff;
 }
@@ -333,7 +339,7 @@
     fill: #81859C;
     stroke: #ffffff;
 }
-.header--transparent .header-lang__switch-icon svg{
+.header--transparent:not(:hover) .header-lang__switch-icon svg{
     fill: #1062AA;
 }
 .header-lang__switch-text{
@@ -342,7 +348,7 @@
     line-height: 30px;
     color: #81859C;
 }
-.header--transparent .header-lang__switch-text{
+.header--transparent:not(:hover) .header-lang__switch-text{
     color: #ffffff;
 }
 .header-lang__switch-arrow{
@@ -706,6 +712,9 @@
 }
 .btn-cta-blue:hover{
     background-color: #F7B916;
+}
+.btn-cta-blue:disabled{
+    background-color: #81859C;
 }
 .cta-blue__text{
     margin: 25px 0 37px 0;
@@ -1102,6 +1111,12 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .cta-blue--reverse .cta-blue__img{
+        order: 1;
+    }
+    .cta-blue--reverse .cta-blue__content{
+        order: 2;
     }
     /*faqs*/
     .faqs{

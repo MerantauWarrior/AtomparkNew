@@ -147,6 +147,16 @@ document.addEventListener("click", closeAllSelect);
     $('.header-lang__select').fadeToggle(250);
   });
 
+  if($('.js-disabled').length>0){
+    $('.js-disabled').on('keyup',function () {
+      if($(this).val() !== ''){
+        $(this).closest('form').find('button[type=submit]').prop('disabled',false);
+      }else{
+        $(this).closest('form').find('button[type=submit]').prop('disabled',true);
+      }
+    })
+  }
+
   //header mobile
   if ($(window).width() < 768) {
     $('.header-mobile-menu-toggle').click(function () {
