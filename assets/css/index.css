@@ -1535,6 +1535,14 @@ h2, h3{
 }
 
 
+@media all and (min-width: 1600px){
+    .hero-cirle--orange img{
+        margin-right: -400px;
+    }
+    .hero-cirle--blue img{
+        margin-left: -400px;
+    }
+}
 @media all and (min-width: 320px) and (max-width: 767px){
     /*hero*/
     .hero{
