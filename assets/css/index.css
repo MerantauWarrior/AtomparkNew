@@ -23,9 +23,6 @@ h2, h3{
 .preheader-cirle__img{
     display: block;
 }
-.preheader-cirle__img-big{
-    display: none;
-}
 .preheader-cirle--orange{
     left: 0;
     margin-left: -260px;
@@ -1548,22 +1545,16 @@ h2, h3{
         height: 798px;
         margin-top: -399px;
     }
-    .preheader-cirle__img{
-        display: none;
-    }
-    .preheader-cirle__img-big{
-        display: block;
-    }
     .preheader-cirle--orange{
         margin-left: -399px;
     }
     .preheader-cirle--blue{
         margin-right: -399px;
     }
-    .preheader-cirle--orange .preheader-cirle__img-big{
+    .preheader-cirle--orange .preheader-cirle__img{
         margin-right: -500px;
     }
-    .preheader-cirle--blue .preheader-cirle__img-big{
+    .preheader-cirle--blue .preheader-cirle__img{
         margin-left: -500px;
     }
     .hero__title {

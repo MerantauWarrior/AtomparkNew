@@ -16,20 +16,24 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/index.css">
 </head>
-
+<body>
 <div class="wrapper">
   <div class="preheader preheader--home">
     <div class="preheader-cirle preheader-cirle--orange" data-aos="fade-right" data-aos-offset="0" data-aos-once="true">
-      <img src="assets/img/home/home-hero-1.png" alt="text" class="preheader-cirle__img" data-aos="fade-left" data-aos-delay="300"
-           data-aos-offset="0" data-aos-once="true">
-      <img src="assets/img/home/home-hero-1-big.png" alt="text" class="preheader-cirle__img-big" data-aos="fade-left" data-aos-delay="300"
-           data-aos-offset="0" data-aos-once="true">
+      <picture class="preheader-cirle__img" data-aos="fade-left" data-aos-delay="300"
+               data-aos-offset="0" data-aos-once="true">
+        <source media="(max-width: 1599px)" srcset="assets/img/home/home-hero-1.png">
+        <source media="(min-width: 1600px)" srcset="assets/img/home/home-hero-1-big.png">
+        <img src="assets/img/home/home-hero-1.png" alt="text">
+      </picture>
     </div>
     <div class="preheader-cirle preheader-cirle--blue" data-aos="fade-left" data-aos-offset="0" data-aos-once="true">
-      <img src="assets/img/home/home-hero-2.png" alt="text" class="preheader-cirle__img" data-aos="fade-right" data-aos-delay="300"
-           data-aos-offset="0" data-aos-once="true">
-      <img src="assets/img/home/home-hero-2-big.png" alt="text" class="preheader-cirle__img-big" data-aos="fade-right" data-aos-delay="300"
-           data-aos-offset="0" data-aos-once="true">
+      <picture class="preheader-cirle__img" data-aos="fade-right" data-aos-delay="300"
+               data-aos-offset="0" data-aos-once="true">
+        <source media="(max-width: 1599px)" srcset="assets/img/home/home-hero-2.png">
+        <source media="(min-width: 1600px)" srcset="assets/img/home/home-hero-2-big.png">
+        <img src="assets/img/home/home-hero-2.png" alt="text">
+      </picture>
     </div>
     <header class="header header--transparent">
       <div class="container">

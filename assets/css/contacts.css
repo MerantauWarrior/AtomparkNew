@@ -1,0 +1,90 @@
+/*contacts*/
+.contacts{
+    padding-top: 66px;
+}
+.contacts__headings{
+    width: 100%;
+    max-width: 580px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contacts__headings h1{
+    font-size: 36px;
+    line-height: 44px;
+}
+.contacts__headings h1 span{
+    color: #1062AA;
+}
+.contacts__headings p{
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #81859C;
+}
+.contacts__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contacts-item{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    margin: 60px 20px 0 20px;
+    padding: 60px 15px 40px 15px;
+    border: 1px solid #333333;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    text-align: center;
+}
+.contacts-item__icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    margin-top: -24px;
+    margin-left: -24px;
+    background-color: #333333;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.contacts-item__title{
+    margin-bottom: 13px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+.contacts-item__link{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+.contacts-item__link:not(:last-child){
+    margin-bottom: 8px;
+}
+/*chat*/
+.chat-contacts{
+    padding: 140px 0;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    .contacts{
+        padding-top: 0;
+    }
+    .contacts__headings h1{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    /*chat*/
+    .chat-contacts{
+        padding: 60px 0;
+    }
+}
