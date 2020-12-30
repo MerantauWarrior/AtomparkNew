@@ -166,6 +166,9 @@ document.addEventListener("click", closeAllSelect);
 
   //header mobile
   if ($(window).width() < 768) {
+    $('.header__search').click(function () {
+      $('body').toggleClass('ovh');
+    });
     $('.header-mobile-menu-toggle').click(function () {
       $('body').toggleClass('ovh');
       $('.header').toggleClass('header-navigation_opened');
