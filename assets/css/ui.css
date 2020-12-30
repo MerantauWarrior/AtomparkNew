@@ -121,6 +121,7 @@ input{
     -webkit-border-radius: 45px;
     -moz-border-radius: 45px;
     border-radius: 45px;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     line-height: 21px;
 }
