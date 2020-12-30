@@ -148,7 +148,10 @@ document.addEventListener("click", closeAllSelect);
   });
   $('.header__search').click(function (e) {
     e.preventDefault();
-    $('.search').toggle();
+    $('.search').show();
+  });
+  $('.search__reset').click(function () {
+    $('.search').hide();
   });
 
   if($('.js-disabled').length>0){
@@ -167,7 +170,10 @@ document.addEventListener("click", closeAllSelect);
   //header mobile
   if ($(window).width() < 768) {
     $('.header__search').click(function () {
-      $('body').toggleClass('ovh');
+      $('body').addClass('ovh');
+    });
+    $('.search__reset').click(function () {
+      $('body').removeClass('ovh');
     });
     $('.header-mobile-menu-toggle').click(function () {
       $('body').toggleClass('ovh');
