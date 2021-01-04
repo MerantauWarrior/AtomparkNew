@@ -1044,7 +1044,7 @@
         padding-top: 80px;
     }
     .hide-mobile{
-        display: none;
+        display: none !important;
     }
     /*header*/
     .header{
