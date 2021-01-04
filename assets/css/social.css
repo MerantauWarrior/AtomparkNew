@@ -1,0 +1,111 @@
+/*social*/
+.social{
+    padding-top: 66px;
+}
+.social__headings{
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+}
+.social__headings h1{
+    font-size: 36px;
+    line-height: 44px;
+}
+.social__headings h1 span{
+    color: #1062AA;
+}
+.social__headings p{
+    margin-top: 13px;
+    font-size: 18px;
+    line-height: 28px;
+    color: #81859C;
+}
+.social__items{
+    margin-top: 27px;
+}
+.social-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 140px;
+}
+.social-item__media,
+.social-item__content{
+    width: 100%;
+    max-width: 458px;
+}
+.social-item:nth-child(odd) .social-item__content{
+    order: 1;
+}
+.social-item:nth-child(odd) .social-item__media{
+    order: 2;
+}
+.social-item__preheader{
+    margin-bottom: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1062AA;
+}
+.social-item__header{
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 35px;
+}
+.social-item__text{
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 26px;
+}
+.social-item__networks{
+    display: flex;
+}
+.social-item__network{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.social-item__network:not(:last-child){
+    margin-right: 30px;
+}
+.social-item__network svg{
+    fill: #1062AA;
+}
+.social-item__network:nth-child(1):hover svg{
+    fill: #3B5998;
+}
+.social-item__network:nth-child(2):hover svg{
+    fill: #00ACEE;
+}
+.social-item__network:nth-child(3):hover svg{
+    fill: #FF0000;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px){
+    .social{
+        padding-top: 0;
+    }
+    .social__headings h1{
+        font-size: 30px;
+        line-height: 37px;
+    }
+    .social-item{
+        margin-bottom: 60px;
+    }
+    .social-item:nth-child(odd) .social-item__content{
+        order: 2;
+    }
+    .social-item:nth-child(odd) .social-item__media{
+        order: 1;
+    }
+    .social-item__media{
+        margin-bottom: 30px;
+    }
+}
