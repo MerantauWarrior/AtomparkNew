@@ -1597,4 +1597,8 @@ h2,h3{
         font-size: 14px;
         line-height: 16px;
     }
+    /*mobile form*/
+    .sw-p-download-form{
+        display: block;
+    }
 }
