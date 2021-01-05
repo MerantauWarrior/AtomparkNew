@@ -679,39 +679,6 @@ h2,h3{
 .other-slider__next{
     top: 88px;
 }
-/*mobile form*/
-.sw-p-download-form{
-    display: none;
-    margin: 0 -15px;
-    padding: 30px;
-    background-color: #EBF0FF;
-}
-.sw-p-download-form__inp{
-    position: relative;
-}
-.sw-p-download-form__inp-icon{
-    position: absolute;
-    top: 13px;
-    right: 16px;
-}
-.inp-sw-p-download-form{
-    width: 100%;
-    padding: 11px 46px 11px 16px;
-    border: 1px solid #81859C;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background-color: #fff;
-    font-size: 16px;
-    line-height: 24px;
-    color: #656565;
-}
-.btn-sw-p-download-form{
-    margin: 19px auto 0 auto;
-    background-color: #80849B;
-    color: #FFFFFF;
-    text-transform: none;
-}
 /*Product discount*/
 .product-discount__inner{
     display: flex;
@@ -1596,9 +1563,5 @@ h2,h3{
         margin-top: 0;
         font-size: 14px;
         line-height: 16px;
-    }
-    /*mobile form*/
-    .sw-p-download-form{
-        display: block;
     }
 }
