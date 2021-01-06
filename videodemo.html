@@ -956,10 +956,19 @@
         infinite: false,
         slidesToShow: 1,
         slidesToScroll: 1,
+        arrows: false,
         dots: false,
         asNavFor: sliderNavId,
         prevArrow: $(sliderId).parent().find('.videodemo__slider-main-prev'),
-        nextArrow: $(sliderId).parent().find('.videodemo__slider-main-next')
+        nextArrow: $(sliderId).parent().find('.videodemo__slider-main-next'),
+        responsive: [
+          {
+            breakpoint: 767,
+            settings: {
+              arrows: true
+            }
+          }
+        ]
       });
       $(sliderNavId).slick({
         infinite: false,
