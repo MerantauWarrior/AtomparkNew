@@ -344,7 +344,7 @@
     stroke: #ffffff;
 }
 .header--transparent:not(:hover) .header-lang__switch-icon svg{
-    fill: #1062AA;
+    fill: transparent;
 }
 .header-lang__switch-text{
     margin: 0 6px;
