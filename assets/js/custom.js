@@ -118,8 +118,8 @@ document.addEventListener("click", closeAllSelect);
   });
 // Timer
   if($('.js-timer').length>0){
-    var countDownDate = new Date('December 31, 2020 03:24:00').getTime();
-    localStorage.setItem('time', new Date('October 7, 2020 03:24:00').getTime());
+    var countDownDate = new Date('December 31, 2021 03:24:00').getTime();
+    localStorage.setItem('time', new Date('October 7, 2021 03:24:00').getTime());
     function timer() {
       var str ='';
       var now = new Date().getTime();

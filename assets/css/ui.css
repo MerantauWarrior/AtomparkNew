@@ -213,6 +213,13 @@ button:disabled{
     background-color: transparent;
     color: #333333;
 }
+.btn-blue{
+    background-color: #00ADEE;
+}
+.btn-blue:hover{
+    background-color: #333333;
+    color: #ffffff;
+}
 .btn-product{
     height: 64px;
 }
