@@ -39,6 +39,9 @@
 .ovh{
     overflow: hidden;
 }
+.no-p{
+    padding: 0 !important;
+}
 .slick-slide{
     outline: none;
 }
