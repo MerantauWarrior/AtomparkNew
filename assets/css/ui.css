@@ -257,6 +257,27 @@ button:disabled{
 .btn-product-s{
     height: 50px;
 }
+.btn-buy svg {
+    fill: #1062AA;
+}
+.btn-buy span{
+    padding-left: 20px;
+    font-weight: 700;
+}
+.btn-buy:hover svg {
+    fill: #F7B916;
+}
+.chat-btn{
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: none;
+}
+.chat-btn svg {
+    stroke: #333333;
+}
+.chat-btn:hover svg {
+    stroke: #ffffff;
+}
 .link-w-arrow{
     display: flex;
     align-items: center;

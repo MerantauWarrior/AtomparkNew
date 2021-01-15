@@ -518,6 +518,9 @@ h2, h3{
 .home-studio__play svg{
     animation: playBtn 2s linear infinite;
 }
+.home-studio__play:hover svg{
+    fill: #333333;
+}
 @keyframes playBtn {
     0%{
         -webkit-transform: scale(1);

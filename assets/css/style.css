@@ -954,6 +954,7 @@
     counter-increment: section;
     content: counter(section) ". ";
     position: static;
+    color: #1062AA;
 }
 /*chat*/
 .chat-box{

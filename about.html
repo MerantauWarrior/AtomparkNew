@@ -374,7 +374,7 @@
       <div class="container-md">
         <h1 class="about-hero__title">About AtomPark Software Group</h1>
         <p class="about-hero__text">Market leader in SMS and email marketing <span>since 2001</span></p>
-        <div class="about-hero__btn">
+        <div class="about-hero__btn js-about-video">
           <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M28.9951 15.1843L7.59098 27.542L7.59098 2.82666L28.9951 15.1843Z" stroke="#333333" stroke-width="2"
                   stroke-linecap="square" stroke-linejoin="round"/>
@@ -897,6 +897,23 @@
       </div>
     </div>
   </footer>
+  <div class="modal">
+    <div class="window-about">
+      <div class="modal__close">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M6.91296 7.64954L20.409 21.1455" stroke="#1062AA" stroke-linecap="round"/>
+          <path d="M21.0223 7.03589L6.91289 21.1453" stroke="#1062AA" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="video">
+        <div class="video-item">
+          <iframe src="https://www.youtube.com/embed/LX9fO3SrwCQ" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -905,6 +922,22 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
+    // about video
+    $('.js-about-video').click(function (e) {
+      e.preventDefault();
+      $('body').addClass('ovh');
+      $('.modal').show();
+    });
+    $('.modal__close').click(function () {
+      $(this).closest('.modal').hide();
+      $('body').removeClass('ovh');
+    })
+    $(document).click(function (e) {
+      if (e.target === $('.modal')[0]) {
+        $('.modal').hide();
+        $('body').removeClass('ovh');
+      }
+    })
     //Slider client
     $('.about-clients-reviews').slick({
       lazyLoad: 'ondemand',
