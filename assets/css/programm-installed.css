@@ -34,27 +34,6 @@ h2 span{
     -ms-flex-align: center;
     align-items: center;
 }
-.header-small-cart{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    padding: 0 15px;
-}
-.header-small-cart__icon{
-    position: relative;
-    margin-right: 7px;
-}
-.header-small-cart__value{
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-    -ms-transform: translate(-50%, 0);
-    transform: translate(-50%, 0);
-    font-size: 16px;
-    line-height: 19px;
-    color: inherit;
-}
 .header-small-action{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -205,22 +184,6 @@ h2 span{
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2;
-    }
-    .header-small-cart{
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-    }
-    .header-small-cart__price{
-        display: none;
-    }
-    .header-small-cart__icon svg{
-        width: 16px;
-        height: 16px;
-    }
-    .header-small-cart__value{
-        font-size: 14px;
-        line-height: 16px;
     }
     /*video*/
     .program-installed-video{
