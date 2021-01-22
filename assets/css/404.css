@@ -98,6 +98,10 @@
 .not-found-card__text span{
     color: #1062AA;
 }
+.not-found-card__btn{
+    display: flex;
+    justify-content: center;
+}
 
 @media all and (min-width: 320px) and (max-width: 767px){
     /*header small*/
@@ -118,6 +122,9 @@
     /*404*/
     .not-found{
         padding: 15px 0 60px 0;
+    }
+    .not-found__bg{
+        display: none;
     }
     .not-found-card{
         padding: 15px;
