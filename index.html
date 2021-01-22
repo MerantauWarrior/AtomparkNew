@@ -692,7 +692,7 @@
               </div>
             </div>
           </div>
-          <a href="#" class="home-studio__play js-studio-video">
+          <a href="#" class="home-studio__play js-modal">
             <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M28.5388 14.2694L7.13471 26.6271L7.13471 1.91174L28.5388 14.2694Z" stroke="#333333"
                     stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
@@ -1566,7 +1566,7 @@
     </div>
   </footer>
   <div class="modal">
-    <div class="window-studio">
+    <div class="modal__window window-studio">
       <div class="modal__close">
         <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M6.91296 7.64954L20.409 21.1455" stroke="#1062AA" stroke-linecap="round"/>
@@ -1627,22 +1627,6 @@
       $('html, body').animate({
         scrollTop: $('section.ratings').offset().top
       }, 1000);
-    })
-    // studio video
-    $('.js-studio-video').click(function (e) {
-      e.preventDefault();
-      $('body').addClass('ovh');
-      $('.modal').show();
-    });
-    $('.modal__close').click(function () {
-      $(this).closest('.modal').hide();
-      $('body').removeClass('ovh');
-    })
-    $(document).click(function (e) {
-      if (e.target === $('.modal')[0]) {
-        $('.modal').hide();
-        $('body').removeClass('ovh');
-      }
     })
     //Slider client
     $('.home-clients-reviews').slick({

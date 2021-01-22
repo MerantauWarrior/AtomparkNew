@@ -220,6 +220,13 @@ button:disabled{
     background-color: #333333;
     color: #ffffff;
 }
+.btn-blue-empty{
+    border: 2px solid #1062AA;
+    background-color: #ffffff;
+}
+.btn-blue-empty:hover{
+    background-color: #1062AA;
+}
 .btn-product{
     height: 64px;
 }

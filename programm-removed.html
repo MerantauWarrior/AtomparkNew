@@ -314,8 +314,8 @@
       </div>
     </div>
   </footer>
-  <div class="modal-programm-removed">
-    <div class="modal-programm-removed__close">
+  <div class="modal-single">
+    <div class="modal-single__close">
       <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1 1.2666L17.6692 17.9358" stroke="#81859C" stroke-miterlimit="10" stroke-linecap="round"
               stroke-linejoin="round"/>
@@ -323,16 +323,16 @@
               stroke-linejoin="round"/>
       </svg>
     </div>
-    <div class="modal-programm-removed__inner">
-      <div class="modal-programm-removed__img">
+    <div class="modal-single__inner">
+      <div class="modal-single__img">
         <svg width="49" height="48" viewBox="0 0 49 48" fill="none" xmlns="http://www.w3.org/2000/svg">
           <circle cx="24.4999" cy="24.4382" r="22.0243" stroke="#6FC6AD" stroke-width="3"/>
           <path d="M16.302 22.1214L24.4999 30.3193L36.262 17.666" stroke="#6FC6AD" stroke-width="3"
                 stroke-linecap="round"/>
         </svg>
       </div>
-      <h3 class="modal-programm-removed__title">Thank you for your feedback!</h3>
-      <div class="modal-programm-removed__text">Your review has been sent successfully. Your opinion about our work is very
+      <h3 class="modal-single__title">Thank you for your feedback!</h3>
+      <div class="modal-single__text">Your review has been sent successfully. Your opinion about our work is very
         important to us! Your review will appear on the <a href="#">"Reviews"</a> page after approval by the moderator.
       </div>
     </div>
@@ -344,9 +344,6 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
-    $('.modal-programm-removed__close').click(function () {
-      $('.modal-programm-removed').remove()
-    })
     //Slider other
     $('.other-slider__inner').slick({
       lazyLoad: 'ondemand',

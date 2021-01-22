@@ -1026,6 +1026,81 @@
     color: #FFFFFF;
     text-transform: none;
 }
+/*Modal*/
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.9);
+    overflow-y: auto;
+    z-index: 999;
+}
+.modal__close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.modal__window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    background-color: #fff;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    box-shadow: -4px 4px 20px rgba(51, 51, 51, 0.2);
+}
+/*Modal single*/
+.modal-single{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 572px;
+    padding: 70px 15px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border: 1px solid #1062AA;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+}
+.modal-single__close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+.modal-single__inner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 458px;
+    margin: 0 auto;
+    text-align: center;
+}
+.modal-single__title{
+    margin: 32px 0 14px 0;
+}
+.modal-single__text{
+    font-size: 16px;
+    line-height: 26px;
+}
 
 @media all and (min-width: 768px){
     /*header*/
@@ -1412,5 +1487,21 @@
     /*mobile form*/
     .sw-p-download-form{
         display: block;
+    }
+    /*Modal*/
+    .modal__window{
+        position: static;
+        max-width: 90% !important;
+        margin: 30px auto;
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+    /*Modal single*/
+    .modal-single{
+        max-width: 90%;
+        padding: 15px;
     }
 }

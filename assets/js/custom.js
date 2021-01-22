@@ -167,6 +167,27 @@ document.addEventListener("click", closeAllSelect);
     })
   }
 
+  // modal
+  $('.js-modal').click(function (e) {
+    e.preventDefault();
+    $('body').addClass('ovh');
+    $('.modal').show();
+  });
+  $('.modal__close').click(function () {
+    $(this).closest('.modal').hide();
+    $('body').removeClass('ovh');
+  })
+  $(document).click(function (e) {
+    if (e.target === $('.modal')[0]) {
+      $('.modal').hide();
+      $('body').removeClass('ovh');
+    }
+  })
+  // modal single
+  $('.modal-single__close').click(function () {
+    $('.modal-single').remove()
+  })
+
   //header mobile
   if ($(window).width() < 768) {
     $('.header__search').click(function () {

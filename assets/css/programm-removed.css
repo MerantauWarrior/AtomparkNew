@@ -215,46 +215,6 @@ input[type="checkbox"]:checked + .checkbox-programm-removed-form:after{
     content: "";
     background: transparent url('../img/feedbacks/feedbacks-form-star-full.svg') center center no-repeat;
 }
-.modal-programm-removed{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    max-width: 572px;
-    padding: 70px 15px;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border: 1px solid #1062AA;
-    background-color: #fff;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-}
-.modal-programm-removed__close{
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    cursor: pointer;
-}
-.modal-programm-removed__inner{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    max-width: 458px;
-    margin: 0 auto;
-    text-align: center;
-}
-.modal-programm-removed__title{
-    margin: 32px 0 14px 0;
-}
-.modal-programm-removed__text{
-    font-size: 16px;
-    line-height: 26px;
-}
 /*others slider*/
 .other{
     padding: 108px 0 182px 0;
@@ -343,10 +303,6 @@ input[type="checkbox"]:checked + .checkbox-programm-removed-form:after{
     }
     .programm-removed-form__col:nth-child(2){
         margin-top: 27px;
-    }
-    .modal-programm-removed{
-        max-width: 90%;
-        padding: 15px;
     }
     /*Other*/
     .other{
