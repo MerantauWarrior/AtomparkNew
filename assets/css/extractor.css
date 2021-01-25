@@ -29,6 +29,7 @@
     display: block;
 }
 .extractor-bussines__heading{
+    font-weight: 700;
     font-size: 24px;
     line-height: 28px;
 }
@@ -39,7 +40,8 @@
 }
 .extractor-bussines__tabs{
     width: 100%;
-    max-width: 555px;
+    max-width: 500px;
+    /*max-width: 555px;*/
     height: 306px;
 }
 .extractor-bussines-tabs{
