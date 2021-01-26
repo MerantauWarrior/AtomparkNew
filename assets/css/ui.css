@@ -227,6 +227,12 @@ button:disabled{
 .btn-blue-empty:hover{
     background-color: #1062AA;
 }
+.btn-orange{
+    background-color: #F8BA00;
+}
+.btn-orange:hover{
+    background-color: #333333;
+}
 .btn-product{
     height: 64px;
 }
