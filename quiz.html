@@ -15,17 +15,19 @@
   <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
 <body>
+<!--<div class="quiz quiz--blue">-->
 <div class="quiz quiz--blue">
   <div class="quiz__header">
     <div class="container">
       <div class="quiz__header-inner">
         <a href="#" class="quiz__logo">
           <img src="assets/img/quiz/quiz-logo-white.svg" alt="atompark" class="quiz__logo-white">
+          <img src="assets/img/quiz/quiz-logo.svg" alt="atompark" class="quiz__logo-regular">
         </a>
       </div>
     </div>
   </div>
-  <div class="quiz__block">
+  <div class="quiz__block quiz__block_active" id="intro">
     <div class="container">
       <div class="quiz-intro">
         <div class="quiz-intro__preheader">Answer some questions and find out</div>
@@ -33,21 +35,74 @@
           <span>
             <svg width="24" height="32" viewBox="0 0 24 32" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
-                d="M0.000666505 14.1023C0.000666505 14.1023 -0.0819632 16.2009 1.59284 16.8281C3.07395 17.3834 3.64436 16.2755 3.64436 16.2755C3.64436 16.2755 3.59194 17.9761 5.36892 18.6051C7.04373 19.1986 7.81227 17.7539 7.81227 17.7539C7.81227 17.7539 8.08504 19.4163 9.84869 19.9014C11.3334 20.3092 12.4395 18.8646 12.4395 18.8646V29.7113C12.4395 30.5633 12.9211 31.9991 14.699 32C16.4759 32.0018 16.882 30.526 16.882 29.7113V11.4972C16.882 10.6087 17.7705 10.6087 17.7705 11.4972V13.8659C17.7705 17.2351 19.5812 19.3239 20.2147 19.9005C20.8482 20.4781 21.6958 20.7704 22.7202 20.5527C24.4581 20.184 24.0788 18.8468 23.5865 17.7122C22.3986 14.9774 21.5839 11.0805 21.336 9.23777C20.6332 4.03388 16.1747 0.0196819 10.7772 0.014351C4.89003 0.010797 0.00510896 4.72157 0.000666505 10.6087V14.1023Z"
-                fill="#F7B916"/>
+                  d="M0.000666505 14.1023C0.000666505 14.1023 -0.0819632 16.2009 1.59284 16.8281C3.07395 17.3834 3.64436 16.2755 3.64436 16.2755C3.64436 16.2755 3.59194 17.9761 5.36892 18.6051C7.04373 19.1986 7.81227 17.7539 7.81227 17.7539C7.81227 17.7539 8.08504 19.4163 9.84869 19.9014C11.3334 20.3092 12.4395 18.8646 12.4395 18.8646V29.7113C12.4395 30.5633 12.9211 31.9991 14.699 32C16.4759 32.0018 16.882 30.526 16.882 29.7113V11.4972C16.882 10.6087 17.7705 10.6087 17.7705 11.4972V13.8659C17.7705 17.2351 19.5812 19.3239 20.2147 19.9005C20.8482 20.4781 21.6958 20.7704 22.7202 20.5527C24.4581 20.184 24.0788 18.8468 23.5865 17.7122C22.3986 14.9774 21.5839 11.0805 21.336 9.23777C20.6332 4.03388 16.1747 0.0196819 10.7772 0.014351C4.89003 0.010797 0.00510896 4.72157 0.000666505 10.6087V14.1023Z"
+                  fill="#F7B916"/>
             </svg>
           </span>
           need to succeed
           <span>
             <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M29 14.5C29 22.508 22.508 29 14.5 29C6.49197 29 0 22.508 0 14.5C0 6.49197 6.49197 0 14.5 0C22.508 0 29 6.49197 29 14.5Z" fill="#FFCC4D"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M0.998888 8.87561C1.19222 9.06814 2.15728 9.64653 2.3498 10.2249C2.54314 10.8025 2.9298 14.0787 4.08819 15.0429C5.28283 16.0354 9.78911 15.6664 10.6519 15.2363C12.5828 14.2736 12.8196 11.5863 13.1612 10.2249C13.3537 9.454 14.5121 9.454 14.5121 9.454C14.5121 9.454 15.6705 9.454 15.8638 10.2241C16.2054 11.5863 16.4438 14.2736 18.3731 15.2355C19.2367 15.6664 23.7429 16.0362 24.9392 15.0437C26.096 14.0795 26.4818 10.8033 26.6752 10.2249C26.8669 9.64733 27.8336 9.06894 28.0261 8.87642C28.2202 8.68389 28.2202 7.91297 28.0261 7.71964C27.6402 7.33458 23.0848 6.99142 18.1798 7.52711C17.201 7.63425 16.8289 7.91217 14.5113 7.91217C12.1953 7.91217 11.8215 7.63344 10.8436 7.52711C5.94178 6.99061 1.38555 7.33378 0.998888 7.71883C0.80636 7.91136 0.80636 8.68308 0.998888 8.87561Z" fill="#292F33"/>
-              <path d="M22.0199 19.0345C21.8765 18.9048 21.6622 18.8967 21.5083 19.0111C21.4769 19.0345 18.349 21.3472 14.5 21.3472C10.6607 21.3472 7.52228 19.0345 7.49167 19.0111C7.33781 18.8967 7.12353 18.9064 6.98015 19.0345C6.83756 19.1634 6.80534 19.376 6.90442 19.5404C7.00834 19.7136 9.4959 23.7639 14.5 23.7639C19.5041 23.7639 21.9925 19.7136 22.0956 19.5404C22.1947 19.3752 22.1633 19.1634 22.0199 19.0345Z" fill="#664500"/>
+              <path
+                  d="M29 14.5C29 22.508 22.508 29 14.5 29C6.49197 29 0 22.508 0 14.5C0 6.49197 6.49197 0 14.5 0C22.508 0 29 6.49197 29 14.5Z"
+                  fill="#FFCC4D"/>
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0.998888 8.87561C1.19222 9.06814 2.15728 9.64653 2.3498 10.2249C2.54314 10.8025 2.9298 14.0787 4.08819 15.0429C5.28283 16.0354 9.78911 15.6664 10.6519 15.2363C12.5828 14.2736 12.8196 11.5863 13.1612 10.2249C13.3537 9.454 14.5121 9.454 14.5121 9.454C14.5121 9.454 15.6705 9.454 15.8638 10.2241C16.2054 11.5863 16.4438 14.2736 18.3731 15.2355C19.2367 15.6664 23.7429 16.0362 24.9392 15.0437C26.096 14.0795 26.4818 10.8033 26.6752 10.2249C26.8669 9.64733 27.8336 9.06894 28.0261 8.87642C28.2202 8.68389 28.2202 7.91297 28.0261 7.71964C27.6402 7.33458 23.0848 6.99142 18.1798 7.52711C17.201 7.63425 16.8289 7.91217 14.5113 7.91217C12.1953 7.91217 11.8215 7.63344 10.8436 7.52711C5.94178 6.99061 1.38555 7.33378 0.998888 7.71883C0.80636 7.91136 0.80636 8.68308 0.998888 8.87561Z"
+                    fill="#292F33"/>
+              <path
+                  d="M22.0199 19.0345C21.8765 18.9048 21.6622 18.8967 21.5083 19.0111C21.4769 19.0345 18.349 21.3472 14.5 21.3472C10.6607 21.3472 7.52228 19.0345 7.49167 19.0111C7.33781 18.8967 7.12353 18.9064 6.98015 19.0345C6.83756 19.1634 6.80534 19.376 6.90442 19.5404C7.00834 19.7136 9.4959 23.7639 14.5 23.7639C19.5041 23.7639 21.9925 19.7136 22.0956 19.5404C22.1947 19.3752 22.1633 19.1634 22.0199 19.0345Z"
+                  fill="#664500"/>
             </svg>
           </span>
         </div>
         <div class="quiz-intro__btn">
-          <a href="#" class="btn btn-orange">begin</a>
+          <a href="#" class="btn btn-orange js-intro">begin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="quiz__block" id="start">
+    <div class="container">
+      <div class="quiz-start">
+        <div class="quiz-start__preheader">Choose the continuation of the phase.</div>
+        <div class="quiz-start__header">I need to:</div>
+        <div class="quiz__answers quiz__answers--start">
+          <div class="quiz-answer">
+            <input type="radio" name="radio-start" id="rs-1" class="quiz-answer__inp">
+            <label for="rs-1" class="quiz-answer__label">enrich clients’ base</label>
+          </div>
+          <div class="quiz-answer">
+            <input type="radio" name="radio-start" id="rs-2" class="quiz-answer__inp">
+            <label for="rs-2" class="quiz-answer__label">create and send mass mailing campaign</label>
+          </div>
+          <div class="quiz-answer">
+            <input type="radio" name="radio-start" id="rs-3" class="quiz-answer__inp">
+            <label for="rs-3" class="quiz-answer__label">ensure the mailing list quality</label>
+          </div>
+          <div class="quiz-answer">
+            <input type="radio" name="radio-start" id="rs-4" class="quiz-answer__inp">
+            <label for="rs-4" class="quiz-answer__label">manage contact base automatically</label>
+          </div>
+          <div class="quiz-answer">
+            <input type="radio" name="radio-start" id="rs-5" class="quiz-answer__inp">
+            <label for="rs-5" class="quiz-answer__label">implement email marketing in my business</label>
+          </div>
+        </div>
+        <div class="quiz-navigation">
+          <a href="#" class="quiz-navigation__link quiz-navigation__link_disabled">
+            <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M0.646446 3.64645C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.976311 4.7308 0.659728 4.53553 0.464466C4.34027 0.269204 4.02369 0.269204 3.82843 0.464466L0.646446 3.64645ZM30 3.5L1 3.5V4.5L30 4.5V3.5Z"
+                  fill=""/>
+            </svg>
+          </a>
+          <div class="quiz-navigation__count">1/4</div>
+          <a href="#" class="quiz-navigation__link">
+            <svg width="30" height="8" viewBox="0 0 30 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M29.3536 3.64645C29.5488 3.84171 29.5488 4.15829 29.3536 4.35355L26.1716 7.53553C25.9763 7.7308 25.6597 7.7308 25.4645 7.53553C25.2692 7.34027 25.2692 7.02369 25.4645 6.82843L28.2929 4L25.4645 1.17157C25.2692 0.976311 25.2692 0.659728 25.4645 0.464466C25.6597 0.269204 25.9763 0.269204 26.1716 0.464466L29.3536 3.64645ZM0 3.5L29 3.5V4.5L0 4.5L0 3.5Z"
+                  fill=""/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -57,6 +112,14 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
+
+    // intro
+    $('.js-intro').click(function (e) {
+      e.preventDefault();
+      $('.quiz__block').removeClass('quiz__block_active');
+      $('.quiz__block#start').addClass('quiz__block_active');
+      $('.quiz').removeClass('quiz--blue');
+    });
 
   });
 </script>
