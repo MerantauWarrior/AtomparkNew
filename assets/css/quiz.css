@@ -11,8 +11,16 @@ body{
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
 }
-.quiz--blue{
+.quiz--blue,
+.quiz--extractor{
     background: #1062AA url('../img/quiz/quiz-bg-noise.png') center center repeat;
+}
+.quiz--hunter,
+.quiz--explorer{
+    background-color: #F8BA00;
+}
+.quiz--logger{
+    background-color: #DDF516;
 }
 .quiz__header{
     position: absolute;
@@ -26,15 +34,40 @@ body{
     flex-wrap: wrap;
     align-items: center;
 }
+.quiz__start-over{
+    display: none;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+}
+.quiz__start-over span{
+    margin-right: 8px;
+}
+.quiz__start-over svg{
+    fill: #333333;
+}
+.quiz--extractor .quiz__start-over{
+    color: #ffffff;
+}
+.quiz--extractor .quiz__start-over svg{
+    fill: #ffffff;
+}
+.quiz--final .quiz__start-over{
+    display: flex;
+}
 .quiz__logo{
     margin-left: auto;
 }
 .quiz__logo-regular,
-.quiz--blue .quiz__logo-white{
+.quiz--blue .quiz__logo-white,
+.quiz--extractor .quiz__logo-white{
     display: block;
 }
 .quiz__logo-white,
-.quiz--blue .quiz__logo-regular{
+.quiz--blue .quiz__logo-regular,
+.quiz--extractor .quiz__logo-regular{
     display: none;
 }
 .quiz__box{
@@ -246,8 +279,124 @@ body{
 .quiz__answers--start{
     margin-bottom: 57px;
 }
+/*Final block*/
+.quiz-final{
+    margin-top: 0;
+}
+.quiz-final__cta{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+}
+.quiz-final__cta span{
+    display: inline-block;
+}
+.quiz-final__title{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.quiz-final__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.quiz-final__media{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 187px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 70px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    background-color: rgba(235, 240, 255, 0.5);
+}
+.quiz-final__media > img{
+    position: relative;
+    z-index: 2;
+}
+.quiz-final__icon{
+    position: absolute;
+    top: -12px;
+    left: -29px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 86px;
+    height: 86px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.quiz-final--hunter .quiz-final__icon,
+.quiz-final--explorer .quiz-final__icon{
+    background-color: #F7B916;
+}
+.quiz-final--logger .quiz-final__icon{
+    background-color: #DDF516;
+}
+.quiz-final--extractor .quiz-final__icon{
+    background-color: #00ADEE;
+}
+.quiz-final__content{
+    width: 100%;
+    max-width: 464px;
+}
+.quiz-final__devider{
+    margin-bottom: 20px;
+}
+.quiz-final__text{
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: uppercase;
+}
+.quiz-final__text span{
+    font-weight: 500;
+}
+.quiz-final--hunter .quiz-final__text span{
+    color: #EF5237;
+}
+.quiz-final--logger .quiz-final__text span{
+    color: #389168;
+}
+.quiz-final--explorer .quiz-final__text span{
+    color: #010059;
+}
+.quiz-final--extractor .quiz-final__text span{
+    color: #00ADEE;
+}
 
 @media all and (min-width: 320px) and (max-width: 767px){
+    .quiz{
+        padding-top: 110px;
+    }
+    .quiz__box{
+        min-height: auto;
+    }
+    /*Answer*/
+    .quiz__answers{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .quiz-answer{
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .quiz-answer:last-child{
+        margin: 0;
+    }
+    /*Question*/
+    .quiz-question__title{
+        margin-bottom: 20px;
+    }
     /*Intro block*/
     .quiz-intro{
         width: 90%;
@@ -271,5 +420,9 @@ body{
         right: -20px;
         border-bottom: 6px solid #ffffff;
         border-right: 6px solid #ffffff;
+    }
+    /*start*/
+    .quiz-start__header{
+        margin-bottom: 54px;
     }
 }

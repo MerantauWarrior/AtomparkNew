@@ -8,18 +8,27 @@
   <title>Quiz</title>
   <meta name="description" content="some text">
   <meta name="keywords" content="some, text">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/ui.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/quiz.css">
 </head>
 <body>
-<!--<div class="quiz quiz--blue">-->
 <div class="quiz quiz--blue">
   <div class="quiz__header">
     <div class="container">
       <div class="quiz__header-inner">
+        <a href="#" class="quiz__start-over">
+          <span>
+            <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM15 7L1 7V9L15 9V7Z"
+                  fill=""/>
+            </svg>
+          </span>
+          start over
+        </a>
         <a href="#" class="quiz__logo">
           <img src="assets/img/quiz/quiz-logo-white.svg" alt="atompark" class="quiz__logo-white">
           <img src="assets/img/quiz/quiz-logo.svg" alt="atompark" class="quiz__logo-regular">
@@ -63,74 +72,243 @@
         <div class="quiz-start__header">I need to:</div>
         <div class="quiz__answers quiz__answers--start">
           <div class="quiz-answer">
-            <input type="radio" name="radio-start" id="rs-1" class="quiz-answer__inp" data-to="1-1" checked>
+            <input type="radio" name="radio-start" id="rs-1" class="quiz-answer__inp" data-to="1-1" data-steps="1/4"
+                   checked>
             <label for="rs-1" class="quiz-answer__label">enrich clients’ base</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-start" id="rs-2" class="quiz-answer__inp" data-to="2-1">
+            <input type="radio" name="radio-start" id="rs-2" class="quiz-answer__inp" data-to="2-1" data-steps="1/3">
             <label for="rs-2" class="quiz-answer__label">create and send mass mailing campaign</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-start" id="rs-3" class="quiz-answer__inp" data-to="3-1">
+            <input type="radio" name="radio-start" id="rs-3" class="quiz-answer__inp" data-to="3-1" data-steps="1/2">
             <label for="rs-3" class="quiz-answer__label">ensure the mailing list quality</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-start" id="rs-4" class="quiz-answer__inp" data-to="4-1">
+            <input type="radio" name="radio-start" id="rs-4" class="quiz-answer__inp" data-to="4-1" data-steps="1/2">
             <label for="rs-4" class="quiz-answer__label">manage contact base automatically</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-start" id="rs-5" class="quiz-answer__inp" data-to="5-1">
+            <input type="radio" name="radio-start" id="rs-5" class="quiz-answer__inp" data-to="5-1" data-steps="1/2">
             <label for="rs-5" class="quiz-answer__label">implement email marketing in my business</label>
           </div>
         </div>
       </div>
-      <div class="quiz__block" data-block="1" data-section="1">
+      <div class="quiz__block" data-block="1-1">
         <div class="quiz-question">
           <div class="quiz-question__title">I need to <span>enrich clients’ base</span></div>
           <div class="quiz-question__description">What type of contacts do you need?</div>
         </div>
         <div class="quiz__answers">
           <div class="quiz-answer">
-            <input type="radio" name="radio-q1-1" id="q1-1-1" class="quiz-answer__inp" data-to="1-2" checked>
+            <input type="radio" name="radio-q1-1" id="q1-1-1" class="quiz-answer__inp" data-to="1-2" data-steps="2/4"
+                   checked>
             <label for="q1-1-1" class="quiz-answer__label">email addresses</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-q1-1" id="q1-1-2" class="quiz-answer__inp" data-to="1-3">
+            <input type="radio" name="radio-q1-1" id="q1-1-2" class="quiz-answer__inp" data-to="1-3" data-steps="2/3">
             <label for="q1-1-2" class="quiz-answer__label">phone numbers</label>
           </div>
         </div>
       </div>
-      <div class="quiz__block" data-block="1" data-section="2">
+      <div class="quiz__block" data-block="1-2">
         <div class="quiz-question">
           <div class="quiz-question__title">I need to <span>enrich clients’ base</span></div>
           <div class="quiz-question__description">From what resources do you need contacts?</div>
         </div>
         <div class="quiz__answers">
           <div class="quiz-answer">
-            <input type="radio" name="radio-q1-2" id="q1-2-1" class="quiz-answer__inp" data-to="1-4" checked>
+            <input type="radio" name="radio-q1-2" id="q1-2-1" class="quiz-answer__inp" data-to="1-4" data-steps="3/4"
+                   checked>
             <label for="q1-2-1" class="quiz-answer__label">the World Wide Web</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-q1-2" id="q1-2-2" class="quiz-answer__inp" data-to="1-5">
+            <input type="radio" name="radio-q1-2" id="q1-2-2" class="quiz-answer__inp" data-to="1-5" data-steps="3/4">
             <label for="q1-2-2" class="quiz-answer__label">my PC</label>
           </div>
           <div class="quiz-answer">
-            <input type="radio" name="radio-q1-2" id="q1-2-3" class="quiz-answer__inp" data-to="1-6">
+            <input type="radio" name="radio-q1-2" id="q1-2-3" class="quiz-answer__inp" data-to="1-6" data-steps="3/4">
             <label for="q1-2-3" class="quiz-answer__label">I need domains’ owners’ email addresses</label>
           </div>
         </div>
       </div>
-      <div class="quiz__block" data-block="1" data-section="3">
-        Atomic Lead Extractor
+      <div class="quiz__block quiz-final quiz-final--extractor" data-block="1-3">
+        <div class="quiz-final__cta">
+          You need
+          <span>
+            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+             <path
+                 d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.976311 12.2692 0.659728 12.2692 0.464466 12.4645C0.269204 12.6597 0.269204 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 0L3.5 16H4.5L4.5 0L3.5 0Z"
+                 fill="#00ADEE"/>
+            </svg>
+          </span>
+        </div>
+        <h2 class="quiz-final__title">Atomic Lead Extractor</h2>
+        <div class="quiz-final__row">
+          <div class="quiz-final__media">
+            <div class="quiz-final__icon"><img src="assets/img/quiz/extractor-icon.svg" alt="text"></div>
+            <img src="assets/img/quiz/extractor.png" alt="text">
+          </div>
+          <div class="quiz-final__content">
+            <div class="quiz-final__devider"><img src="assets/img/quiz/extractor-devider.png" alt="--------------"></div>
+            <div class="quiz-final__text">This guy can find phone numbers, Skype contacts and email addresses <span>according to your keywords and needs.</span>
+            </div>
+            <div class="quiz-final__btn">
+              <a href="#" class="btn btn-black-filled">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14" stroke="#F7B916" stroke-width="2"/>
+                  <path
+                      d="M14.2929 21.7071C14.6834 22.0976 15.3166 22.0976 15.7071 21.7071L22.0711 15.3431C22.4616 14.9526 22.4616 14.3195 22.0711 13.9289C21.6805 13.5384 21.0474 13.5384 20.6569 13.9289L15 19.5858L9.34315 13.9289C8.95262 13.5384 8.31946 13.5384 7.92893 13.9289C7.53841 14.3195 7.53841 14.9526 7.92893 15.3431L14.2929 21.7071ZM14 8L14 21L16 21L16 8L14 8Z"
+                      fill="#F7B916"/>
+                </svg>
+                <span>FREE DOWNLOAD</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="quiz__block" data-block="1" data-section="4">
-        Atomic Mail Hunter!
+      <div class="quiz__block quiz-final quiz-final--hunter" data-block="1-4">
+        <div class="quiz-final__cta">
+          You need
+          <span>
+            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.976311 12.2692 0.659728 12.2692 0.464466 12.4645C0.269204 12.6597 0.269204 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 0L3.5 16H4.5L4.5 0L3.5 0Z"
+                  fill="#F7B916"/>
+            </svg>
+          </span>
+        </div>
+        <h2 class="quiz-final__title">Atomic Mail Hunter!</h2>
+        <div class="quiz-final__row">
+          <div class="quiz-final__media">
+            <div class="quiz-final__icon"><img src="assets/img/quiz/hunter-icon.svg" alt="text"></div>
+            <img src="assets/img/quiz/hunter.png" alt="text">
+          </div>
+          <div class="quiz-final__content">
+            <div class="quiz-final__devider"><img src="assets/img/quiz/hunter-devider.png" alt="--------------"></div>
+            <div class="quiz-final__text">It will help you <span>find email addresses</span> according to the needs and
+              characteristics of the business sphere. Just choose keywords and websites where <span>Atomic Mail Hunter gathers
+              email addresses.</span>
+            </div>
+            <div class="quiz-final__btn">
+              <a href="#" class="btn btn-black-filled">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14" stroke="#F7B916" stroke-width="2"/>
+                  <path
+                      d="M14.2929 21.7071C14.6834 22.0976 15.3166 22.0976 15.7071 21.7071L22.0711 15.3431C22.4616 14.9526 22.4616 14.3195 22.0711 13.9289C21.6805 13.5384 21.0474 13.5384 20.6569 13.9289L15 19.5858L9.34315 13.9289C8.95262 13.5384 8.31946 13.5384 7.92893 13.9289C7.53841 14.3195 7.53841 14.9526 7.92893 15.3431L14.2929 21.7071ZM14 8L14 21L16 21L16 8L14 8Z"
+                      fill="#F7B916"/>
+                </svg>
+                <span>FREE DOWNLOAD</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="quiz__block" data-block="1" data-section="5">
-        Atomic Email Logger
+      <div class="quiz__block quiz-final quiz-final--logger" data-block="1-5">
+        <div class="quiz-final__cta">
+          You need
+          <span>
+            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.976311 12.2692 0.659728 12.2692 0.464466 12.4645C0.269204 12.6597 0.269204 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 0L3.5 16H4.5L4.5 0L3.5 0Z"
+                  fill="#F7B916"/>
+            </svg>
+          </span>
+        </div>
+        <h2 class="quiz-final__title">Atomic Email Logger</h2>
+        <div class="quiz-final__row">
+          <div class="quiz-final__media">
+            <div class="quiz-final__icon"><img src="assets/img/quiz/logger-icon.svg" alt="text"></div>
+            <img src="assets/img/quiz/logger.png" alt="text">
+          </div>
+          <div class="quiz-final__content">
+            <div class="quiz-final__devider"><img src="assets/img/quiz/logger-devider.png" alt="--------------"></div>
+            <div class="quiz-final__text">It <span>extracts emails from local files</span> on your PC and your Mailbox.
+              Be sure you
+              will get emails of warm leads on your computer.
+            </div>
+            <div class="quiz-final__btn">
+              <a href="#" class="btn btn-black-filled">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14" stroke="#F7B916" stroke-width="2"/>
+                  <path
+                      d="M14.2929 21.7071C14.6834 22.0976 15.3166 22.0976 15.7071 21.7071L22.0711 15.3431C22.4616 14.9526 22.4616 14.3195 22.0711 13.9289C21.6805 13.5384 21.0474 13.5384 20.6569 13.9289L15 19.5858L9.34315 13.9289C8.95262 13.5384 8.31946 13.5384 7.92893 13.9289C7.53841 14.3195 7.53841 14.9526 7.92893 15.3431L14.2929 21.7071ZM14 8L14 21L16 21L16 8L14 8Z"
+                      fill="#F7B916"/>
+                </svg>
+                <span>FREE DOWNLOAD</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="quiz__block" data-block="1" data-section="6">
-        Atomic Whois Explorer
+      <div class="quiz__block quiz-final quiz-final--explorer" data-block="1-6">
+        <div class="quiz-final__cta">
+          You need
+          <span>
+            <svg width="8" height="17" viewBox="0 0 8 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M3.64645 16.3536C3.84171 16.5488 4.15829 16.5488 4.35355 16.3536L7.53553 13.1716C7.7308 12.9763 7.7308 12.6597 7.53553 12.4645C7.34027 12.2692 7.02369 12.2692 6.82843 12.4645L4 15.2929L1.17157 12.4645C0.976311 12.2692 0.659728 12.2692 0.464466 12.4645C0.269204 12.6597 0.269204 12.9763 0.464466 13.1716L3.64645 16.3536ZM3.5 0L3.5 16H4.5L4.5 0L3.5 0Z"
+                  fill="#F7B916"/>
+            </svg>
+          </span>
+        </div>
+        <h2 class="quiz-final__title">Atomic Whois Explorer</h2>
+        <div class="quiz-final__row">
+          <div class="quiz-final__media">
+            <div class="quiz-final__icon"><img src="assets/img/quiz/explorer-icon.svg" alt="text"></div>
+            <img src="assets/img/quiz/explorer.png" alt="text">
+          </div>
+          <div class="quiz-final__content">
+            <div class="quiz-final__devider"><img src="assets/img/quiz/explorer-devider.png" alt="--------------"></div>
+            <div class="quiz-final__text">It finds <span>needed emails for some minutes</span> from the Whois database.
+              Using this
+              program provides you with information about Domains’ owners.
+            </div>
+            <div class="quiz-final__btn">
+              <a href="#" class="btn btn-black-filled">
+                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="15" cy="15" r="14" stroke="#F7B916" stroke-width="2"/>
+                  <path
+                      d="M14.2929 21.7071C14.6834 22.0976 15.3166 22.0976 15.7071 21.7071L22.0711 15.3431C22.4616 14.9526 22.4616 14.3195 22.0711 13.9289C21.6805 13.5384 21.0474 13.5384 20.6569 13.9289L15 19.5858L9.34315 13.9289C8.95262 13.5384 8.31946 13.5384 7.92893 13.9289C7.53841 14.3195 7.53841 14.9526 7.92893 15.3431L14.2929 21.7071ZM14 8L14 21L16 21L16 8L14 8Z"
+                      fill="#F7B916"/>
+                </svg>
+                <span>FREE DOWNLOAD</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="quiz__block" data-block="2-1">
+        <div class="quiz-question">
+          <div class="quiz-question__title">I need to <span>create and send mass mailing campaign</span></div>
+          <div class="quiz-question__description">Do you have a mailing base?</div>
+        </div>
+        <div class="quiz__answers">
+          <div class="quiz-answer">
+            <input type="radio" name="radio-q2" id="q2-1" class="quiz-answer__inp" data-to="2-2" data-steps="2/3"
+                   checked>
+            <label for="q2-1" class="quiz-answer__label">Yes</label>
+          </div>
+          <div class="quiz-answer">
+            <input type="radio" name="radio-q2" id="q2-2" class="quiz-answer__inp" data-to="2-3" data-steps="2/3">
+            <label for="q2-2" class="quiz-answer__label">No</label>
+          </div>
+        </div>
+      </div>
+      <div class="quiz__block quiz-final" data-block="2-2">
+        Atomic Mail Sender
+      </div>
+      <div class="quiz__block quiz-final" data-block="2-3">
+        Atomic Email Hunter --- Atomic Mail Sender
+      </div>
+      <div class="quiz__block quiz-final" data-block="3-1">
+        Atomic Mail Verifier
+      </div>
+      <div class="quiz__block quiz-final" data-block="4-1">
+        Atomic List Manager
+      </div>
+      <div class="quiz__block quiz-final" data-block="5-1">
+        Atomic Mail Studio
       </div>
 
       <div class="quiz-navigation">
@@ -167,20 +345,51 @@
       $('.quiz').removeClass('quiz--blue');
     });
 
+    $('.quiz__start-over').click(function (e) {
+      e.preventDefault();
+      $('.quiz__box').addClass('quiz__box_hidden quiz__box--no-style');
+      $('.quiz__block').removeClass('quiz__block_active');
+      $('.quiz-intro').addClass('quiz__block_active');
+      $('.quiz').attr('class', 'quiz quiz--blue');
+      $('.quiz-navigation__count').text($('.quiz-answer__inp:checked').data('steps'));
+      $('.quiz-navigation').show();
+    });
 
     var to, back;
+    $('.quiz-navigation__count').text($('.quiz-answer__inp:checked').data('steps'));
     $('.quiz-answer__inp').on('change', function () {
+      $('.quiz-navigation__count').text($(this).data('steps'));
     });
     $('.js-prev, .js-next').click(function (e) {
       e.preventDefault();
-      if($('.quiz-start').hasClass('quiz__block_active')){
+      to = $('.quiz__block_active').find('.quiz-answer__inp:checked').data('to');
+      if ($('.quiz-start').hasClass('quiz__block_active')) {
         $('.quiz__box').removeClass('quiz__box--no-style');
       }
-      to = $('.quiz__block_active').find('.quiz-answer__inp:checked').data('to').toString().split('-');
       $('.quiz__block').removeClass('quiz__block_active');
-      $('[data-block="'+to[0]+'"][data-section="'+to[1]+'"]').addClass('quiz__block_active');
+      $('[data-block="' + to + '"]').addClass('quiz__block_active');
+      $('.quiz-navigation__count').text($('.quiz__block_active').find('.quiz-answer__inp:checked').data('steps'));
+      if (!$('.quiz__block_active').hasClass('quiz-start')) {
+        $('.quiz').addClass('quiz--blue');
+      }
+      if ($('.quiz-final').hasClass('quiz__block_active')) {
+        $('.quiz').removeClass('quiz--blue');
+        $('.quiz').addClass('quiz--final');
+        if (to === '1-3') {
+          $('.quiz').addClass('quiz--extractor');
+        }
+        if (to === '1-4') {
+          $('.quiz').addClass('quiz--hunter');
+        }
+        if (to === '1-5') {
+          $('.quiz').addClass('quiz--logger');
+        }
+        if (to === '1-6') {
+          $('.quiz').addClass('quiz--explorer');
+        }
+        $('.quiz-navigation').hide();
+      }
     });
-    
 
   });
 </script>
