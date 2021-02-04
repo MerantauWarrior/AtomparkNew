@@ -20,7 +20,7 @@ body{
     background-color: #F8BA00;
 }
 .quiz--logger{
-    background-color: #DDF516;
+    background-color: #389168;
 }
 .quiz--sender{
     background-color: #4AE4E4;
@@ -61,10 +61,12 @@ body{
     fill: #333333;
 }
 .quiz--extractor .quiz__start-over,
+.quiz--logger .quiz__start-over,
 .quiz--verifier .quiz__start-over{
     color: #ffffff;
 }
 .quiz--extractor .quiz__start-over svg,
+.quiz--logger .quiz__start-over svg,
 .quiz--verifier .quiz__start-over svg{
     fill: #ffffff;
 }
@@ -76,11 +78,13 @@ body{
 }
 .quiz__logo-regular,
 .quiz--blue .quiz__logo-white,
+.quiz--logger .quiz__logo-white,
 .quiz--extractor .quiz__logo-white{
     display: block;
 }
 .quiz__logo-white,
 .quiz--blue .quiz__logo-regular,
+.quiz--logger .quiz__logo-regular,
 .quiz--extractor .quiz__logo-regular{
     display: none;
 }
