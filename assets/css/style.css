@@ -818,10 +818,10 @@
     width: 100%;
     max-width: 434px;
 }
-.cta-blue h2{
-    text-align: left;
+.cta-blue__title{
+    text-align: left !important;
 }
-.cta-blue h2 span{
+.cta-blue__title span{
     color: #1062AA;
 }
 .cta-blue__only-btn{
@@ -1421,8 +1421,8 @@
         padding: 60px 0;
         text-align: center;
     }
-    .cta-blue h2{
-        text-align: center;
+    .cta-blue__title{
+        text-align: center !important;
     }
     .cta-blue__img{
         margin-bottom: 30px;
