@@ -1114,6 +1114,10 @@
     font-size: 16px;
     line-height: 26px;
 }
+/*seo-text*/
+.seo-text h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
 
 @media all and (min-width: 768px){
     /*header*/

@@ -1074,6 +1074,10 @@ h2, h3,
     margin-top: auto;
     z-index: 9;
 }
+/*seo-text-home*/
+.seo-text-home{
+    padding-bottom: 120px;
+}
 /*lets start*/
 .letsstart__inner{
     display: flex;
@@ -1641,6 +1645,10 @@ h2, h3,
     .bestsellers-item{
         margin: 0;
         padding: 15px;
+    }
+    /*seo-text-home*/
+    .seo-text-home{
+        padding-bottom: 60px;
     }
     /*lets start*/
     .letsstart__inner{
