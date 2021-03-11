@@ -189,15 +189,15 @@ button:disabled{
     width: 122px;
 }
 .btn-submit{
-    background-color: #1062AA;
+    background: #1062AA;
     color: #FFFFFF;
 }
 .btn-submit:hover{
     color: #333333;
-    background-color: #FFE735;
+    background: #FFE735;
 }
 .btn-submit:disabled{
-    background-color: #E8EBF2;
+    background: #E8EBF2;
     color: #333333;
 }
 .btn-black{
