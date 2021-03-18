@@ -1,0 +1,45 @@
+.container-checkout{
+    width: 100%;
+    max-width: 945px;
+}
+.admin-header{
+    padding: 10px 20px 0 20px;
+}
+.admin-header .logo {
+    float: none;
+    margin: 0;
+}
+.admin-user-info {
+    margin-left: auto;
+    font-size: 14px;
+    color: #777;
+}
+.admin-user-info a {
+    text-decoration: underline;
+}
+.admin-footer {
+    width: 100%;
+    margin-top: auto;
+    padding: 45px 0 32px 0;
+    background-color: #1062AA;
+    font-size: 12px;
+}
+.admin-ftr-top {
+    height: auto;
+    padding: 15px 20px 15px 30px;
+    background: #008bbf;
+    color: #fff;
+    overflow: hidden;
+}
+.admin-ftr-bottom {
+    height: 24px;
+    overflow: hidden;
+    padding: 13px 0 17px 0;
+    text-align: center;
+}
+.admin-ftr-bottom .copyright {
+    display: inline;
+    padding: 5px 20px 0 10px;
+    margin: 0;
+    color: #777;
+}

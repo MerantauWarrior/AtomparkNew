@@ -5,7 +5,7 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Checkout</title>
+  <title>atompark-checkout</title>
   <meta name="description" content="some text">
   <meta name="keywords" content="some, text">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -39,7 +39,7 @@
             Cart
             <span class="header-buy-cart__price">($101,99)</span>
           </a>
-          <a href="#" class="header-buy-navigation__link header-buy-navigation__link_active" title="Checkout">Checkout</a>
+          <a href="#" class="header-buy-navigation__link header-buy-navigation__link_active" title="atompark-checkout">atompark-checkout</a>
         </nav>
         <a href="#" class="header-buy-action">
           <img src="assets/img/buy/header-support.svg" alt="support">
@@ -50,16 +50,16 @@
   </header>
   <main>
 
-    <section class="checkout">
+    <section class="atompark-checkout">
       <div class="container-md">
-        <h2 class="checkout__title">Checkout</h2>
+        <h2 class="atompark-checkout__title">Checkout</h2>
         <form method="get">
-          <div class="checkout__cols">
-            <div class="checkout__col">
-              <div class="checkout__fields">
-                <div class="checkout-small-title">Payment Information:</div>
-                <div class="checkout__field">
-                  <label for="pay" class="checkout-label">Выберите способ оплаты*</label>
+          <div class="atompark-checkout__cols">
+            <div class="atompark-checkout__col">
+              <div class="atompark-checkout__fields">
+                <div class="atompark-checkout-small-title">Payment Information:</div>
+                <div class="atompark-checkout__field">
+                  <label for="pay" class="atompark-checkout-label">Выберите способ оплаты*</label>
                   <div class="select select-currency">
                     <select name="pay" id="pay" required>
                       <option value="0" selected>Выберите способ оплаты</option>
@@ -74,61 +74,61 @@
                   </div>
                 </div>
               </div>
-              <div class="checkout__fields">
-                <div class="checkout-small-title">Contact Information:</div>
-                <div class="checkout__field">
-                  <label for="mail" class="checkout-label">Email (на этот email будет отправлен ключ активации)*</label>
-                  <input type="email" name="mail" id="mail" class="checkout-inp" placeholder="user@gmail.com" required>
+              <div class="atompark-checkout__fields">
+                <div class="atompark-checkout-small-title">Contact Information:</div>
+                <div class="atompark-checkout__field">
+                  <label for="mail" class="atompark-checkout-label">Email (на этот email будет отправлен ключ активации)*</label>
+                  <input type="email" name="mail" id="mail" class="atompark-checkout-inp" placeholder="user@gmail.com" required>
                   <span class="inp-error-msg">Please enter a valid email address</span>
                 </div>
-                <div class="checkout__field">
-                  <label for="name" class="checkout-label">Name*</label>
-                  <input type="text" name="name" id="name" class="checkout-inp" placeholder="User 2020" required>
+                <div class="atompark-checkout__field">
+                  <label for="name" class="atompark-checkout-label">Name*</label>
+                  <input type="text" name="name" id="name" class="atompark-checkout-inp" placeholder="User 2020" required>
                   <span class="inp-error-msg">Please enter a valid name</span>
                 </div>
-                <div class="checkout__field">
-                  <label for="tel" class="checkout-label">Phone*</label>
-                  <input type="tel" name="tel" id="tel" class="checkout-inp" placeholder="+31 20 241 8700" required>
+                <div class="atompark-checkout__field">
+                  <label for="tel" class="atompark-checkout-label">Phone*</label>
+                  <input type="tel" name="tel" id="tel" class="atompark-checkout-inp" placeholder="+31 20 241 8700" required>
                   <span class="inp-error-msg">Please enter a valid phone</span>
                 </div>
-                <div class="checkout__optional-fields"></div>
+                <div class="atompark-checkout__optional-fields"></div>
               </div>
             </div>
-            <div class="checkout__col">
-              <div class="checkout-summary">
-                <div class="checkout-summary__top">
-                  <div class="checkout-small-title">Contact Information:</div>
-                  <a href="#" class="checkout-link">View cart</a>
+            <div class="atompark-checkout__col">
+              <div class="atompark-checkout-summary">
+                <div class="atompark-checkout-summary__top">
+                  <div class="atompark-checkout-small-title">Contact Information:</div>
+                  <a href="#" class="atompark-checkout-link">View cart</a>
                 </div>
-                <div class="checkout-summary__products">
-                  <div class="checkout-summary__product">
-                    <div class="checkout-summary-text">Atomic Email Studio (1 PC)</div>
-                    <div class="checkout-summary-price">$ 39,99</div>
+                <div class="atompark-checkout-summary__products">
+                  <div class="atompark-checkout-summary__product">
+                    <div class="atompark-checkout-summary-text">Atomic Email Studio (1 PC)</div>
+                    <div class="atompark-checkout-summary-price">$ 39,99</div>
                   </div>
-                  <div class="checkout-summary__product">
-                    <div class="checkout-summary-text">Atomic Lead Extractor</div>
-                    <div class="checkout-summary-price">$ 19,99</div>
+                  <div class="atompark-checkout-summary__product">
+                    <div class="atompark-checkout-summary-text">Atomic Lead Extractor</div>
+                    <div class="atompark-checkout-summary-price">$ 19,99</div>
                   </div>
                 </div>
-                <div class="checkout-summary__total">
-                  <div class="checkout-small-title">Order total</div>
-                  <div class="checkout-summary-price checkout-summary__total-price">$ 58,00</div>
+                <div class="atompark-checkout-summary__total">
+                  <div class="atompark-checkout-small-title">Order total</div>
+                  <div class="atompark-checkout-summary-price atompark-checkout-summary__total-price">$ 58,00</div>
                 </div>
-                <div class="checkout-summary__promo">
-                  <div class="checkout-summary-text">Do you have a promocode?</div>
-                  <a href="#" class="checkout-link js-promo">Click here</a>
-                  <div class="checkout-summary__promo-box">
-                    <input type="text" name="promo" id="promo" class="checkout-summary__promo-inp" placeholder="Enter promocode">
-                    <button class="checkout-summary__promo-btn" type="button">apply</button>
+                <div class="atompark-checkout-summary__promo">
+                  <div class="atompark-checkout-summary-text">Do you have a promocode?</div>
+                  <a href="#" class="atompark-checkout-link js-promo">Click here</a>
+                  <div class="atompark-checkout-summary__promo-box">
+                    <input type="text" name="promo" id="promo" class="atompark-checkout-summary__promo-inp" placeholder="Enter promocode">
+                    <button class="atompark-checkout-summary__promo-btn" type="button">apply</button>
                   </div>
                 </div>
               </div>
-              <div class="checkout__help">
-                <div class="checkout-small-title">Need help? </div>
-                <div>Contact us: <a href="#" class="checkout-link">Live Chat</a> or <a href="tel:0 800 21-01-91" class="checkout-link">0 800 21-01-91</a></div>
+              <div class="atompark-checkout__help">
+                <div class="atompark-checkout-small-title">Need help? </div>
+                <div>Contact us: <a href="#" class="atompark-checkout-link">Live Chat</a> or <a href="tel:0 800 21-01-91" class="atompark-checkout-link">0 800 21-01-91</a></div>
               </div>
             </div>
-            <div class="checkout__submit">
+            <div class="atompark-checkout__submit">
               <button class="btn btn-submit" type="submit" disabled>Make payment</button>
             </div>
           </div>
@@ -199,20 +199,20 @@
 //Promocode show
     $('.js-promo').click(function (e) {
       e.preventDefault();
-      $('.checkout-summary__promo-box').siblings().remove();
-      $('.checkout-summary__promo-box').show();
+      $('.atompark-checkout-summary__promo-box').siblings().remove();
+      $('.atompark-checkout-summary__promo-box').show();
     });
 
 //Promocode pending
-    $('.checkout-summary__promo-btn').click(function () {
-      var pVal = $('.checkout-summary__promo-inp').val();
+    $('.atompark-checkout-summary__promo-btn').click(function () {
+      var pVal = $('.atompark-checkout-summary__promo-inp').val();
       if(pVal.length !== 0){
-        $('.checkout-summary__promo-inp').addClass('pending');
-        $('.checkout-summary__promo-inp').attr('disabled', true);
+        $('.atompark-checkout-summary__promo-inp').addClass('pending');
+        $('.atompark-checkout-summary__promo-inp').attr('disabled', true);
         $(this).attr('disabled', true);
       }else {
-        $('.checkout-summary__promo-inp').removeClass('pending')
-        $('.checkout-summary__promo-inp').attr('disabled', false);
+        $('.atompark-checkout-summary__promo-inp').removeClass('pending')
+        $('.atompark-checkout-summary__promo-inp').attr('disabled', false);
         $(this).attr('disabled', false);
       }
     });
@@ -226,30 +226,30 @@
         return $.trim($(this).val()).length == 0;
       }).length;
       if(allReq === 0){
-        $('.checkout__submit button').attr('disabled', false);
+        $('.atompark-checkout__submit button').attr('disabled', false);
       }else {
-        $('.checkout__submit button').attr('disabled', true);
+        $('.atompark-checkout__submit button').attr('disabled', true);
       }
     })
 
 //Optional fields after payment method checking
-    var fields = '<div class="checkout__field">\n' +
-      '                  <label for="tel" class="checkout-label">Address*</label>\n' +
-      '                  <input type="text" name="Address" id="Address" class="checkout-inp" placeholder="" required>\n' +
+    var fields = '<div class="atompark-checkout__field">\n' +
+      '                  <label for="tel" class="atompark-checkout-label">Address*</label>\n' +
+      '                  <input type="text" name="Address" id="Address" class="atompark-checkout-inp" placeholder="" required>\n' +
       '                  <span class="inp-error-msg">Please enter a valid ADdress</span>' +
       '                </div>' +
-      '<div class="checkout__field">\n' +
-      '                  <label for="tel" class="checkout-label">City*</label>\n' +
-      '                  <input type="text" name="City" id="City" class="checkout-inp" placeholder="" required>\n' +
+      '<div class="atompark-checkout__field">\n' +
+      '                  <label for="tel" class="atompark-checkout-label">City*</label>\n' +
+      '                  <input type="text" name="City" id="City" class="atompark-checkout-inp" placeholder="" required>\n' +
       '                  <span class="inp-error-msg">Please enter a valid City</span>' +
       '                </div>';
     $('.select-items div').on('click', function () {
       var curVal = $(this).data('val');
       if(curVal !== 1){
-        $('.checkout__optional-fields').children().remove();
-        $('.checkout__optional-fields').append(fields);
+        $('.atompark-checkout__optional-fields').children().remove();
+        $('.atompark-checkout__optional-fields').append(fields);
       }else {
-        $('.checkout__optional-fields').children().remove();
+        $('.atompark-checkout__optional-fields').children().remove();
       }
     })
 
