@@ -55,6 +55,7 @@
 .software-product__top{
     display: flex;
     align-items: center;
+    width: 100%;
     margin-bottom: 20px;
 }
 .software-product__icon{

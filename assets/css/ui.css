@@ -82,11 +82,6 @@ a{
     color: #1062AA;
     text-decoration: none;
 }
-button, input, textarea, select{
-    padding: 0;
-    outline: none;
-    border: none;
-}
 a, svg, button{
     text-decoration: none;
     -webkit-transition: all 0.25s;

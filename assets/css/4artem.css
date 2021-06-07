@@ -43,3 +43,235 @@
     margin: 0;
     color: #777;
 }
+
+
+/*checkout addons*/
+.atompark-checkout{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #333333;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+.atompark-checkout .container-md {
+    max-width: 975px;
+}
+.atompark-checkout .container, .atompark-checkout .container-md {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.atompark-checkout *, .atompark-checkout *:after, .atompark-checkout *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.atompark-checkout a{
+    color: #1062AA;
+    text-decoration: none;
+}
+button, input, textarea, select{
+    padding: 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.atompark-checkout-btn{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    height: 50px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #FFE735;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.atompark-checkout-btn:hover{
+    color: #ffffff;
+    background-color: #1062AA;
+}
+.atompark-checkout-btn:disabled{
+    cursor: default;
+}
+.atompark-checkout-btn-submit{
+    background: #1062AA;
+    color: #FFFFFF;
+}
+.atompark-checkout-btn-submit:hover{
+    color: #333333;
+    background: #FFE735;
+}
+.atompark-checkout-btn-submit:disabled{
+    background: #E8EBF2;
+    color: #333333;
+}
+.atompark-checkout .has-error{
+    border: 1px solid #EF5237 !important;
+}
+.atompark-checkout*, .atompark-checkout *:after, .atompark-checkout *:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+main{
+    display: block;
+}
+.atompark-checkout .inp-error-msg{
+    display: none;
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 16px;
+    color: #EF5237;
+}
+.atompark-checkout .has-error + .inp-error-msg{
+    display: block;
+}
+.atompark-checkout button, .atompark-checkout input, .atompark-checkout textarea, .atompark-checkout a, .atompark-checkout div{
+    outline: none;
+}
+.atompark-checkout input[type="checkbox"],
+.atompark-checkout input[type="radio"],
+.atompark-checkout input[type="file"]{
+    display: none;
+}
+.atompark-checkout .h1, .atompark-checkout .h2, .atompark-checkout .h3, .atompark-checkout .h4, .atompark-checkout .h5, .atompark-checkout .h6{
+    font-weight: 700;
+}
+.atompark-checkout h1, .atompark-checkout h2, .atompark-checkout h3, .atompark-checkout h4, .atompark-checkout h5, .atompark-checkout h6,.atompark-checkout p, .atompark-checkout pre{
+    margin: 0;
+}
+.atompark-checkout h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+    line-height: 44px;
+}
+.atompark-checkout h1, .atompark-checkout h2, .atompark-checkout h3, .atompark-checkout h4,
+.atompark-checkout .h1, .atompark-checkout .h2, .atompark-checkout .h3, .atompark-checkout .h4{
+    font-family: 'Montserrat', sans-serif;
+}
+.atompark-checkout h5, .atompark-checkout h6,
+.atompark-checkout .h5, .atompark-checkout .h6{
+    font-family: 'Roboto', sans-serif;
+}
+.atompark-checkout h1,
+.atompark-checkout .h1{
+    font-size: 64px;
+    line-height: 78px;
+}
+.atompark-checkout h2,
+.atompark-checkout .h2{
+    font-size: 36px;
+    line-height: 44px;
+}
+.atompark-checkout h3,
+.atompark-checkout .h3{
+    font-size: 30px;
+    line-height: 37px;
+}
+.atompark-checkout h4,
+.atompark-checkout .h4{
+    font-size: 24px;
+    line-height: 29px;
+}
+.atompark-checkout h6,
+.atompark-checkout .h6{
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.atompark-checkout .select{
+    position: relative;
+    width: 100%;
+}
+.atompark-checkout .select select{
+    display: none;
+}
+.atompark-checkout .select-currency .select-selected{
+    width: 100%;
+    height: 40px;
+    line-height: 38px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #81859C;
+    color: #333333;
+    background-color: #fff;
+}
+.atompark-checkout .select-currency .select-selected.select-arrow-active{
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: none;
+}
+.atompark-checkout .select-currency .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 50%;
+    right: 17px;
+    width: 10px;
+    height: 6px;
+    margin-top: -3px;
+    background: url("../img/general/select-arrow.svg") no-repeat 50% 50%;
+    background-size: contain;
+}
+.atompark-checkout .select-currency .select-selected.select-arrow-active:after {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.atompark-checkout .select-currency .select-items div, .select-selected{
+    display: flex;
+    align-items: center;
+    padding: 0 17px;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+    user-select: none;
+}
+.atompark-checkout .select-currency .select-items div{
+    height: 40px;
+    border-top: 1px solid rgba(129, 133, 156, 0.5);
+    line-height: 39px;
+    color: #333333;
+}
+.atompark-checkout .select-currency .select-items div.same-as-selected{
+    background-color: rgba(129, 133, 156, 0.3);
+    cursor: default;
+}
+.atompark-checkout .select-currency .select-items div span, .select-selected span{
+    width: 50%;
+    margin-left: auto;
+}
+.atompark-checkout .select-currency .select-items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #81859C;
+    box-sizing: border-box;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    z-index: 999;
+}
+.atompark-checkout .select-currency .select-arrow-active + .select-items{
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.atompark-checkout .select-hide{
+    display: none;
+}
+.atompark-checkout .select-currency .select-items div:not(.same-as-selected):hover{
+    background-color: rgba(129, 133, 156, 0.3);
+}

@@ -259,6 +259,44 @@
     line-height: 19px;
 }
 
+/*shit code*/
+.atompark-checkout-btn{
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 263px;
+    height: 50px;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    border-radius: 45px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #FFE735;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.atompark-checkout-btn:hover{
+    color: #ffffff;
+    background-color: #1062AA;
+}
+.atompark-checkout-btn:disabled{
+    cursor: default;
+}
+.atompark-checkout-btn-submit{
+    background: #1062AA;
+    color: #FFFFFF;
+}
+.atompark-checkout-btn-submit:hover{
+    color: #333333;
+    background: #FFE735;
+}
+.atompark-checkout-btn-submit:disabled{
+    background: #E8EBF2;
+    color: #333333;
+}
 
 /*Responsive*/
 @media all and (min-width: 320px) and (max-width: 767px) {
