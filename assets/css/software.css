@@ -140,7 +140,7 @@
     line-height: 16px;
     color: #1062AA;
 }
-.software-product__atompark-buy-btn{
+.software-product__buy-btn{
     margin-top: 30px;
 }
 .software-product__actions-timer{
@@ -299,7 +299,7 @@
         font-size: 18px;
         line-height: 21px;
     }
-    .software-product__atompark-buy-btn{
+    .software-product__buy-btn{
         margin: 19px auto 0 auto;
     }
     .software-product__actions{
