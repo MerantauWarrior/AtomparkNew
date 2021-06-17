@@ -1,5 +1,5 @@
 /*to basket*/
-.to-basket{
+.atompark-to-basket{
     position: fixed;
     top: 50%;
     right: 0;
@@ -18,7 +18,7 @@
     -o-transform: translate(0, -50%);
     transform: translate(0, -50%);
 }
-.to-basket__icon{
+.atompark-to-basket__icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,16 +31,16 @@
     -moz-border-radius: 12px 0 12px 12px;
     border-radius: 12px 0 12px 12px;
 }
-.to-basket__qty{
+.atompark-to-basket__qty{
     margin-bottom: -10px;
     font-size: 16px;
     line-height: 19px;
     color: #F7B916;
 }
-.to-basket__icon svg{
+.atompark-to-basket__icon svg{
     fill: #FFFFFF;
 }
-.to-basket__text{
+.atompark-to-basket__text{
     max-width: 155px;
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
@@ -49,7 +49,7 @@
     line-height: 17px;
     color: #333333;
 }
-.to-basket__text-hover{
+.atompark-to-basket__text-hover{
     display: none;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -59,17 +59,17 @@
     text-transform: uppercase;
     color: #FFFFFF;
 }
-.to-basket:hover{
+.atompark-to-basket:hover{
     background-color: #1062AA;
 }
-.to-basket:hover .to-basket__text{
+.atompark-to-basket:hover .atompark-to-basket__text{
     display: none;
 }
-.to-basket:hover .to-basket__text-hover{
+.atompark-to-basket:hover .atompark-to-basket__text-hover{
     display: block;
 }
 /*buy bar*/
-.buy-bar{
+.atompark-buy-bar{
     position: fixed;
     width: 100%;
     bottom: 0;
@@ -77,19 +77,19 @@
     padding: 37px 0;
     background-color: #F5F7FF;
 }
-.buy-bar__inner{
+.atompark-buy-bar__inner{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
 }
-.buy-bar__price{
+.atompark-buy-bar__price{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin: 0 83px;
 }
-.buy-bar__old-price{
+.atompark-buy-bar__old-price{
     margin-right: 18px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -98,24 +98,24 @@
     -webkit-text-decoration-line: line-through;
     text-decoration-line: line-through;
 }
-.buy-bar__current-price{
+.atompark-buy-bar__current-price{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     line-height: 29px;
     font-weight: 700;
     color: #1062AA;
 }
-.buy-bar-btn svg{
+.atompark-buy-bar-btn svg{
     fill: #FFFFFF;
 }
-.buy-bar-btn:hover svg{
+.atompark-buy-bar-btn:hover svg{
     fill: #000000;
 }
-.buy-bar-btn__qty{
+.atompark-buy-bar-btn__qty{
     position: relative;
     margin-right: 18px;
 }
-.buy-bar-btn__qty-value{
+.atompark-buy-bar-btn__qty-value{
     position: absolute;
     top: -10px;
     left: 50%;
@@ -128,14 +128,14 @@
     -o-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
 }
-.buy-bar-btn:hover .buy-bar-btn__qty-value{
+.atompark-buy-bar-btn:hover .atompark-buy-bar-btn__qty-value{
     color: #000000;
 }
 
-.buy-check{
+.atompark-buy-check{
     margin: 0 18px;
 }
-.buy-radio{
+.atompark-buy-radio{
     margin: 0 16px;
 }
 .label-check-buy,
@@ -206,49 +206,49 @@ input[type="radio"]:checked + .label-radio-buy:before{
     -ms-flex-align: center;
     align-items: center;
 }
-.header-buy-navigation{
+.atompark-header-buy-navigation{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-.header-buy-navigation__link{
+.atompark-header-buy-navigation__link{
     padding-bottom: 5px;
     font-size: 18px;
     line-height: 21px;
     color: #81859C;
     border-bottom: 1px solid #81859C;
 }
-.header-buy-navigation__link:hover,
-.header-buy-navigation__link_active{
+.atompark-header-buy-navigation__link:hover,
+.atompark-header-buy-navigation__link_active{
     color: #1062AA;
     border-bottom: 1px solid #F7B916;
 }
-.header-buy-navigation__link svg{
+.atompark-header-buy-navigation__link svg{
     display: block;
     fill: #81859C;
 }
-.header-buy-navigation__link_active svg,
-.header-buy-navigation__link:hover svg{
+.atompark-header-buy-navigation__link_active svg,
+.atompark-header-buy-navigation__link:hover svg{
     fill: #1062AA;
 }
-.header-buy-navigation__link:first-child{
+.atompark-header-buy-navigation__link:first-child{
     padding-right: 15px;
 }
-.header-buy-navigation__link:last-child{
+.atompark-header-buy-navigation__link:last-child{
     padding-left: 15px;
     text-align: right;
 }
-.header-buy-cart{
+.atompark-header-buy-cart{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     padding: 0 15px;
 }
-.header-buy-cart__icon{
+.atompark-header-buy-cart__icon{
     position: relative;
     margin-right: 7px;
 }
-.header-buy-cart__value{
+.atompark-header-buy-cart__value{
     position: absolute;
     top: -10px;
     left: 50%;
@@ -259,7 +259,7 @@ input[type="radio"]:checked + .label-radio-buy:before{
     line-height: 19px;
     color: inherit;
 }
-.header-buy-action{
+.atompark-header-buy-action{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -272,63 +272,63 @@ input[type="radio"]:checked + .label-radio-buy:before{
     text-transform: capitalize;
     color: #333333;
 }
-.header-buy-action__text{
+.atompark-header-buy-action__text{
     margin-left: 16px;
 }
 /*Footer Buy*/
-.footer-buy{
+.atompark-footer-buy{
     margin-top: auto;
     padding: 45px 0 32px 0;
     background-color: #1062AA;
 }
-.footer-buy__top,
-.footer-buy__bottom{
+.atompark-footer-buy__top,
+.atompark-footer-buy__bottom{
     position: relative;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 }
-.footer-buy__top{
+.atompark-footer-buy__top{
     padding-bottom: 45px;
     border-bottom: 1px solid #F7B916;
 }
-.footer-buy__bottom{
+.atompark-footer-buy__bottom{
     margin-top: 37px;
 }
-.footer-buy-info,
-.footer-buy-pay,
-.footer-buy-policy{
+.atompark-footer-buy-info,
+.atompark-footer-buy-pay,
+.atompark-footer-buy-policy{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
     max-width: 400px;
 }
-.footer-buy-logo{
+.atompark-footer-buy-logo{
     position: absolute;
     top: 0;
     left: 0;
 }
-.footer-buy-info__title{
+.atompark-footer-buy-info__title{
     margin-bottom: 13px;
     font-size: 10px;
     line-height: 12px;
     color: #E5E5E5;
 }
-.footer-buy-info__link{
+.atompark-footer-buy-info__link{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #F7B916;
 }
-.footer-buy-info__link:hover{
+.atompark-footer-buy-info__link:hover{
     text-decoration: underline;
 }
-.footer-buy-pay{
+.atompark-footer-buy-pay{
     margin-top: 40px;
 }
-.footer-buy-copyright{
+.atompark-footer-buy-copyright{
     position: absolute;
     top: 0;
     left: 0;
@@ -336,26 +336,26 @@ input[type="radio"]:checked + .label-radio-buy:before{
     line-height: 14px;
     color: #E5E5E5;
 }
-.footer-buy-policy__link{
+.atompark-footer-buy-policy__link{
     font-weight: 500;
     font-size: 12px;
     line-height: 14px;
     color: #E5E5E5;
 }
-.footer-buy-policy__link:hover{
+.atompark-footer-buy-policy__link:hover{
     text-decoration: underline;
 }
-.footer-buy-menu,
-.footer-buy-socials{
+.atompark-footer-buy-menu,
+.atompark-footer-buy-socials{
     display: none;
     justify-content: space-between;
 }
-.footer-buy-menu__link{
+.atompark-footer-buy-menu__link{
     font-size: 16px;
     line-height: 19px;
     color: #F2F2F2;
 }
-.footer-buy-menu__link:hover{
+.atompark-footer-buy-menu__link:hover{
     text-decoration: underline;
 }
 
@@ -366,25 +366,25 @@ input[type="radio"]:checked + .label-radio-buy:before{
     .header-buy{
         padding: 19px 0 16px 0;
     }
-    .header-buy-logo{
+    .atompark-header-buy-logo{
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
         order: 1;
         max-width: 51px;
     }
-    .header-buy-action{
+    .atompark-header-buy-action{
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
         order: 2;
     }
-    .header-buy-navigation{
+    .atompark-header-buy-navigation{
         -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
         order: 3;
         width: 100%;
         margin-top: 26px;
     }
-    .header-buy-navigation__link{
+    .atompark-header-buy-navigation__link{
         -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
         flex: 1 0 auto;
@@ -392,88 +392,88 @@ input[type="radio"]:checked + .label-radio-buy:before{
         font-size: 14px;
         line-height: 16px;
     }
-    .header-buy-cart{
+    .atompark-header-buy-cart{
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
     }
-    .header-buy-cart__price{
+    .atompark-header-buy-cart__price{
         display: none;
     }
-    .header-buy-cart__icon svg{
+    .atompark-header-buy-cart__icon svg{
         width: 16px;
         height: 16px;
     }
-    .header-buy-cart__value{
+    .atompark-header-buy-cart__value{
         font-size: 14px;
         line-height: 16px;
     }
     /*footer buy*/
-    .footer-buy{
+    .atompark-footer-buy{
         padding: 31px 0 43px 0;
     }
-    .footer-buy-pay{
+    .atompark-footer-buy-pay{
         display: none;
     }
-    .footer-buy-menu,
-    .footer-buy-socials{
+    .atompark-footer-buy-menu,
+    .atompark-footer-buy-socials{
         display: flex;
         width: 100%;
     }
-    .footer-buy-logo,
-    .footer-buy-copyright{
+    .atompark-footer-buy-logo,
+    .atompark-footer-buy-copyright{
         position: static;
     }
-    .footer-buy__top{
+    .atompark-footer-buy__top{
         flex-direction: row;
         align-items: flex-start;
         padding-bottom: 41px;
     }
-    .footer-buy-info{
+    .atompark-footer-buy-info{
         justify-content: flex-end;
         width: 50%;
         margin-left: auto;
         text-align: right;
     }
-    .footer-buy-info__item:first-child{
+    .atompark-footer-buy-info__item:first-child{
         margin-bottom: 20px;
     }
-    .footer-buy-info__title{
+    .atompark-footer-buy-info__title{
         margin-bottom: 3px;
     }
-    .footer-buy-policy{
+    .atompark-footer-buy-policy{
         order: 1;
         justify-content: center;
     }
-    .footer-buy-policy__link{
+    .atompark-footer-buy-policy__link{
         margin: 0 5px;
         font-size: 16px;
         line-height: 26px;
     }
-    .footer-buy-copyright{
+    .atompark-footer-buy-copyright{
         order: 2;
         margin-top: 32px;
         font-size: 14px;
         line-height: 16px;
         text-align: center;
     }
-    .footer-buy-socials{
+    .atompark-footer-buy-socials{
         margin: 43px 0 38px 0;
     }
     /*buy bar*/
-    .buy-bar{
+    .atompark-buy-bar{
         padding: 22px 0 32px 0;
     }
-    .buy-bar__inner{
+    .atompark-buy-bar__inner{
         justify-content: center;
     }
-    .buy-bar__price{
+    .atompark-buy-bar__price{
         margin: 0 0 0 30px;
     }
-    .buy-bar__old-price{
+    .atompark-buy-bar__old-price{
         display: none;
     }
-    .buy-bar-btn{
+    .atompark-buy-bar-btn{
         margin-top: 10px;
     }
 }
