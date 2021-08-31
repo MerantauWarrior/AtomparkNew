@@ -16,6 +16,7 @@
 <!--  <link rel="stylesheet" href="assets/css/buy-general.css">-->
 <!--  <link rel="stylesheet" href="assets/css/cart.css">-->
   <link rel="stylesheet" href="assets/css/basket-module-full.css">
+  <link rel="stylesheet" href="libs/slick-1.8.1/slick/slick.css">
 </head>
 <body>
 
@@ -53,23 +54,7 @@
   <main>
     <section class="atompark-cart">
       <div class="container-md">
-        <div class="atompark-cart-summary atompark-cart-summary--top">
-          <div class="atompark-cart-summary__text">
-            Выберите подходящую опцию
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20ZM12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
-                    fill="#1062AA"/>
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M13 13.5858L15.2929 11.2929L16.7071 12.7071L12 17.4142L7.29289 12.7071L8.70711 11.2929L11 13.5858V7L13 7L13 13.5858Z"
-                    fill="#1062AA"/>
-            </svg>
-          </div>
-          <div class="atompark-cart-summary__info">
-            <div class="atompark-cart-summary__price">$ 101,99</div>
-            <a href="#" class="btn btn-m">PLACE ORDER</a>
-          </div>
-        </div>
+        <h1 class="atompark-cart__title">My cart</h1>
         <div class="atompark-cart__products">
           <div class="atompark-cart-product">
             <div class="atompark-cart-product__top">
@@ -102,123 +87,52 @@
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M6.79289 12.7071L8.58579 14.5L6.79289 16.2929L8.20711 17.7071L10 15.9142L11.7929 17.7071L13.2071 16.2929L11.4142 14.5L13.2071 12.7071L11.7929 11.2929L10 13.0858L8.20711 11.2929L6.79289 12.7071Z"
-                        fill="#EF5237"/>
+                        fill=""/>
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7 0C5.89543 0 5 0.89543 5 2V3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H2.07397L2.8609 19.2301C2.98113 20.7931 4.28445 22 5.85206 22H14.1479C15.7155 22 17.0189 20.7931 17.1391 19.2301L17.926 9H18C19.1046 9 20 8.10457 20 7V5C20 3.89543 19.1046 3 18 3H15V2C15 0.895431 14.1046 0 13 0H7ZM13 3H7V2H13V3ZM4.85501 19.0767L4.07988 9H15.9201L15.145 19.0767C15.1049 19.5977 14.6705 20 14.1479 20H5.85206C5.32953 20 4.89508 19.5977 4.85501 19.0767ZM2 7V5H18V7H2Z"
-                          fill="#EF5237"/>
+                          fill=""/>
                   </svg>
                 </a>
               </div>
             </div>
+            <div class="atompark-cart-product-show-extra">
+              <span>Discount program - Save up to 25%</span>
+              <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.8037 8.48943L8.35426 1.20522L0.803711 8.57959" stroke="#1062AA" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
             <div class="atompark-cart-product-extra">
               <div class="atompark-cart-product-extra__product">
-                <div class="atompark-cart-product-extra__text">
-                  <div class="atompark-cart-product-extra__title">Atomic Email Studio Corporate Lisense for 3 PCs<span
-                      class="color-discount">экономия 10%</span></div>
-                </div>
-                <div class="atompark-cart-product-controls">
-                  <div class="atompark-cart-product-qty">
-                    <button class="atompark-cart-product-qty__btn js-cart-minus">
-                      <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                    <input type="text" name="product-2" id="product-2" class="atompark-cart-product-qty__inp js-number" value="0"
-                           maxlength="3">
-                    <button class="atompark-cart-product-qty__btn js-cart-plus">
-                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
-                              stroke-linecap="round"/>
-                        <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="atompark-cart-product-price">
-                    <div class="atompark-cart-old-price">$ 49,99</div>
-                    <div class="atompark-cart-price">$ 3500</div>
-                  </div>
-                </div>
+                <div class="atompark-cart-product-extra__title">Atomic Email Studio 2 PCs</div>
+                <div class="atompark-cart-product-extra__discount color-discount">Save 10%</div>
+                <div class="atompark-cart-product-extra__divider"></div>
+                <div class="atompark-cart-product-extra__price">$35 per PC</div>
               </div>
               <div class="atompark-cart-product-extra__product">
-                <div class="atompark-cart-product-extra__text">
-                  <div class="atompark-cart-product-extra__title">Atomic Email Studio Corporate Lisense for 5 PCs<span
-                      class="color-discount">экономия 10%</span></div>
-                </div>
-                <div class="atompark-cart-product-controls">
-                  <div class="atompark-cart-product-qty">
-                    <button class="atompark-cart-product-qty__btn js-cart-minus">
-                      <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                    <input type="text" name="product-3" id="product-3" class="atompark-cart-product-qty__inp js-number" value="0"
-                           maxlength="3">
-                    <button class="atompark-cart-product-qty__btn js-cart-plus">
-                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
-                              stroke-linecap="round"/>
-                        <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="atompark-cart-product-price">
-                    <div class="atompark-cart-old-price">$ 49,99</div>
-                    <div class="atompark-cart-price">$ 4500</div>
-                  </div>
-                </div>
+                <div class="atompark-cart-product-extra__title">Atomic Email Studio 3 PCs</div>
+                <div class="atompark-cart-product-extra__discount color-discount">Save 15%</div>
+                <div class="atompark-cart-product-extra__divider"></div>
+                <div class="atompark-cart-product-extra__price">$30 per PC</div>
               </div>
               <div class="atompark-cart-product-extra__product">
-                <div class="atompark-cart-product-extra__text">
-                  <div class="atompark-cart-product-extra__title">Atomic Email Studio Corporate Lisense for 10 PCs<span
-                      class="color-discount">экономия 10%</span></div>
-                </div>
-                <div class="atompark-cart-product-controls">
-                  <div class="atompark-cart-product-qty">
-                    <button class="atompark-cart-product-qty__btn js-cart-minus">
-                      <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                    <input type="text" name="product-34" id="product-34" class="atompark-cart-product-qty__inp js-number" value="0"
-                           maxlength="3">
-                    <button class="atompark-cart-product-qty__btn js-cart-plus">
-                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
-                              stroke-linecap="round"/>
-                        <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="atompark-cart-product-price">
-                    <div class="atompark-cart-old-price">$ 49,99</div>
-                    <div class="atompark-cart-price">$ 5700</div>
-                  </div>
-                </div>
+                <div class="atompark-cart-product-extra__title">Atomic Email Studio 4 PCs</div>
+                <div class="atompark-cart-product-extra__discount color-discount">Save 20%</div>
+                <div class="atompark-cart-product-extra__divider"></div>
+                <div class="atompark-cart-product-extra__price">$25 per PC</div>
               </div>
-            </div>
-            <div class="atompark-cart-product-additional">
-              <div class="atompark-cart-product-additional__product clear">
-                <div class="atompark-cart-product-additional__img"><img src="assets/img/cart/email%20studio%201.png" alt="name">
-                </div>
-                <div class="atompark-cart-product-additional__info">
-                  <a href="#" class="atompark-cart-product-additional__title">Atomic Email Studio Extreme</a>
-                  <div>Create a successful email campaign from scratch</div>
-                </div>
-                <div class="atompark-cart-product-additional__text">Find clients' contacts, check their existence, and start mass
-                  mailing with the help of one tool.
-                </div>
-                <div class="atompark-cart-product-additional__controls">
-                  <div class="atompark-cart-price">$ 49,99</div>
-                  <a href="#" class="btn btn-s atompark-cart-product-additional__btn">UPGRADE</a>
-                </div>
+              <div class="atompark-cart-product-extra__product">
+                <div class="atompark-cart-product-extra__title">Atomic Email Studio 5 PCs</div>
+                <div class="atompark-cart-product-extra__discount color-discount">Save 25%</div>
+                <div class="atompark-cart-product-extra__divider"></div>
+                <div class="atompark-cart-product-extra__price">$20 per PC</div>
               </div>
             </div>
           </div>
           <div class="atompark-cart-product">
             <div class="atompark-cart-product__top">
               <div class="atompark-cart-product-info">
-                <div class="atompark-cart-product-logo"><img src="assets/img/cart/p1.svg" alt="p name"></div>
-                <div class="atompark-cart-product-name">Atomic Email Studio</div>
+                <div class="atompark-cart-product-logo"><img src="assets/img/cart/p2.svg" alt="p name"></div>
+                <div class="atompark-cart-product-name">Atomic Email Tracker 1 month</div>
               </div>
               <div class="atompark-cart-product-controls">
                 <div class="atompark-cart-product-qty">
@@ -227,7 +141,7 @@
                       <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
                     </svg>
                   </button>
-                  <input type="text" name="product-21" id="product-21" class="atompark-cart-product-qty__inp js-number" value="1"
+                  <input type="text" name="product-2" id="product-2" class="atompark-cart-product-qty__inp js-number" value="1"
                          maxlength="3">
                   <button class="atompark-cart-product-qty__btn js-cart-plus">
                     <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,209 +152,124 @@
                   </button>
                 </div>
                 <div class="atompark-cart-product-price">
+                  <div class="atompark-cart-old-price">$ 49,99</div>
                   <div class="atompark-cart-price">$ 39,99</div>
                 </div>
                 <a href="#" class="atompark-cart-product-action js-delete-cart">
                   <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M6.79289 12.7071L8.58579 14.5L6.79289 16.2929L8.20711 17.7071L10 15.9142L11.7929 17.7071L13.2071 16.2929L11.4142 14.5L13.2071 12.7071L11.7929 11.2929L10 13.0858L8.20711 11.2929L6.79289 12.7071Z"
-                        fill="#EF5237"/>
+                        fill=""/>
                     <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7 0C5.89543 0 5 0.89543 5 2V3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H2.07397L2.8609 19.2301C2.98113 20.7931 4.28445 22 5.85206 22H14.1479C15.7155 22 17.0189 20.7931 17.1391 19.2301L17.926 9H18C19.1046 9 20 8.10457 20 7V5C20 3.89543 19.1046 3 18 3H15V2C15 0.895431 14.1046 0 13 0H7ZM13 3H7V2H13V3ZM4.85501 19.0767L4.07988 9H15.9201L15.145 19.0767C15.1049 19.5977 14.6705 20 14.1479 20H5.85206C5.32953 20 4.89508 19.5977 4.85501 19.0767ZM2 7V5H18V7H2Z"
-                          fill="#EF5237"/>
+                          fill=""/>
                   </svg>
                 </a>
-              </div>
-            </div>
-            <div class="atompark-cart-product-extra">
-              <div class="atompark-cart-product-extra__product">
-                <div class="atompark-cart-product-extra__text">
-                  <div class="atompark-cart-product-extra__title">Atomic Email Studio Corporate Lisense for 3 PCs<span
-                      class="color-discount">экономия 10%</span></div>
-                </div>
-                <div class="atompark-cart-product-controls">
-                  <div class="atompark-cart-product-qty">
-                    <button class="atompark-cart-product-qty__btn js-cart-minus">
-                      <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                    <input type="text" name="product-22" id="product-22" class="atompark-cart-product-qty__inp js-number" value="0"
-                           maxlength="3">
-                    <button class="atompark-cart-product-qty__btn js-cart-plus">
-                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
-                              stroke-linecap="round"/>
-                        <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="atompark-cart-product-price">
-                    <div class="atompark-cart-old-price">$ 49,99</div>
-                    <div class="atompark-cart-price">$ 3500</div>
-                  </div>
-                </div>
-              </div>
-              <div class="atompark-cart-product-extra__product">
-                <div class="atompark-cart-product-extra__text">
-                  <div class="atompark-cart-product-extra__title">Atomic Email Studio Corporate Lisense for 5 PCs<span
-                      class="color-discount">экономия 10%</span></div>
-                </div>
-                <div class="atompark-cart-product-controls">
-                  <div class="atompark-cart-product-qty">
-                    <button class="atompark-cart-product-qty__btn js-cart-minus">
-                      <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                    <input type="text" name="product-32" id="product-32" class="atompark-cart-product-qty__inp js-number" value="0"
-                           maxlength="3">
-                    <button class="atompark-cart-product-qty__btn js-cart-plus">
-                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
-                              stroke-linecap="round"/>
-                        <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="atompark-cart-product-price">
-                    <div class="atompark-cart-old-price">$ 49,99</div>
-                    <div class="atompark-cart-price">$ 4500</div>
-                  </div>
-                </div>
-              </div>
-              <div class="atompark-cart-product-extra__product">
-                <div class="atompark-cart-product-extra__text">
-                  <div class="atompark-cart-product-extra__title">Atomic Email Studio Corporate Lisense for 10 PCs<span
-                      class="color-discount">экономия 10%</span></div>
-                </div>
-                <div class="atompark-cart-product-controls">
-                  <div class="atompark-cart-product-qty">
-                    <button class="atompark-cart-product-qty__btn js-cart-minus">
-                      <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                    <input type="text" name="product-324" id="product-324" class="atompark-cart-product-qty__inp js-number"
-                           value="0" maxlength="3">
-                    <button class="atompark-cart-product-qty__btn js-cart-plus">
-                      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
-                              stroke-linecap="round"/>
-                        <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="atompark-cart-product-price">
-                    <div class="atompark-cart-old-price">$ 49,99</div>
-                    <div class="atompark-cart-price">$ 5700</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="atompark-cart-product-additional">
-              <div class="atompark-cart-product-additional__product clear">
-                <div class="atompark-cart-product-additional__img"><img src="assets/img/cart/lead%20extractor%201.png" alt="name">
-                </div>
-                <div class="atompark-cart-product-additional__info">
-                  <a href="#" class="atompark-cart-product-additional__title">+ Atomic Lead Extractor</a>
-                  <div>Phone Number Extractor and More</div>
-                </div>
-                <div class="atompark-cart-product-additional__text">Enrich your contact list with target audience emails, phone
-                  numbers, and Skype information.
-                </div>
-                <div class="atompark-cart-product-additional__controls">
-                  <div class="atompark-cart-old-price">$ 49,99</div>
-                  <div class="atompark-cart-price">$ 19,99</div>
-                  <a href="#" class="btn btn-s atompark-cart-product-additional__btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="" stroke-width="2"
-                            stroke-linecap="round"/>
-                      <path d="M9.60889 1L9.60889 18" stroke="" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    ADD
-                  </a>
-                </div>
-              </div>
-              <div class="atompark-cart-product-additional__product clear">
-                <div class="atompark-cart-product-additional__img"><img src="assets/img/cart/lead%20extractor%201.png" alt="name">
-                </div>
-                <div class="atompark-cart-product-additional__info">
-                  <a href="#" class="atompark-cart-product-additional__title">+ Atomic Lead Extractor</a>
-                  <div>Phone Number Extractor and More</div>
-                </div>
-                <div class="atompark-cart-product-additional__text">Enrich your contact list with target audience emails, phone
-                  numbers, and Skype information.
-                </div>
-                <div class="atompark-cart-product-additional__controls">
-                  <div class="atompark-cart-price">$ 19,99</div>
-                  <a href="#" class="btn btn-s atompark-cart-product-additional__btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="" stroke-width="2"
-                            stroke-linecap="round"/>
-                      <path d="M9.60889 1L9.60889 18" stroke="" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    ADD
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="atompark-cart-product">
-            <div class="atompark-cart-product__top">
-              <div class="atompark-cart-product-info">
-                <div class="atompark-cart-product-logo"><img src="assets/img/cart/p2.svg" alt="p name"></div>
-                <div class="atompark-cart-product-name">Atomic Email Tracker 1 month</div>
-              </div>
-              <div class="atompark-cart-product-controls cart-product-controls--priceonly">
-                <div class="atompark-cart-product-price">
-                  <div class="atompark-cart-price">$ 95,99</div>
-                </div>
-                <a href="#" class="atompark-cart-product-action js-delete-cart">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M6.79289 12.7071L8.58579 14.5L6.79289 16.2929L8.20711 17.7071L10 15.9142L11.7929 17.7071L13.2071 16.2929L11.4142 14.5L13.2071 12.7071L11.7929 11.2929L10 13.0858L8.20711 11.2929L6.79289 12.7071Z"
-                        fill="#EF5237"/>
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7 0C5.89543 0 5 0.89543 5 2V3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H2.07397L2.8609 19.2301C2.98113 20.7931 4.28445 22 5.85206 22H14.1479C15.7155 22 17.0189 20.7931 17.1391 19.2301L17.926 9H18C19.1046 9 20 8.10457 20 7V5C20 3.89543 19.1046 3 18 3H15V2C15 0.895431 14.1046 0 13 0H7ZM13 3H7V2H13V3ZM4.85501 19.0767L4.07988 9H15.9201L15.145 19.0767C15.1049 19.5977 14.6705 20 14.1479 20H5.85206C5.32953 20 4.89508 19.5977 4.85501 19.0767ZM2 7V5H18V7H2Z"
-                          fill="#EF5237"/>
-                  </svg>
-                </a>
-              </div>
-            </div>
-            <div class="atompark-cart-product-additional cart-product-additional--periods">
-              <div class="atompark-cart-product-additional__product clear">
-                <div class="atompark-cart-product-additional__img"><img src="assets/img/cart/VERIFIER%20ONLINE%201.png" alt="name">
-                </div>
-                <div class="atompark-cart-product-additional__info">
-                  <a href="#" class="atompark-cart-product-additional__title">+ Atomic Verifier Online 1 year subscription</a>
-                  <div>See when and who opened your message</div>
-                </div>
-                <div class="atompark-cart-product-additional__text">Enrich your contact list with target audience emails, phone
-                  numbers, and Skype information.
-                </div>
-                <div class="atompark-cart-product-additional__controls">
-                  <div class="atompark-cart-price">$ 505,99</div>
-                  <a href="#" class="btn btn-s atompark-cart-product-additional__btn">
-                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="" stroke-width="2"
-                            stroke-linecap="round"/>
-                      <path d="M9.60889 1L9.60889 18" stroke="" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
-                    ADD
-                  </a>
-                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="atompark-cart-summary atompark-cart-summary--bottom">
-          <div class="atompark-cart-summary__text">
-            К оплате
-          </div>
           <div class="atompark-cart-summary__info">
-            <div class="atompark-cart-summary__price">$ 101,99</div>
+            <div class="atompark-cart-summary__price">Total <span>$359</span></div>
             <a href="#" class="btn btn-m">PLACE ORDER</a>
+          </div>
+        </div>
+        <div class="atompark-cart-related">
+          <div class="atompark-cart-related__title">Related Software</div>
+          <div class="atompark-cart-related__products">
+            <div class="atompark-cart-related__slider-arrow atompark-cart-related__slider-prev">
+              <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8.3239 16.7849L1.03969 9.33546L8.41406 1.78491" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="atompark-cart-related__slider-arrow atompark-cart-related__slider-next">
+              <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.12922 16.7849L8.41343 9.33546L1.03906 1.78491" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="atompark-cart-related__slider">
+              <div>
+                <div class="atompark-cart-related-product" data-logo="assets/img/cart/p2.svg">
+                  <div class="atompark-cart-related-product__media">
+                    <img src="assets/img/cart/lead%20extractor%201.png" alt="text">
+                  </div>
+                  <div class="atompark-cart-related-product__content">
+                    <div class="atompark-cart-related-product__title">Atomic Lead Extractor</div>
+                    <div class="atompark-cart-related-product__description">Phone Number Extractor and More</div>
+                    <div class="atompark-cart-related-product__controls">
+                      <a href="#" class="btn atompark-cart-related-product__add">add</a>
+                      <span class="atompark-cart-related-product__price">$ 23,99</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="atompark-cart-related-product" data-logo="assets/img/cart/p2.svg">
+                  <div class="atompark-cart-related-product__media">
+                    <img src="assets/img/cart/TRACKER%202.png" alt="text">
+                  </div>
+                  <div class="atompark-cart-related-product__content">
+                    <div class="atompark-cart-related-product__title">Atomic Email Tracker</div>
+                    <div class="atompark-cart-related-product__description">See when and who opened your message</div>
+                    <div class="atompark-cart-related-product__controls">
+                      <a href="#" class="btn atompark-cart-related-product__add">add</a>
+                      <span class="atompark-cart-related-product__price">$ 19,99</span>
+                      <div class="atompark-cart-related-product__peroids">
+                        <div class="atompark-cart-radio">
+                          <input type="radio" name="period" id="per1" checked>
+                          <label for="per1" class="atompark-cart-radio__label">1 month</label>
+                        </div>
+                        <div class="atompark-cart-radio">
+                          <input type="radio" name="period" id="per2">
+                          <label for="per2" class="atompark-cart-radio__label">1 year</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="atompark-cart-related-product" data-logo="assets/img/cart/p2.svg">
+                  <div class="atompark-cart-related-product__media">
+                    <img src="assets/img/cart/lead%20extractor%201.png" alt="text">
+                  </div>
+                  <div class="atompark-cart-related-product__content">
+                    <div class="atompark-cart-related-product__title">Atomic Lead Extractor</div>
+                    <div class="atompark-cart-related-product__description">Phone Number Extractor and More</div>
+                    <div class="atompark-cart-related-product__controls">
+                      <a href="#" class="btn atompark-cart-related-product__add">add</a>
+                      <span class="atompark-cart-related-product__price">$ 23,99</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="atompark-cart-related-product" data-logo="assets/img/cart/p2.svg">
+                  <div class="atompark-cart-related-product__media">
+                    <img src="assets/img/cart/TRACKER%202.png" alt="text">
+                  </div>
+                  <div class="atompark-cart-related-product__content">
+                    <div class="atompark-cart-related-product__title">Atomic Email Tracker</div>
+                    <div class="atompark-cart-related-product__description">See when and who opened your message</div>
+                    <div class="atompark-cart-related-product__controls">
+                      <a href="#" class="btn atompark-cart-related-product__add">add</a>
+                      <span class="atompark-cart-related-product__price">$ 19,99</span>
+                      <div class="atompark-cart-related-product__peroids">
+                        <div class="atompark-cart-radio">
+                          <input type="radio" name="period2" id="per12" checked>
+                          <label for="per12" class="atompark-cart-radio__label">1 month</label>
+                        </div>
+                        <div class="atompark-cart-radio">
+                          <input type="radio" name="period2" id="per22">
+                          <label for="per22" class="atompark-cart-radio__label">1 year</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -522,23 +351,24 @@
 </div>
 
 <script src="libs/jquery-3.5.1.min.js"></script>
+<script src="libs/slick-1.8.1/slick/slick.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
 
-    $('.js-cart-plus').click(function () {
-      var inpVal = parseInt($(this).parent().find('.atompark-cart-product-qty__inp').val()) || 0;
+    $(document).on('click','.js-cart-plus',function () {
+      var inpVal = parseInt($(this).parent().find('.atompark-cart-product-qty__inp').val()) || 1;
       $(this).parent().find('.atompark-cart-product-qty__inp').val(inpVal + 1);
     });
-    $('.js-cart-minus').click(function () {
-      var inpVal = parseInt($(this).parent().find('.atompark-cart-product-qty__inp').val()) || 0;
-      if (inpVal < 1) {
+    $(document).on('click','.js-cart-minus',function () {
+      var inpVal = parseInt($(this).parent().find('.atompark-cart-product-qty__inp').val()) || 1;
+      if (inpVal < 2) {
         return false;
       } else {
         $(this).parent().find('.atompark-cart-product-qty__inp').val(inpVal - 1);
       }
     });
-    $('.js-delete-cart').click(function (e) {
+    $(document).on('click','.js-delete-cart',function (e) {
       e.preventDefault();
       $(this).closest('.atompark-cart-product').remove();
       if($('.atompark-cart-product').length < 1){
@@ -546,6 +376,87 @@
         $('.atompark-cart-empty').show();
       }
     })
+    $('.atompark-cart-product-show-extra').click(function () {
+      $(this).toggleClass('atompark-cart-product-show-extra_opened');
+      $(this).siblings('.atompark-cart-product-extra').slideToggle(250);
+    });
+
+    // slider
+
+    $('.atompark-cart-related__slider').slick({
+      arrows: true,
+      dots: false,
+      infinite: false,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      nextArrow: $('.atompark-cart-related__slider-next'),
+      prevArrow: $('.atompark-cart-related__slider-prev'),
+      responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            dots: true,
+            arrows: false,
+            adaptiveHeight: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]
+    });
+
+    function makeTemplate(title, price, logo){
+      var tmpl = `
+      <div class="atompark-cart-product">
+            <div class="atompark-cart-product__top">
+              <div class="atompark-cart-product-info">
+                <div class="atompark-cart-product-logo"><img src="${logo}" alt="p name"></div>
+                <div class="atompark-cart-product-name">${title}</div>
+              </div>
+              <div class="atompark-cart-product-controls">
+                <div class="atompark-cart-product-qty">
+                  <button class="atompark-cart-product-qty__btn js-cart-minus">
+                    <svg width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="1" y1="1" x2="15" y2="1" stroke="#81859C" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                  <input type="text" name="product-2" id="product-2" class="atompark-cart-product-qty__inp js-number" value="1"
+                         maxlength="3">
+                  <button class="atompark-cart-product-qty__btn js-cart-plus">
+                    <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="1" y1="8.86963" x2="17.4783" y2="8.86963" stroke="#1062AA" stroke-width="2"
+                            stroke-linecap="round"/>
+                      <path d="M9.60889 1L9.60889 18" stroke="#1062AA" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </button>
+                </div>
+                <div class="atompark-cart-product-price">
+                  <div class="atompark-cart-price">${price}</div>
+                </div>
+                <a href="#" class="atompark-cart-product-action js-delete-cart">
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M6.79289 12.7071L8.58579 14.5L6.79289 16.2929L8.20711 17.7071L10 15.9142L11.7929 17.7071L13.2071 16.2929L11.4142 14.5L13.2071 12.7071L11.7929 11.2929L10 13.0858L8.20711 11.2929L6.79289 12.7071Z"
+                        fill=""/>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7 0C5.89543 0 5 0.89543 5 2V3H2C0.895431 3 0 3.89543 0 5V7C0 8.10457 0.895431 9 2 9H2.07397L2.8609 19.2301C2.98113 20.7931 4.28445 22 5.85206 22H14.1479C15.7155 22 17.0189 20.7931 17.1391 19.2301L17.926 9H18C19.1046 9 20 8.10457 20 7V5C20 3.89543 19.1046 3 18 3H15V2C15 0.895431 14.1046 0 13 0H7ZM13 3H7V2H13V3ZM4.85501 19.0767L4.07988 9H15.9201L15.145 19.0767C15.1049 19.5977 14.6705 20 14.1479 20H5.85206C5.32953 20 4.89508 19.5977 4.85501 19.0767ZM2 7V5H18V7H2Z"
+                          fill=""/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+      `;
+      $('.atompark-cart__products').append(tmpl);
+    }
+
+    $('.atompark-cart-related-product__add').click(function (e) {
+      var logo = $(this).closest('.atompark-cart-related-product').data('logo');
+      var title = $(this).closest('.atompark-cart-related-product').find('.atompark-cart-related-product__title').text();
+      var price = $(this).siblings('.atompark-cart-related-product__price').text();
+      e.preventDefault();
+      makeTemplate(title, price, logo);
+    });
 
   });
 </script>
