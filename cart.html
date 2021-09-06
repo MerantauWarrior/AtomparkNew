@@ -60,7 +60,7 @@
             <div class="atompark-cart-product__top">
               <div class="atompark-cart-product-info">
                 <div class="atompark-cart-product-logo"><img src="assets/img/cart/p1.svg" alt="p name"></div>
-                <div class="atompark-cart-product-name">Atomic Email Studio (1 PC)</div>
+                <a href="#" class="atompark-cart-product-name">Atomic Email Studio (1 PC)</a>
               </div>
               <div class="atompark-cart-product-controls">
                 <div class="atompark-cart-product-qty">
@@ -132,7 +132,7 @@
             <div class="atompark-cart-product__top">
               <div class="atompark-cart-product-info">
                 <div class="atompark-cart-product-logo"><img src="assets/img/cart/p2.svg" alt="p name"></div>
-                <div class="atompark-cart-product-name">Atomic Email Tracker 1 month</div>
+                <a href="#" class="atompark-cart-product-name">Atomic Email Tracker 1 month</a>
               </div>
               <div class="atompark-cart-product-controls">
                 <div class="atompark-cart-product-qty">
@@ -454,7 +454,7 @@
       var logo = $(this).closest('.atompark-cart-related-product').data('logo');
       var title = $(this).closest('.atompark-cart-related-product').find('.atompark-cart-related-product__title').text();
       var price = $(this).siblings('.atompark-cart-related-product__price').text();
-      e.preventDefault();
+      e.preventDefault();  
       makeTemplate(title, price, logo);
     });
 
